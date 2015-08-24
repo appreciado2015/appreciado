@@ -9,7 +9,6 @@ Author URL: http://shapebootstrap.net
 *******Typography******
 **************************/
 body {
-  padding-top: 1em;
   background: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -154,6 +153,11 @@ ul.nostyle i {
 /*************************
 ******* Header ******
 **************************/
+.top-header {
+  padding-top: 0.2em;
+  padding-right: 1em;
+}
+
 .navbar.navbar-default {
   border: 0;
   border-radius: 0;
@@ -186,15 +190,15 @@ ul.nostyle i {
     box-shadow: none;
   }
   #main-menu.navbar-default .navbar-nav > li > a {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 10px 10px 10px;
   }
   #main-menu.navbar-default .navbar-nav > li.active > a,
   #main-menu.navbar-default .navbar-nav > li.open > a,
   #main-menu.navbar-default .navbar-nav > li:hover > a {
     background: transparent;
     padding-top: 37px;
-    border-bottom: 3px solid #45aed6;
+    border-bottom: 3px solid #D2007D;
+    color: #ACD36A;
   }
   #main-menu.navbar-default .dropdown-menu {
     padding: 0 20px;
@@ -920,30 +924,41 @@ ul.nostyle i {
 ********* Footer ******
 ************************/
 #footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background-image: url("../assets/footer-bg.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  padding-top: 0;
+  padding-bottom: 10px;
   color: #fff;
-  background: #2e2e2e;
 }
-#footer a {
+
+#footer h3 {
   color: #fff;
+  font-weight: 300
 }
+
 #footer a:hover {
-  color: #45aed6;
+  color: #373873
 }
 #footer ul {
   list-style: none;
-  padding: 0;
-  margin: 0 -7.5px;
+  padding: 0
 }
 #footer ul > li {
   display: inline-block;
   margin: 0 7.5px;
 }
-@media only screen and (min-width: 768px) {
-  #footer .social-icons {
-    float: right;
-  }
+#footer address p, #footer address p > a {
+  color: #83D0D2
+}
+#footer address ul > li > a {
+  color: #83D0D2
+}
+#footer-bot ul > li > a {
+  color: #fff;
 }
 .form-control {
   box-shadow: none;
@@ -952,11 +967,22 @@ ul.nostyle i {
 
 
 /******* TOP BENEFITS *******/
+#top-benefits-top h1 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #41A2AE;
+  padding: 0.2em 0
+}
+
+#top-benefits-top p {
+  font-size: 25px;
+  color: #8F8F95
+}
 
 #top-benefits-mid1 {
   color: #fff;
   background-color: #008999;
-  height: 400px;
+  height: 400px
 }
 
 #mid1-img1 {
@@ -996,7 +1022,9 @@ ul.nostyle i {
 }
 
 /******** General ********/
-
+.pad-top1 {
+  padding-top: 1em
+}
 .pad-top3 {
   padding-top: 3em
 }
@@ -1005,6 +1033,9 @@ ul.nostyle i {
 }
 .pad-bot1 {
   padding-bottom: 1em
+}
+.pad-bot3 {
+  padding-bottom: 3em
 }
 .mar-top-m5 {
   margin-top: -5em
@@ -1083,6 +1114,33 @@ ul.nostyle i {
       -ms-user-select: none;
           user-select: none;  
   }
+
+  .btn-chat {
+  color: #fff;
+  background-color: #D2007D;
+  border: 3px solid #D2007D;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 0 0 10px 10px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  background-image: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;  
+  }
+
 
 
 .btn-mar .btn-pink {

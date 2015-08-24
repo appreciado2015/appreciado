@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <title>Appreciado</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+    <%= favicon_link_tag 'favicon.ico' %>
   <!-- core CSS -->
     <link href="/assets/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/font-awesome.min.css" rel="stylesheet">
@@ -21,7 +20,7 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+    <!-- <link rel="shortcut icon" href="/assets/ico/favicon.ico"> -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
@@ -30,8 +29,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body <%= yield :index_body %>>
+<div class="text-right top-header">
+  <img src="/assets/canada-flag.png" alt="Canada Flag"><span> PROUDLY CANADIAN</span>
+</div>
 <div class="text-center">
-  <img src="http://appreciado.com/wp-content/uploads/2015/05/logo-appreciado-header.png" alt="logo" >
+  <img src="/assets/logo.png" alt="logo" >
 </div>
 <header id="header">
     <nav id="main-menu" class="navbar navbar-default" role="banner">
@@ -47,13 +49,13 @@
     
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">                    
-                    <li><%= link_to "TOP BENEFITS", root_path, :method => :get %></li>
-                    <li><%= link_to "WHO WE ARE?", about_path, :method => :get %></li>
-                    <li><%= link_to "PARTNERS", partners_path, :method => :get %></li>
-                    <li><%= link_to "CONTACT", contact_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "TOP BENEFITS", root_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "WHO WE ARE?", about_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(partners_path) %>"><%= link_to "PARTNERS", partners_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "CONTACT", contact_path, :method => :get %></li>
                     <li><%= link_to "BLOG", root_path, :method => :get %></li>
-                    <li><%= link_to "SUPPORT", support_path, :method => :get %></li>
-                    <li><%= link_to "PURCHASE", purchase_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(support_path) %>"><%= link_to "SUPPORT", support_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(purchase_path) %>"><%= link_to "PURCHASE", purchase_path, :method => :get %></li>
                 </ul>
             </div>
         </div><!--/.container-->
@@ -63,23 +65,45 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                &copy; 2014 Your Company. Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
+            <div class="col-sm-12 text-center pad-bot3">
+        <button class="btn-chat"><i class="fa fa-weixin"></i> CHAT ONLINE</button>
             </div>
-            <div class="col-sm-6">
-                <ul class="social-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    <li><a href="#"><i class="fa fa-flickr"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <address>
+                    <h3>CONTACT US</h3>
+                    <p>OFFICE <a href="tel:+14038707826">+1 (403) 870 7826</a> <br>
+                       <a href="mailto:hello@appreciado.com?Subject=Hello%20Appreciado">HELLO@APPRECIADO.COM</a></p>
+                </address>
+            </div>
+            <div class="col-md-4 text-center">
+                <address>
+                    <h3>FOLLOW US</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="col-md-4">
+                <address>
+                    <h3>LOCATION</h3>
+                    <p>317 7 Ave SW, Calgary, AB T2P 1B5 <br>
+                       <a href="https://www.google.com/maps/place/317+7+St+SW,+Calgary,+AB+T2P,+Canada/@51.0501008,-114.0785038,17z/data=!3m1!4b1!4m2!3m1!1s0x53716fe50c4e8f55:0xc63abf0afbd87bd0?hl=en-US" target="_blank"><i class="fa fa-map-marker"></i> VIEW MAP</a></p>
+                </address>
+            </div>
+            <div class="col-sm-12 text-center" id="footer-bot">
+                <ul>
+                    <li><%= link_to "ABOUT APPRECIADO", about_path, :method => :get %></li>
+                    <li><%= link_to "PRIVACY", root_path, :method => :get %></li>
+                    <li><%= link_to "TERMS & CONDITIONS", root_path, :method => :get %></li>
+                    <li><%= link_to "CONTACT", contact_path, :method => :get %></li>
+                    <li ><%= link_to "<u>ALREADY A CUSTOMER?</u>".html_safe, root_path, :method => :get %></li>                    
                 </ul>
             </div>
+            
         </div>
     </div>
 </footer>
