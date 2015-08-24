@@ -181,9 +181,9 @@ ul.nostyle i {
 }
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {
-    background: rgba(255, 255, 255, 0.9);
-    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
   #main-menu.navbar-default .navbar-nav > li > a {
     padding-top: 40px;
@@ -948,4 +948,150 @@ ul.nostyle i {
 .form-control {
   box-shadow: none;
   -webkit-box-shadow: none;
+}
+
+
+/******* TOP BENEFITS *******/
+
+#top-benefits-mid1 {
+  color: #fff;
+  background-color: #008999;
+  height: 400px;
+}
+
+#mid1-img1 {
+  background-image: url("../assets/home/fostering-caring-relationship.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 400px
+}
+
+#mid1-img1 h3 {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+#mid2-img1 {
+  background-image: url("../assets/home/dental-practices.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 400px
+}
+
+#mid2-img2 {
+  background-image: url("../assets/home/amazing-patients.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 400px
+}
+
+/******** General ********/
+
+.pad-top3 {
+  padding-top: 3em
+}
+.pad-top4 {
+  padding-top: 4em
+}
+.pad-bot1 {
+  padding-bottom: 1em
+}
+.mar-top-m5 {
+  margin-top: -5em
+}
+
+.color-white {
+  color: #fff
+}
+
+.bk-color-sky {
+    background-color:rgba(102,184,195, 0.61)
+}
+.bk-color-blue-green {
+   background-color: #008999
+}
+.bk-color-green {
+    background-color:#A2CE57
+}
+
+.in-block {
+  display: inline-block
+}
+.my-block h3 {
+  color: #fff;
+  padding: 1em 0.5em
+}
+
+.btn-pink {
+  color: #D2007D;
+  background-color: transparent;
+  border: 3px solid #D2007D;
+  display: inline-block;
+  padding: 0.1em 2.5em 0.2em;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 25px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  background-image: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;  
+  }
+
+  .btn-blue {
+  color: #373873;
+  background-color: transparent;
+  border: 3px solid #373873;
+  display: inline-block;
+  padding: 0.1em 2.5em 0.2em;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 25px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  background-image: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;  
+  }
+
+
+.btn-mar .btn-pink {
+  margin-right: 3em;
+}
+.btn-mar .btn-blue {
+  margin-left: 3em;
+}
+.btn-pad {
+    padding-top: 5em;
+    padding-bottom: 4em;
 }
