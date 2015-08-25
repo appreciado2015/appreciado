@@ -966,18 +966,20 @@ ul.nostyle i {
 }
 
 
-/******* TOP BENEFITS *******/
-#top-benefits-top h1 {
+/******* TOP PART *******/
+#top-top h1 {
   font-size: 48px;
   font-weight: 400;
   color: #41A2AE;
   padding: 0.2em 0
 }
 
-#top-benefits-top p {
+#top-top p {
   font-size: 25px;
   color: #8F8F95
 }
+/******* TOP BENEFITS *******/
+
 
 #top-benefits-mid1 {
   color: #fff;
@@ -1021,9 +1023,62 @@ ul.nostyle i {
   min-height: 400px
 }
 
+
+/******** Who are we ********/
+
+#about-mid1 h1 {
+  color: #fff;
+  font-weight: 400;
+}
+
+#about-mid1 h3 {
+  color: #fff;
+  font-weight: 400;
+  padding: 0 2em 0 3em;
+  text-align: left;
+  line-height: 1.3;
+}
+#about-mid2 h1 {
+  color: #ACD36A;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  padding: 1em 0 0.5em;
+}
+#about-mid2 h1 > a {
+  color: #ACD36A;
+}
+
+#about-mid3 {
+  background-image: url("../assets/whoarewe/helping-u-grow.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  height: 196px;
+  box-shadow: 0px 3px 3px #888888
+}
+#about-mid4 {
+  padding-top: 0.3em 
+}
+#about-mid4 h1 {
+    font-size: 48px;
+    font-weight: 400;
+    color: #41A2AE;
+    padding: 0.2em 0
+}
+#about-mid4 h4 {
+  color: #777;
+}
+    
+
 /******** General ********/
 .pad-top1 {
   padding-top: 1em
+}
+.pad-top2 {
+  padding-top: 2em
 }
 .pad-top3 {
   padding-top: 3em
@@ -1046,13 +1101,16 @@ ul.nostyle i {
 }
 
 .bk-color-sky {
-    background-color:rgba(102,184,195, 0.61)
+  background-color:rgba(102,184,195, 0.61)
 }
 .bk-color-blue-green {
-   background-color: #008999
+  background-color: #008999
 }
 .bk-color-green {
-    background-color:#A2CE57
+  background-color:#A2CE57
+}
+.bk-color-gray {
+  background: #EBEBEB
 }
 
 .in-block {
@@ -1061,6 +1119,10 @@ ul.nostyle i {
 .my-block h3 {
   color: #fff;
   padding: 1em 0.5em
+}
+
+.min-h650 {
+  min-height: 650px;
 }
 
 .btn-pink {
@@ -1093,6 +1155,32 @@ ul.nostyle i {
   color: #373873;
   background-color: transparent;
   border: 3px solid #373873;
+  display: inline-block;
+  padding: 0.1em 2.5em 0.2em;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 25px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  background-image: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;  
+  }
+
+  .btn-green {
+  color: #ACD36A;
+  background-color: transparent;
+  border: 3px solid #ACD36A;
   display: inline-block;
   padding: 0.1em 2.5em 0.2em;
   margin-bottom: 0;
@@ -1149,6 +1237,10 @@ ul.nostyle i {
 .btn-mar .btn-blue {
   margin-left: 3em;
 }
+.btn3-mar .btn-blue {
+  margin: 0 3em;
+}
+
 .btn-pad {
     padding-top: 5em;
     padding-bottom: 4em;

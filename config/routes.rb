@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   root 'static_pages#index'
   
-  match '/about', to: 'static_pages#about', via: 'get', as: :about
+  match '/who-are-we', to: 'static_pages#about', via: 'get', as: :about
   match '/partners', to: 'static_pages#partners', via: 'get', as: :partners
   match '/contact', to: 'static_pages#contact', via: 'get', as: :contact
   match '/support', to: 'static_pages#support', via: 'get', as: :support
