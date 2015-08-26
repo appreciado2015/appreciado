@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   
   match '/who-are-we', to: 'static_pages#about', via: 'get', as: :about
+  match '/team', to: 'static_pages#about_team', via: 'get', as: :about_team
   match '/partners', to: 'static_pages#partners', via: 'get', as: :partners
   match '/contact', to: 'static_pages#contact', via: 'get', as: :contact
   match '/support', to: 'static_pages#support', via: 'get', as: :support
+  match '/appreciado-support', to: 'static_pages#support_appreciado', via: 'get', as: :support_appreciado
   match '/purchase', to: 'static_pages#purchase', via: 'get', as: :purchase
 
   # The priority is based upon order of creation: first created -> highest priority.

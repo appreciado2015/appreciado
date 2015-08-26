@@ -25,6 +25,9 @@ h6 {
   font-family: 'Roboto', sans-serif;
   color: #272727;
 }
+p {
+  color: #8F8F95;
+}
 a {
   color: #45aed6;
   -webkit-transition: color 400ms, background-color 400ms;
@@ -38,8 +41,8 @@ a:focus {
   color: #2a95be;
 }
 hr {
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid #D2007D;
+ /* border-bottom: 1px solid #fff;*/
 }
 .gradiant {
   background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
@@ -1024,7 +1027,7 @@ ul.nostyle i {
 }
 
 
-/******** Who are we ********/
+/******** WHO ARE WE ********/
 
 #about-mid1 h1 {
   color: #fff;
@@ -1063,15 +1066,59 @@ ul.nostyle i {
   padding-top: 0.3em 
 }
 #about-mid4 h1 {
-    font-size: 48px;
-    font-weight: 400;
-    color: #41A2AE;
-    padding: 0.2em 0
+  font-size: 48px;
+  font-weight: 400;
+  color: #41A2AE;
+  padding: 0.2em 0
 }
 #about-mid4 h4 {
-  color: #777;
+  color: #777
 }
-    
+
+/******** Team ********/
+#team-about p {
+  font-size: 18px;
+}
+#team-about .pr-ul ul {
+  padding: 10em 3em 0 0;
+}
+#team-about .pl-ul ul {
+  padding: 10em 0 0 3em;
+}
+#team-about h1 {
+  color: #41A2AE;
+  font-weight: 400
+}
+#team-about ul > li > a {
+  color: #D2007D
+}
+
+
+/******** SUPPORT ********/
+#support-mid1 .thumbnail {
+  padding: 20px 4px 4px 4px;
+  border-radius: 0;
+  color: #41A2AE;
+  border: 2px solid #41A2AE;
+}
+#support-mid1 h3 {
+  color: #41A2AE;
+  font-weight: 400
+}
+#support-mid1 p {
+  color: #8F8F95;
+  font-size: 18px
+}
+
+/******** Support Appreciado ********/
+#support-appreciado h2,h3 {
+  font-weight: 400;
+  color: #41A2AE
+}
+
+#support-appreciado a {
+  color: #D2007D
+}
 
 /******** General ********/
 .pad-top1 {
@@ -1092,6 +1139,13 @@ ul.nostyle i {
 .pad-bot3 {
   padding-bottom: 3em
 }
+.pad-bot4 {
+  padding-bottom: 4em;
+}
+.pad-lr5 {
+  padding-left: 5em;
+  padding-right: 5em
+}
 .mar-top-m5 {
   margin-top: -5em
 }
@@ -1099,7 +1153,9 @@ ul.nostyle i {
 .color-white {
   color: #fff
 }
-
+.color-pink {
+  color: #D2007D
+}
 .bk-color-sky {
   background-color:rgba(102,184,195, 0.61)
 }
@@ -1113,6 +1169,9 @@ ul.nostyle i {
   background: #EBEBEB
 }
 
+.in-table {
+  display: inline-table;
+}
 .in-block {
   display: inline-block
 }

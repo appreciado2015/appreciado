@@ -5,6 +5,9 @@ class StaticPagesController < ApplicationController
   def about
   end
 
+  def about_team
+  end
+
   def partners
   end
 
@@ -12,6 +15,9 @@ class StaticPagesController < ApplicationController
   end
 
   def support
+  end
+
+  def support_appreciado    
   end
 
   def purchase

@@ -50,11 +50,11 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">                    
                     <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "TOP BENEFITS", root_path, :method => :get %></li>
-                    <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "WHO WE ARE?", about_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(about_path)||current_page?(about_team_path) %>"><%= link_to "WHO WE ARE?", about_path, :method => :get %></li>
                     <li class="<%= 'active' if current_page?(partners_path) %>"><%= link_to "PARTNERS", partners_path, :method => :get %></li>
                     <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "CONTACT", contact_path, :method => :get %></li>
                     <li><%= link_to "BLOG", root_path, :method => :get %></li>
-                    <li class="<%= 'active' if current_page?(support_path) %>"><%= link_to "SUPPORT", support_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(support_path)||current_page?(support_appreciado_path) %>"><%= link_to "SUPPORT", support_path, :method => :get %></li>
                     <li class="<%= 'active' if current_page?(purchase_path) %>"><%= link_to "PURCHASE", purchase_path, :method => :get %></li>
                 </ul>
             </div>
