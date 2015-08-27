@@ -21,9 +21,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 400;
   font-family: 'Roboto', sans-serif;
-  color: #272727;
+  color: #fff;
 }
 p {
   color: #8F8F95;
@@ -1026,6 +1026,230 @@ ul.nostyle i {
   min-height: 400px
 }
 
+/******* Top Benefits Connecting *******/
+#tb-connecting-mid1 {
+  background-image: url("../assets/home/appreciado-connecting.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 400px
+}
+
+#tb-connecting-mid3 {
+  background-image: url("../assets/home/how-it-works.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 300px  
+}
+
+#connect-mid4-img1 {
+  background-image: url("../assets/home/time.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+#connect-mid4-img2 {
+  background-image: url("../assets/home/stories.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+#connect-mid4-img3 {
+  background-image: url("../assets/home/smooth.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+#tb-connecting-mid1 h1 {
+  font-size: 64px
+}
+#tb-connecting-mid2 h1 {
+  font-size: 64px
+}
+#tb-connecting-mid2 h3 {
+  color: #8F8F95;
+  line-height: 1.2;
+  word-spacing: 0.2em;
+  font-size: 26px
+}
+#tb-connecting-mid2 .caption {
+  padding: 3em 0 6em 2em
+}
+#tb-connecting-mid2 .c-caption {
+  padding: 2em 0 1em 0
+}
+#tb-connecting-mid3 h1 {
+  color: #D2007D;
+  font-size: 64px
+}
+#tb-connecting-mid3 .fa-8x {
+  color: #D2007D;
+}
+
+
+/******* Top Benefits Growing *******/
+
+#tb-growing-mid1 {
+  background-image: url("../assets/home/dental-practices-grow.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 400px
+}
+
+#tb-growing-mid3 {
+  background-image: url("../assets/home/how-it-works.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 300px  
+}
+
+#grow-mid4-img1 {
+  background-image: url("../assets/home/cancellations.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+#grow-mid4-img2 {
+  background-image: url("../assets/home/performance.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+#grow-mid4-img3 {
+  background-image: url("../assets/home/referrals.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+
+#tb-growing-mid1 h1 {
+  font-size: 64px
+}
+#tb-growing-mid2 h1 {
+  font-size: 64px
+}
+#tb-growing-mid2 h3 {
+  color: #8F8F95;
+  line-height: 1.2;
+  word-spacing: 0.2em;
+  font-size: 26px
+}
+#tb-growing-mid2 .caption {
+  padding: 3em 0 6em 2em
+}
+#tb-growing-mid2 .c-caption {
+  padding: 2em 0 1em 0
+}
+#tb-growing-mid3 h1 {
+  color: #D2007D;
+  font-size: 64px
+}
+#tb-growing-mid3 .fa-8x {
+  color: #D2007D;
+}
+
+/******* Top Benefits Rewarding *******/
+#tb-rewarding-mid1 {
+  background-image: url("../assets/home/appreciado-rewarding.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 400px
+}
+
+#tb-rewarding-mid3 {
+  background-image: url("../assets/home/how-it-works-reward.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 300px  
+}
+
+#reward-mid4-img1 {
+  background-image: url("../assets/home/empowered.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+#reward-mid4-img2 {
+  background-image: url("../assets/home/appreciated.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+#reward-mid4-img3 {
+  background-image: url("../assets/home/acknowledged.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+#tb-rewarding-mid1 h1 {
+  font-size: 64px
+}
+#tb-rewarding-mid2 h1 {
+  font-size: 64px
+}
+#tb-rewarding-mid2 h3 {
+  color: #8F8F95;
+  line-height: 1.2;
+  word-spacing: 0.2em;
+  font-size: 26px
+}
+#tb-rewarding-mid2 .caption {
+  padding: 3em 0 6em 2em
+}
+#tb-rewarding-mid2 .c-caption {
+  padding: 2em 0 1em 0
+}
+#tb-rewarding-mid3 h1 {
+  color: #D2007D;
+  font-size: 64px
+}
+#tb-rewarding-mid3 .fa-8x {
+  color: #D2007D;
+}
 
 /******** WHO ARE WE ********/
 
@@ -1111,7 +1335,11 @@ ul.nostyle i {
 }
 
 /******** Support Appreciado ********/
-#support-appreciado h2,h3 {
+#support-appreciado h2 {
+  font-weight: 400;
+  color: #41A2AE
+}
+#support-appreciado h3 {
   font-weight: 400;
   color: #41A2AE
 }
@@ -1133,6 +1361,12 @@ ul.nostyle i {
 .pad-top4 {
   padding-top: 4em
 }
+.pad-top5 {
+  padding-top: 5em
+}
+.pad-top13 {
+  padding-top: 13em
+}
 .pad-bot1 {
   padding-bottom: 1em
 }
@@ -1142,6 +1376,7 @@ ul.nostyle i {
 .pad-bot4 {
   padding-bottom: 4em;
 }
+
 .pad-lr5 {
   padding-left: 5em;
   padding-right: 5em
@@ -1159,6 +1394,9 @@ ul.nostyle i {
 .bk-color-sky {
   background-color:rgba(102,184,195, 0.61)
 }
+.bk-color-blue {
+  background-color: #373873
+}
 .bk-color-blue-green {
   background-color: #008999
 }
@@ -1167,6 +1405,10 @@ ul.nostyle i {
 }
 .bk-color-gray {
   background: #EBEBEB
+}
+
+.fa-8x {
+    font-size: 8em;
 }
 
 .in-table {
@@ -1297,6 +1539,9 @@ ul.nostyle i {
   margin-left: 3em;
 }
 .btn3-mar .btn-blue {
+  margin: 0 3em;
+}
+.btn3-marg .btn-green {
   margin: 0 3em;
 }
 

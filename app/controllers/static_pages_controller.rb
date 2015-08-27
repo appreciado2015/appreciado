@@ -1,5 +1,14 @@
 class StaticPagesController < ApplicationController
-  def index
+  def top_benefits
+  end
+
+  def top_benefits_connecting    
+  end
+
+  def top_benefits_growing    
+  end
+
+  def top_benefits_rewarding    
   end
 
   def about
