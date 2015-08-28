@@ -54,7 +54,7 @@
                     <li class="<%= 'active' if current_page?(partners_path) %>"><%= link_to "PARTNERS", partners_path, :method => :get %></li>
                     <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "CONTACT", contact_path, :method => :get %></li>
                     <li><%= link_to "BLOG", root_path, :method => :get %></li>
-                    <li class="<%= 'active' if current_page?(support_path)||current_page?(support_appreciado_path) %>"><%= link_to "SUPPORT", support_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(support_path)||current_page?(support_appreciado_path)||current_page?(support_question_path) %>"><%= link_to "SUPPORT", support_path, :method => :get %></li>
                     <li class="<%= 'active' if current_page?(purchase_path) %>"><%= link_to "PURCHASE", purchase_path, :method => :get %></li>
                 </ul>
             </div>

@@ -29,6 +29,12 @@ class StaticPagesController < ApplicationController
   def support_appreciado    
   end
 
+  def support_question    
+  end
+
   def purchase
+  end
+
+  def thankyou    
   end
 end

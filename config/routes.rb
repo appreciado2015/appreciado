@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get', as: :contact
   match '/support', to: 'static_pages#support', via: 'get', as: :support
   match '/appreciado-support', to: 'static_pages#support_appreciado', via: 'get', as: :support_appreciado
+  match '/question-support', to: 'static_pages#support_question', via: 'get', as: :support_question
   match '/purchase', to: 'static_pages#purchase', via: 'get', as: :purchase
+  match '/thank-you', to: 'static_pages#thankyou', via: 'get', as: :thankyou
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

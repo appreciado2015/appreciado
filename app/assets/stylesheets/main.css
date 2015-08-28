@@ -944,7 +944,7 @@ ul.nostyle i {
 }
 
 #footer a:hover {
-  color: #373873
+  color: #ccc
 }
 #footer ul {
   list-style: none;
@@ -1334,6 +1334,7 @@ ul.nostyle i {
   font-size: 18px
 }
 
+
 /******** Support Appreciado ********/
 #support-appreciado h2 {
   font-weight: 400;
@@ -1346,6 +1347,82 @@ ul.nostyle i {
 
 #support-appreciado a {
   color: #D2007D
+}
+
+/******** Support Question  ********/
+#support-faq h1, #support-faq h2 {
+  color: #41A2AE
+}
+#support-faq p {
+  color: #8F8F95;
+  font-size: 18px
+}
+#support-faq .thumbnail {
+  padding: 20px 4px 4px 4px;
+  border-radius: 10px;
+  color: #41A2AE;
+  border: 2px solid #41A2AE
+}
+#support-faq input {
+  margin-left: 3em
+}
+#support-faq button {
+  background-color: transparent
+}
+#support-faq .btn {
+  color: #D2007D;
+  border-bottom-width: 0px;
+  padding: 3px 8px;
+  z-index: 10
+}
+
+.form-search {
+    position: relative
+}
+
+.form-search:before {
+    content:'';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url(http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png);
+    background-position: -48px 0;
+    position: absolute;
+    top:12px;
+    left:50px;
+    opacity: .5;
+    z-index: 1000
+}
+
+#support-faq .input-group .form-control {
+    padding-left: 2em;
+    float: none;
+    border-radius: 10px;
+    border: 2px solid #41A2AE
+}
+
+/******** THANK YOU ********/
+
+#thankyou-mid1 h1, #thankyou-mid1 h2 {
+  color: #41A2AE
+}
+#thankyou-mid1 p {
+  color: #8F8F95;
+  font-size: 18px
+}
+#thankyou-mid1 .thumbnail {
+  border: 2px solid #41A2AE;
+  border-radius: 0
+}
+#thankyou-mid2 h2 {
+  color: #D2007D
+}
+#thankyou-mid2 .thumbnail {
+  padding: 24px;
+  border-radius: 0
+}
+#thankyou-mid2 .thumbnail a {
+  color: #fff
 }
 
 /******** General ********/
@@ -1376,6 +1453,9 @@ ul.nostyle i {
 .pad-bot4 {
   padding-bottom: 4em;
 }
+.pad-bot5 {
+  padding-bottom: 5em;
+}
 
 .pad-lr5 {
   padding-left: 5em;
@@ -1391,6 +1471,7 @@ ul.nostyle i {
 .color-pink {
   color: #D2007D
 }
+
 .bk-color-sky {
   background-color:rgba(102,184,195, 0.61)
 }
@@ -1405,6 +1486,15 @@ ul.nostyle i {
 }
 .bk-color-gray {
   background: #EBEBEB
+}
+.bk-color-linkedin {
+  background: #0C98C3
+}
+.bk-color-facebook {
+  background: #4666B5
+}
+.bk-color-twitter {
+  background: #53C9FF
 }
 
 .fa-8x {
