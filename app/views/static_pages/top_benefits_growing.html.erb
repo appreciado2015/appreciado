@@ -82,7 +82,57 @@
             <div class="col-sm-12 text-center btn3-mar btn-pad">
                 <button type="button" class="btn-pink wow fadeInLeft">"HOW IT WORKS"<br>VIDEO</button>
                 <button type="button" class="btn-blue">PURCHASE<br>APPRECIADO</button>
-                <button type="button" class="btn-green">SHARE WITH<br>YOUR STAFF</button>
+                <button type="button" class="btn-green" data-toggle="modal" data-target="#myModal">SHARE WITH<br>YOUR STAFF</button>
+
+                <!-- Modal SHARE WITH YOUR STAFF -->
+                <div class="modal-green">
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close fa-4x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h1 class="modal-title" id="myModalLabel">SHARE WITH YOUR STAFF</h1>
+                          </div>
+                          <div class="modal-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="text-right col-md-4"><h3>NAME *</h3></div>
+                                    <div class="col-md-6 pad-top1">
+                                        <input type="text" class="form-control" placeholder="eg. Mary Mitchelle" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="text-right col-md-4"><h3>EMAIL</h3></div>
+                                    <div class="col-md-6 pad-top1">
+                                        <input type="email" class="form-control" placeholder="eg. mary@her-email.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="text-right col-md-4"><h3>NUMBER</h3></div>
+                                    <div class="col-md-6 pad-top1">
+                                        <input type="text" class="form-control"  placeholder="eg. 403-403-403">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="text-right col-md-4"><h3>MESSAGE *</h3></div>
+                                    <div class="col-md-6 pad-top1">
+                                        <textarea class="form-control" id="inputPassword" rows="6" placeholder="eg. Hello Mary! Have you heard about Appreciado, It's an amzing app that really appreciate us as a customers. Go to appstore and download Appreciado." required></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="col-md-offset-3 col-md-7 text-right pad-top1">
+                                        <button type="submit" class="btn-white"><h3>SUBMIT</h3></button>
+                                    </div>
+                                </div>
+                            </form>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>    

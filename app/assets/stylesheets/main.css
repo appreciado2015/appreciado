@@ -972,14 +972,12 @@ ul.nostyle i {
 /******* TOP PART *******/
 #top-top h1 {
   font-size: 48px;
-  font-weight: 400;
   color: #41A2AE;
   padding: 0.2em 0
 }
 
 #top-top p {
   font-size: 25px;
-  color: #8F8F95
 }
 /******* TOP BENEFITS *******/
 
@@ -1001,7 +999,6 @@ ul.nostyle i {
 }
 
 #mid1-img1 h3 {
-    color: #fff;
     margin-top: 10px;
     margin-bottom: 20px
 }
@@ -1620,22 +1617,97 @@ ul.nostyle i {
           user-select: none;  
   }
 
+.btn-white {
+  color: #fff;
+  background-color: transparent;
+  border: 3px solid #fff;
+  display: inline-block;
+  padding: 0.1em 2.5em 0.2em;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 25px;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  background-image: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;  
+  }
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none
+}
 
 
 .btn-mar .btn-pink {
-  margin-right: 3em;
+  margin-right: 3em
 }
 .btn-mar .btn-blue {
-  margin-left: 3em;
+  margin-left: 3em
 }
 .btn3-mar .btn-blue {
-  margin: 0 3em;
+  margin: 0 3em
 }
 .btn3-marg .btn-green {
-  margin: 0 3em;
+  margin: 0 3em
 }
 
 .btn-pad {
     padding-top: 5em;
-    padding-bottom: 4em;
+    padding-bottom: 4em
+}
+
+
+.modal .close {
+  color: #fff;
+  opacity: 1
+}
+.modal-content {
+  background-color: transparent;
+  box-shadow: none;
+  border: none
+}
+.modal .form-control {
+  font-size: 24px;
+  border-radius: 0px
+}
+.modal .form-group {
+  margin-bottom: 0px
+}
+.modal-header {
+  border-bottom: none
+}
+
+@media (min-width: 768px){
+  .modal-dialog {
+    width: 850px   
+  }  
+}
+.modal-green .modal {
+  background: rgba(155,205,110,0.8)
+  }
+.modal-purple .modal {
+  background: rgba(59,19,53,0.8)
+}
+.modal-blue .modal {
+  background: rgba(67,68,115,0.8)
 }
