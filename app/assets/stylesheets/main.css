@@ -1699,15 +1699,15 @@ button:hover
 
 @media (min-width: 768px){
   .modal-dialog {
-    width: 850px   
+    width: auto;   
   }  
 }
-/*.modal-green .modal {
+.modal-green .modal-dialog {
   background: rgba(155,205,110,0.8)
-  }*/
-.modal-purple .modal {
+  }
+.modal-purple .modal-dialog {
   background: rgba(59,19,53,0.8)
 }
-.modal-blue .modal {
+.modal-blue .modal-dialog {
   background: rgba(67,68,115,0.8)
 }
