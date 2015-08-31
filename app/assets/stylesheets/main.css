@@ -1,16 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
-/*
-Template Name: Multi
-Version: 1.0
-Author: ShapeBootstrap
-Author URL: http://shapebootstrap.net
-*/
+@font-face {font-family: 'AmsiPro-Regular';src: url('/assets/fonts/2E1573_0_0.eot');src: url('/assets/fonts/2E1573_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/2E1573_0_0.woff2') format('woff2'),url('/assets/fonts/2E1573_0_0.woff') format('woff'),url('/assets/fonts/2E1573_0_0.ttf') format('truetype');}
+@font-face {font-family: 'AmsiPro-Bold';src: url('/assets/fonts/2E1573_1_0.eot');src: url('/assets/fonts/2E1573_1_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/2E1573_1_0.woff2') format('woff2'),url('/assets/fonts/2E1573_1_0.woff') format('woff'),url('/assets/fonts/2E1573_1_0.ttf') format('truetype');}
+@font-face {font-family: 'AmsiProCond-Bold';src: url('/assets/fonts/2E1573_2_0.eot');src: url('/assets/fonts/2E1573_2_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/2E1573_2_0.woff2') format('woff2'),url('/assets/fonts/2E1573_2_0.woff') format('woff'),url('/assets/fonts/2E1573_2_0.ttf') format('truetype');}
+@font-face {font-family: 'AmsiPro-Italic';src: url('/assets/fonts/2E1573_3_0.eot');src: url('/assets/fonts/2E1573_3_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/2E1573_3_0.woff2') format('woff2'),url('/assets/fonts/2E1573_3_0.woff') format('woff'),url('/assets/fonts/2E1573_3_0.ttf') format('truetype');}
+
 /*************************
 *******Typography******
 **************************/
 body {
   background: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'AmsiPro-Regular', 'Roboto', sans-serif;
   font-weight: 400;
   color: #64686d;
   line-height: 26px;
@@ -22,8 +21,9 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'AmsiPro-Regular', 'Roboto', sans-serif;
   color: #fff;
+  letter-spacing: -1px
 }
 p {
   color: #8F8F95;
@@ -193,7 +193,9 @@ ul.nostyle i {
     box-shadow: none;
   }
   #main-menu.navbar-default .navbar-nav > li > a {
-    padding: 40px 10px 10px 10px;
+    font-family: 'AmsiPro-Bold';
+    font-size: 12px;
+    padding: 40px 10px 10px 10px
   }
   #main-menu.navbar-default .navbar-nav > li.active > a,
   #main-menu.navbar-default .navbar-nav > li.open > a,
@@ -201,7 +203,7 @@ ul.nostyle i {
     background: transparent;
     padding-top: 37px;
     border-bottom: 3px solid #D2007D;
-    color: #ACD36A;
+    color: #ACD36A
   }
   #main-menu.navbar-default .dropdown-menu {
     padding: 0 20px;
