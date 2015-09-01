@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   match '/team', to: 'static_pages#about_team', via: 'get', as: :about_team
   match '/partners', to: 'static_pages#partners', via: 'get', as: :partners
   match '/contact', to: 'static_pages#contact', via: 'get', as: :contact
-  match '/support', to: 'static_pages#support', via: 'get', as: :support
+  match '/talk-with-us', to: 'static_pages#support', via: 'get', as: :support
   match '/appreciado-support', to: 'static_pages#support_appreciado', via: 'get', as: :support_appreciado
   match '/question-support', to: 'static_pages#support_question', via: 'get', as: :support_question
   match '/purchase', to: 'static_pages#purchase', via: 'get', as: :purchase
