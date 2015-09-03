@@ -200,6 +200,14 @@ ul.nostyle i {
     position: relative;
     display: inline-block;
 }
+
+@media screen and (min-width:768px) {
+    .dropdown:hover .dropdown-menu
+    {
+        display:block
+    }
+}
+
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {
     background: transparent;
@@ -1727,3 +1735,5 @@ button:hover
 .modal-blue .modal-dialog {
   background: rgba(67,68,115,0.8)
 }
+
+
