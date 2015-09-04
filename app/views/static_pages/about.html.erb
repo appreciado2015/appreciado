@@ -1,3 +1,69 @@
+<%= content_for :about_testi do %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#CoryLiss").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#myModalCoryLiss").on('hide.bs.modal', function(){
+        $("#CoryLiss").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#myModalCoryLiss").on('show.bs.modal', function(){
+        $("#CoryLiss").attr('src', url);
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var url = $("#NadiaNizam").attr('src');
+    
+    $("#myModalNadiaNizam").on('hide.bs.modal', function(){
+        $("#NadiaNizam").attr('src', '');
+    });
+    
+    $("#myModalNadiaNizam").on('show.bs.modal', function(){
+        $("#NadiaNizam").attr('src', url);
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var url = $("#GlennChan").attr('src');
+    
+    $("#myModalGlennChan").on('hide.bs.modal', function(){
+        $("#GlennChan").attr('src', '');
+    });
+    
+    $("#myModalGlennChan").on('show.bs.modal', function(){
+        $("#GlennChan").attr('src', url);
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var url = $("#MiteGiuffre").attr('src');
+    
+    $("#myModalMiteGiuffre").on('hide.bs.modal', function(){
+        $("#MiteGiuffre").attr('src', '');
+    });
+    
+    $("#myModalMiteGiuffre").on('show.bs.modal', function(){
+        $("#MiteGiuffre").attr('src', url);
+    });
+});
+</script>
+
+<% end %>   
 
 <%= content_for :index_body do %>id="home" class="homepage"<% end %>    
 
@@ -62,24 +128,90 @@
                     <h1>TESTIMONIALS</h1>
                 </div>
             </div>
-            <div class="row text-center pad-top2 pad-bot1">
+            <div class="row text-center modal-pink pad-top2 pad-bot1">
                 <div class="col-md-3">
-                    <img alt="Cory Liss" src="/assets/whoarewe/Dr-Cory.jpg" class="img-circle" />
-                    <h4>Dr. Cory Liss</h4>
+                    <div class="bs-example"> 
+                        <a href="#myModalCoryLiss" data-toggle="modal">
+                        <img alt="Cory Liss" src="/assets/whoarewe/Dr-Cory.jpg" class="img-circle" />
+                        <h4>Dr. Cory Liss</h4></a>
+                        
+                        <div id="myModalCoryLiss" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title">Dr. Cory Liss</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe id="CoryLiss" width="560" height="315" src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <img alt="Nadia Nizam" src="/assets/whoarewe/Dr-Nadia.jpg" class="img-circle" />
-                    <h4>Dr. Nadia Nizam</h4>
+                    <div class="bs-example"> 
+                        <a href="#myModalNadiaNizam" data-toggle="modal">
+                        <img alt="Nadia Nizam" src="/assets/whoarewe/Dr-Nadia.jpg" class="img-circle" />
+                        <h4>Dr. Nadia Nizam</h4></a>                        
+                        <div id="myModalNadiaNizam" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title">Dr. Nadia Nizam</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe id="NadiaNizam" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
                 <div class="col-md-3">
-                    <img alt="Glenn Chan" src="/assets/whoarewe/Dr-Glenn.jpg" class="img-circle" />
-                    <h4>Dr. Glenn Chan</h4>
+                    <div class="bs-example"> 
+                        <a href="#myModalGlennChan" data-toggle="modal">
+                        <img alt="Glenn Chan" src="/assets/whoarewe/Dr-Glenn.jpg" class="img-circle" />
+                        <h4>Dr. Glenn Chan</h4></a>                        
+                        <div id="myModalGlennChan" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title">Dr. Glenn Chan</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe id="GlennChan" width="560" height="315" src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <img alt="Mite Giuffre" src="/assets/whoarewe/Dr-Mite.jpg" class="img-circle" />
-                    <h4>Dr. Mite Giuffre</h4>
+                    <div class="bs-example"> 
+                        <a href="#myModalMiteGiuffre" data-toggle="modal">
+                        <img alt="Mite Giuffre" src="/assets/whoarewe/Dr-Mite.jpg" class="img-circle" />
+                        <h4>Dr. Mite Giuffre</h4></a>                        
+                        <div id="myModalMiteGiuffre" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title">Dr. Mite Giuffre</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

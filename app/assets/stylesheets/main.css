@@ -700,12 +700,12 @@ ul.nostyle i {
 .nav.main-tab > li:last-child > a {
   border-radius: 0 3px 0 0;
 }
-.tab-content {
+/*.tab-content {
   border: 1px solid #eee;
   border-top: 0;
   padding: 20px 20px 10px;
   border-radius: 0 0 3px 3px;
-}
+}*/
 .panel-default {
   border-color: #eee;
 }
@@ -1353,6 +1353,12 @@ ul.nostyle i {
   color: #8F8F95;
   font-size: 18px
 }
+#support-mid1-tab h1 {
+  color: #41A2AE;
+}
+#support-mid1-tab h3, #support-mid1-tab h4 {
+  color: #8F8F95;
+}
 
 
 /******** Support Appreciado ********/
@@ -1488,6 +1494,9 @@ ul.nostyle i {
 
 .font-AmsiProCB {
   font-family: 'AmsiProCond-Bold'
+}
+.font-AmsiProCR {
+  font-family: 'AmsiProCond-Regular'
 }
 .color-white {
   color: #fff
@@ -1667,12 +1676,9 @@ ul.nostyle i {
   }
 
 
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
-input:focus,
+textarea:hover,
+textarea:active,
+textarea:focus,
 button:focus,
 button:active,
 button:hover
@@ -1735,5 +1741,6 @@ button:hover
 .modal-blue .modal-dialog {
   background: rgba(67,68,115,0.8)
 }
-
-
+.modal-pink .modal-dialog {
+  background: rgba(255,239,230,0.8)
+}
