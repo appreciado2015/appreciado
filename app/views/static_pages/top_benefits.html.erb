@@ -1,9 +1,13 @@
 <head>
+  
 <script src="/assets/bootstrap.min.js"></script>
 <script type="text/javascript">
+
+window.onload=hide_fostering;
 function show_fostering()
 {
 document.getElementById('fostering').style.visibility="visible";
+$(this).animate({left: '250px'});
 }
 
 function hide_fostering()
@@ -11,6 +15,8 @@ function hide_fostering()
 document.getElementById('fostering').style.visibility="hidden";
 }
 </script>
+
+
 </head>
 
 <%= content_for :index_body do %>id="home" class="homepage"<% end %>    
@@ -102,3 +108,4 @@ document.getElementById('fostering').style.visibility="hidden";
         </div>
     </div>    
 </section>
+
