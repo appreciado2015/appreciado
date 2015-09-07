@@ -1095,6 +1095,18 @@ ul.nostyle i {
   background-size: 100%;
   min-height: 425px 
 }
+/*#fostering {
+  display: none;
+}
+#top-benefits-mid1:hover #fostering {
+  display: block;    
+}*/
+#fostering {
+  position: absolute;
+  padding-left: 100px;
+  width: 100%
+}
+
 #tb-connecting-mid1 h1 {
   font-size: 72px
 }
