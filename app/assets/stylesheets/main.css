@@ -38,7 +38,7 @@ h6 {
 }
 
 p {
-  color: #8F8F95;
+  color: #8F8F95
 }
 a {
   color: #45aed6;
@@ -50,13 +50,13 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #2a95be;
+  color: #2a95be
 }
 hr {
   border-top: 1px solid #D2007D;
  /* border-bottom: 1px solid #fff;*/
 }
-.gradiant {
+/*.gradiant {
   background-image: -moz-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -webkit-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
@@ -65,8 +65,8 @@ hr {
   background-image: -moz-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -webkit-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
   background-image: -ms-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
-}
-.section-header {
+}*/
+/*.section-header {
   margin-bottom: 50px;
 }
 .section-header .section-title {
@@ -98,8 +98,8 @@ hr {
   border: 5px solid #fff;
   border-radius: 20px;
   background: #45aed6;
-}
-.btn {
+}*/
+/*.btn {
   border-width: 0;
   border-bottom-width: 3px;
   border-radius: 3px;
@@ -134,7 +134,7 @@ ul.nostyle {
 }
 ul.nostyle i {
   color: #45aed6;
-}
+}*/
 .scaleIn {
   -webkit-animation-name: scaleIn;
   animation-name: scaleIn;
@@ -264,7 +264,7 @@ ul.nostyle i {
     background-color: transparent;
   }
 }
-#main-slider {
+/*#main-slider {
   overflow: hidden;
 }
 #main-slider .item {
@@ -508,18 +508,18 @@ ul.nostyle i {
 }
 #portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
-}
+}*/
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-.isotope-item {
+/*.isotope-item {
   z-index: 2;
 }
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
-}
+}*/
 /**** Isotope CSS3 transitions ****/
-.isotope,
+/*.isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
@@ -540,9 +540,9 @@ ul.nostyle i {
   -ms-transition-property: -ms-transform, opacity;
   -o-transition-property: -o-transform, opacity;
   transition-property: transform, opacity;
-}
+}*/
 /**** disabling Isotope CSS3 transitions ****/
-.isotope.no-transition,
+/*.isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
   -webkit-transition-duration: 0s;
@@ -550,10 +550,10 @@ ul.nostyle i {
   -ms-transition-duration: 0s;
   -o-transition-duration: 0s;
   transition-duration: 0s;
-}
+}*/
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-.isotope.infinite-scrolling {
+/*.isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
@@ -681,7 +681,7 @@ ul.nostyle i {
   background-image: -ms-linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
   -webkit-box-shadow: none;
   box-shadow: none;
-}
+}*/
 .nav.main-tab {
   background: #eee;
   border-bottom: 3px solid #222534;
@@ -706,7 +706,7 @@ ul.nostyle i {
   padding: 20px 20px 10px;
   border-radius: 0 0 3px 3px;
 }*/
-.panel-default {
+/*.panel-default {
   border-color: #eee;
 }
 .panel-default > .panel-heading {
@@ -946,7 +946,7 @@ ul.nostyle i {
 }
 #contact .contact-form h3 {
   margin-top: 0;
-}
+}*/
 /***********************
 ********* Footer ******
 ************************/
@@ -979,7 +979,11 @@ ul.nostyle i {
   display: inline-block;
   margin: 0 7.5px;
 }
-#footer address p, #footer address p > a {
+#footer address p {
+  color: #83D0D2;
+  font-size: 15px
+}
+#footer address p > a {
   color: #83D0D2
 }
 #footer address ul > li > a {
