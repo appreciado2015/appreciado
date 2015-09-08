@@ -1101,11 +1101,62 @@ ul.nostyle i {
 #top-benefits-mid1:hover #fostering {
   display: block;    
 }*/
-#fostering {
-  position: absolute;
+/*#fostering {
+  position: relative;
   padding-left: 100px;
   width: 100%
+}*/
+
+#fostering {
+    position: absolute;
+    width : 100%;
+    opacity:0;
+    height:0;
+    padding-top: 3em
 }
+
+.box:hover #fostering {
+    bottom: 0;
+    -webkit-transition: all 1s, -webkit-transform 1s;
+    transition: all 1s, transform 1s;
+    width:100%;
+    height:100%;
+    opacity:1
+}
+
+#revenue {
+    position: absolute;
+    width : 100%;
+    opacity:0;
+    height:0
+}
+
+.box:hover #revenue {
+    bottom: 0;
+    -webkit-transition: all 1s, -webkit-transform 1s;
+    transition: all 1s, transform 1s;
+    width:100%;
+    height:100%;
+    opacity:1
+}
+
+#appreciated {
+    position: absolute;
+    width : 100%;
+    opacity:0;
+    height:0
+}
+
+.box:hover #appreciated {
+    bottom: 0;
+    -webkit-transition: all 1s, -webkit-transform 1s;
+    transition: all 1s, transform 1s;
+    width:100%;
+    height:100%;
+    opacity:1
+}
+
+
 
 #tb-connecting-mid1 h1 {
   font-size: 72px
@@ -1135,13 +1186,11 @@ ul.nostyle i {
 
 #move-in-to-place {
     position: absolute;
-    bottom: -100%;
-    height : 100%;
     width : 100%;
     background: rgba(67,68,115,0.7);
     opacity:0;
     height:0;
-    padding-top: 9.5em;
+    padding-top: 9.5em
 }
 
 .box:hover #move-in-to-place {
@@ -1511,10 +1560,10 @@ ul.nostyle i {
   padding-bottom: 3em
 }
 .pad-bot4 {
-  padding-bottom: 4em;
+  padding-bottom: 4em
 }
 .pad-bot5 {
-  padding-bottom: 5em;
+  padding-bottom: 5em
 }
 
 .pad-lr5 {
@@ -1567,7 +1616,11 @@ ul.nostyle i {
 }
 
 .fa-9x {
-    font-size: 9em;
+    font-size: 9em
+}
+
+.z1 {
+  z-index: 1
 }
 
 .in-table {
@@ -1582,7 +1635,7 @@ ul.nostyle i {
 }
 
 .min-h650 {
-  min-height: 650px;
+  min-height: 650px
 }
 
 .btn-pink {
