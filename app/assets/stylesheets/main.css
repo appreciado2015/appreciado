@@ -1051,66 +1051,6 @@ ul.nostyle i {
   min-height: 400px
 }
 
-/******* Top Benefits Connecting *******/
-#tb-connecting-mid1 {
-  background-image: url("../assets/home/appreciado-connecting.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  min-height: 400px
-}
-
-#tb-connecting-mid3 {
-  background-image: url("../assets/home/how-it-works.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  min-height: 300px  
-}
-
-#connect-mid4-img1 {
-  background-image: url("../assets/home/time.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  min-height: 425px 
-}
-#connect-mid4-img2 {
-  background-image: url("../assets/home/stories.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  min-height: 425px 
-}
-#connect-mid4-img3 {
-  background-image: url("../assets/home/smooth.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  min-height: 425px 
-}
-/*#fostering {
-  display: none;
-}
-#top-benefits-mid1:hover #fostering {
-  display: block;    
-}*/
-/*#fostering {
-  position: relative;
-  padding-left: 100px;
-  width: 100%
-}*/
-
 #fostering {
     position: absolute;
     width : 100%;
@@ -1161,6 +1101,54 @@ ul.nostyle i {
 }
 
 
+/******* Top Benefits Connecting *******/
+#tb-connecting-mid1 {
+  background-image: url("../assets/home/appreciado-connecting.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 400px
+}
+
+#tb-connecting-mid3 {
+  background-image: url("../assets/home/how-it-works.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 300px  
+}
+
+#connect-mid4-img1 {
+  background-image: url("../assets/home/time.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+#connect-mid4-img2 {
+  background-image: url("../assets/home/stories.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
+#connect-mid4-img3 {
+  background-image: url("../assets/home/smooth.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 425px 
+}
 
 #tb-connecting-mid1 h1 {
   font-size: 72px
@@ -1188,7 +1176,7 @@ ul.nostyle i {
   color: #D2007D
 }
 
-#move-in-to-place {
+#move-in-to-place-p1 {
     position: absolute;
     width : 100%;
     background: rgba(67,68,115,0.7);
@@ -1196,8 +1184,7 @@ ul.nostyle i {
     height:0;
     padding-top: 9.5em
 }
-
-.box:hover #move-in-to-place {
+.box:hover #move-in-to-place-p1 {
     bottom: 0;
     -webkit-transition: all 1s, -webkit-transform 1s;
     transition: all 1s, transform 1s;
@@ -1205,8 +1192,47 @@ ul.nostyle i {
     height:100%;
     opacity:1
 }
-
 .box:hover #tb-connecting-mid4-p1 {
+  display: none;
+}
+
+#move-in-to-place-p2 {
+    position: absolute;
+    width : 100%;
+    background: rgba(67,68,115,0.7);
+    opacity:0;
+    height:0;
+    padding-top: 9.5em
+}
+.box:hover #move-in-to-place-p2 {
+    bottom: 0;
+    -webkit-transition: all 1s, -webkit-transform 1s;
+    transition: all 1s, transform 1s;
+    width:100%;
+    height:100%;
+    opacity:1
+}
+.box:hover #tb-connecting-mid4-p2 {
+  display: none;
+}
+
+#move-in-to-place-p3 {
+    position: absolute;
+    width : 100%;
+    background: rgba(67,68,115,0.7);
+    opacity:0;
+    height:0;
+    padding-top: 9.5em
+}
+.box:hover #move-in-to-place-p3 {
+    bottom: 0;
+    -webkit-transition: all 1s, -webkit-transform 1s;
+    transition: all 1s, transform 1s;
+    width:100%;
+    height:100%;
+    opacity:1
+}
+.box:hover #tb-connecting-mid4-p3 {
   display: none;
 }
 
@@ -1285,6 +1311,66 @@ ul.nostyle i {
 }
 #tb-growing-mid3 .fa-9x {
   color: #D2007D
+}
+
+#move-in-to-place-gr-p1 {
+    position: absolute;
+    width : 100%;
+    background: rgba(67,68,115,0.7);
+    opacity:0;
+    height:0;
+    padding-top: 11.5em
+}
+.box:hover #move-in-to-place-gr-p1 {
+    bottom: 0;
+    -webkit-transition: all 1s, -webkit-transform 1s;
+    transition: all 1s, transform 1s;
+    width:100%;
+    height:100%;
+    opacity:1
+}
+.box:hover #tb-growing-mid4-p1 {
+  display: none;
+}
+
+#move-in-to-place-gr-p2 {
+    position: absolute;
+    width : 100%;
+    background: rgba(67,68,115,0.7);
+    opacity:0;
+    height:0;
+    padding-top: 11.5em
+}
+.box:hover #move-in-to-place-gr-p2 {
+    bottom: 0;
+    -webkit-transition: all 1s, -webkit-transform 1s;
+    transition: all 1s, transform 1s;
+    width:100%;
+    height:100%;
+    opacity:1
+}
+.box:hover #tb-growing-mid4-p2 {
+  display: none;
+}
+
+#move-in-to-place-gr-p3 {
+    position: absolute;
+    width : 100%;
+    background: rgba(67,68,115,0.7);
+    opacity:0;
+    height:0;
+    padding-top: 11.5em
+}
+.box:hover #move-in-to-place-gr-p3 {
+    bottom: 0;
+    -webkit-transition: all 1s, -webkit-transform 1s;
+    transition: all 1s, transform 1s;
+    width:100%;
+    height:100%;
+    opacity:1
+}
+.box:hover #tb-growing-mid4-p3 {
+  display: none;
 }
 
 /******* Top Benefits Rewarding *******/
