@@ -1,3 +1,22 @@
+<%= content_for :benefits_modal do %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    
+    var url = $("#RewardHowitworks").attr('src');
+    
+    $("#myModalRewardHowitworks").on('hide.bs.modal', function(){
+        $("#RewardHowitworks").attr('src', '');
+    });
+    
+    $("#myModalRewardHowitworks").on('show.bs.modal', function(){
+        $("#RewardHowitworks").attr('src', url);
+    });
+});
+</script>
+<% end %>
 
 <%= content_for :index_body do %>id="home" class="homepage"<% end %>    
 
@@ -8,7 +27,7 @@
                 <h1>YOUR TIME IS VALUABLE</h1>
             </div>
             <div class="col-sm-12 text-center pad-top2 pad-bot4">
-        <button type="button" class="btn-pink wow fadeInLeft">"WHAT IT IS"<br>VIDEO</button>
+        <button type="button" class="btn-pink">"WHAT IT IS"<br>VIDEO</button>
             </div>
         </div>
     </div>
@@ -51,7 +70,26 @@
         <div class="row"> 
             <div class="col-sm-12 text-center pad-top3">
                 <h1>"HOW IT WORKS" VIDEO</h1>
-                <span class="fa fa-play-circle-o fa-9x"></span>
+                <div class="row text-center modal-pink pad-top2 pad-bot1">
+                    <div class="bs-example"> 
+                        <a href="#myModalRewardHowitworks" data-toggle="modal">
+                        <span class="fa fa-play-circle-o fa-9x"></span></a>
+                        
+                        <div id="myModalRewardHowitworks" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title">HOW IT WORKS</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe id="CoryLiss" width="560" height="315" src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -80,9 +118,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center btn3-marg btn-pad">
-                <button type="button" class="btn-pink wow fadeInLeft" data-toggle="modal" data-target="#myModalmom">"SHARE WITH"<br>ANOTHER MOM</button>
+                <button type="button" class="btn-pink" data-toggle="modal" data-target="#myModalmom">"SHARE WITH"<br>ANOTHER MOM</button>
                 <button type="button" class="btn-green">DOWNLOAD<br>THE APP</button>
-                <button type="button" class="btn-blue wow fadeInLeft" data-toggle="modal" data-target="#myModaldoc">"SHARE WITH"<br>MY DOCTOR</button>
+                <button type="button" class="btn-blue" data-toggle="modal" data-target="#myModaldoc">"SHARE WITH"<br>MY DOCTOR</button>
 
     <!-- Modal SHARE WITH ANOTHER MOM -->
     <div class="modal-purple">

@@ -1,3 +1,23 @@
+<%= content_for :benefits_modal do %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    
+    var url = $("#ConnectHowitworks").attr('src');
+    
+    $("#myModalConnectHowitworks").on('hide.bs.modal', function(){
+        $("#ConnectHowitworks").attr('src', '');
+    });
+    
+    $("#myModalConnectHowitworks").on('show.bs.modal', function(){
+        $("#ConnectHowitworks").attr('src', url);
+    });
+});
+</script>
+<% end %> 
+
 <%= content_for :index_body do %>id="home" class="homepage"<% end %>    
 
 <section id="top-top">
@@ -7,7 +27,7 @@
                 <h1>CONNECTING YOU WITH<br>YOUR PATIENTS</h1>
             </div>
             <div class="col-sm-12 text-center pad-top2 pad-bot4">
-        <button type="button" class="btn-pink wow fadeInLeft">"WHAT IT IS"<br>VIDEO</button>
+        <button type="button" class="btn-pink">"WHAT IT IS"<br>VIDEO</button>
             </div>
         </div>
     </div>
@@ -50,7 +70,26 @@
         <div class="row"> 
             <div class="col-sm-12 text-center pad-top3">
                 <h1>"HOW IT WORKS" VIDEO</h1>
-                <span class="fa fa-play-circle-o fa-9x"></span>
+                <div class="row text-center modal-pink pad-top2 pad-bot1">
+                    <div class="bs-example"> 
+                        <a href="#myModalConnectHowitworks" data-toggle="modal">
+                        <span class="fa fa-play-circle-o fa-9x"></span></a>
+                        
+                        <div id="myModalConnectHowitworks" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h4 class="modal-title">HOW IT WORKS</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe id="CoryLiss" width="560" height="315" src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -103,9 +142,79 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center btn3-mar btn-pad">
-                <button type="button" class="btn-pink wow fadeInLeft">"HOW IT WORKS"<br>VIDEO</button>
+                <button type="button" class="btn-pink">"HOW IT WORKS"<br>VIDEO</button>
                 <button type="button" class="btn-blue">PURCHASE<br>APPRECIADO</button>
-                <button type="button" class="btn-green">SHARE WITH<br>A DOCTOR</button>
+                <button type="button" class="btn-green" data-toggle="modal" data-target="#myModalConnectDoctor">SHARE WITH<br>A DOCTOR</button>
+
+                <!-- Modal SHARE WITH YOUR STAFF -->
+                <div class="modal-sky">
+                    <div class="modal fade" id="myModalConnectDoctor" tabindex="-1" role="dialog" aria-labelledby="myModalLabelConnectDoctor">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close fa-4x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h1 class="modal-title" id="myModalLabelConnectDoctor">STEP 1 OF 4</h1>
+                          </div>
+                          <div class="modal-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="text-right col-md-4 pad-top1"><h4>TITLE:</h4></div>
+                                    <div class="col-md-6 text-left">
+                                        <div class="row">
+                                       <label class="checkbox-inline">
+                                          <h4>DOCTOR <input type="radio" name="optionRadiosinline" id="optionRadios1" 
+                                             value="DOCTOR" checked></h4>
+                                       </label>
+                                       <label class="checkbox-inline">
+                                          <h4>ASSISTANT <input type="radio" name="optionRadiosinline" id="optionRadios2" 
+                                             value="ASSISTANT"> </h4>
+                                       </label>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="text-right col-md-4"><h4>FIRST NAME:</h4></div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="text-right col-md-4"><h4>LAST NAME:</h4></div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="text-right col-md-4"><h4>OFFICE NUMBER:</h4></div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="text-right col-md-4"><h4>EMAIL:</h4></div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>                        
+                                <div class="form-group">
+                                    <div class="text-right col-md-4"><h4>WHY ARE<br>YOU HERE?</h4></div>
+                                    <div class="col-md-6">
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>                        
+                                <div class="form-group">
+                                    <div class="col-md-offset-3 col-md-7 text-center pad-top1">
+                                        <button type="submit" class="btn-white"><span>CONTINUE</span></button>
+                                    </div>
+                                </div>
+                            </form>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>    

@@ -219,6 +219,7 @@ ul.nostyle i {
     font-size: 12px;
     padding: 40px 10px 10px 10px
   }
+  
   #main-menu.navbar-default .navbar-nav > li.active > a,
   #main-menu.navbar-default .navbar-nav > li.open > a,
   #main-menu.navbar-default .navbar-nav > li:hover > a {
@@ -230,7 +231,7 @@ ul.nostyle i {
   #main-menu.navbar-default .dropdown-menu {
     padding: 0 20px;
     min-width: 220px;
-    background-color: rgba(26, 28, 40, 0.9);
+    background-color: #fff;
     border: 0;
     border-radius: 0;
     box-shadow: none;
@@ -238,16 +239,13 @@ ul.nostyle i {
     background-clip: inherit;
   }
   #main-menu.navbar-default .dropdown-menu > li {
-    border-left: 3px solid transparent;
-    margin-left: -20px;
-    padding-left: 17px;
-    -webit-transition: border-color 400ms;
-    transition: border-color 400ms;
+    margin-left: -10px;
   }
   #main-menu.navbar-default .dropdown-menu > li > a {
-    border-top: 1px solid #404455;
-    padding: 15px 0;
-    color: #eeeeee;
+    font-family: 'AmsiPro-Bold';
+    font-size: 12px;
+    padding: 10px 0;
+    color: #777;
   }
   #main-menu.navbar-default .dropdown-menu > li:first-child > a {
     border-top: 0;
@@ -255,13 +253,17 @@ ul.nostyle i {
   #main-menu.navbar-default .dropdown-menu > li.active,
   #main-menu.navbar-default .dropdown-menu > li.open,
   #main-menu.navbar-default .dropdown-menu > li:hover {
-    border-left-color: #45aed6;
+    /*border-left-color: #45aed6;*/
   }
   #main-menu.navbar-default .dropdown-menu > li.active > a,
   #main-menu.navbar-default .dropdown-menu > li.open > a,
   #main-menu.navbar-default .dropdown-menu > li:hover > a {
-    color: #45aed6;
+    color: #ACD36A;
     background-color: transparent;
+  }
+  #main-menu.navbar-default .dropdown-menu > li.active > a {
+     padding-top: 0px;
+    border-bottom: 3px solid #D2007D;
   }
 }
 /*#main-slider {
@@ -969,7 +971,8 @@ ul.nostyle i {
 }
 
 #footer a:hover {
-  color: #ccc
+  color: #ccc;
+  text-decoration: underline
 }
 #footer ul {
   list-style: none;
@@ -1923,4 +1926,8 @@ button:hover
 .modal-pink .modal-dialog {
   background: rgba(255,239,230,0.8)
 }
+.modal-sky .modal-dialog {
+  background: rgba(49,157,169,0.8)
+}
+
 
