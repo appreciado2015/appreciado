@@ -170,9 +170,26 @@ ul.nostyle i {
 **************************/
 .top-header {
   padding-top: 0.2em;
-  padding-right: 1em;
-  font-size: 11px;
+  padding-right: 10em;
+}
+
+.top-header .tooltip-inner {
+  font-size: 8px;
   font-family: "AmsiPro-Bold";
+  background-color: #008A97;
+  color: #fff;
+}
+.top-header .tooltip.top .tooltip-arrow {
+    border-top-color: #008A97;
+}
+.top-header .tooltip.right .tooltip-arrow {
+    border-right-color: #008A97;
+}
+.top-header .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #008A97;
+}
+.top-header .tooltip.left .tooltip-arrow {
+    border-left-color: #008A97;
 }
 
 .navbar.navbar-default {
@@ -214,10 +231,15 @@ ul.nostyle i {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+  #main-menu.navbar-default .navbar-nav > li {
+    padding-left: 1em;
+    padding-right: 1em
+  }
+
   #main-menu.navbar-default .navbar-nav > li > a {
     font-family: 'AmsiPro-Bold';
     font-size: 12px;
-    padding: 40px 10px 10px 10px
+    padding: 40px 0 0 0
   }
   
   #main-menu.navbar-default .navbar-nav > li.active > a,
@@ -237,14 +259,16 @@ ul.nostyle i {
     box-shadow: none;
     -webkit-box-shadow: none;
     background-clip: inherit;
+    z-index: 1001;
   }
   #main-menu.navbar-default .dropdown-menu > li {
-    margin-left: -10px;
+    margin-left: -5px;
+    padding-top: 10px;
   }
   #main-menu.navbar-default .dropdown-menu > li > a {
     font-family: 'AmsiPro-Bold';
     font-size: 12px;
-    padding: 10px 0;
+    padding: 0;
     color: #777;
   }
   #main-menu.navbar-default .dropdown-menu > li:first-child > a {
@@ -262,8 +286,8 @@ ul.nostyle i {
     background-color: transparent;
   }
   #main-menu.navbar-default .dropdown-menu > li.active > a {
-     padding-top: 0px;
     border-bottom: 3px solid #D2007D;
+    display: inline-block;
   }
 }
 /*#main-slider {
@@ -1992,3 +2016,25 @@ button:hover
 
 
 
+/*.tooltip-inner {
+   font-size: 8px;
+  font-family: "AmsiPro-Bold";
+    background-color: #008A97;
+    color: #fff;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #008A97;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #008A97;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #008A97;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #008A97;
+}*/

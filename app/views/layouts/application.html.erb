@@ -32,8 +32,9 @@
     <%= yield :about_testi %>
 </head>
 <body <%= yield :index_body %>>
-<div class="text-right top-header">
-  <img src="/assets/canada-flag.png" alt="Canada Flag"><span> PROUDLY CANADIAN</span>
+<div class="text-right top-header"> 
+<a data-toggle="tooltip" data-placement="bottom" data-html="true" title="PROUDLY<br>CANADIAN" rel="tooltip"><img src="/assets/canada-flag.png" alt="Canada Flag"></a>
+
 </div>
 <div class="text-center">
     <%= link_to(image_tag("logo.png", alt: "Appreciado Logo"), root_path, method: :get) %>
@@ -70,7 +71,7 @@
                     <li class="dropdown <%= 'active' if current_page?(support_path)||current_page?(support_appreciado_path)||current_page?(support_question_path) %>">
                         <%= link_to "TALK WITH US<span class='caret'></span>".html_safe, support_path, class: "dropdown-toggle", id: "dropdownMenu2", "data-toggle" => "dropdown" , "aria-haspopup" => "true", "aria-expanded" => "true", :method => :get %>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><%= link_to "FAQ", support_question_path, :method => :get %></li>                        
+                        <li class="<%= 'active' if current_page?(support_question_path) %>"><%= link_to "FAQ", support_question_path, :method => :get %></li>                        
                       </ul>
                     </li>
                     <li class="<%= 'active' if current_page?(purchase_path) %>"><%= link_to "PURCHASE", purchase_path, :method => :get %>
@@ -139,6 +140,11 @@
     <script src="/assets/wow.min.js"></script>
     <script src="/assets/main.js"></script>
 
-    
+    <script type="text/javascript">
+        $(function () {
+            $("[rel='tooltip']").tooltip();
+        });
+    </script>
+
 </body>
 </html>
