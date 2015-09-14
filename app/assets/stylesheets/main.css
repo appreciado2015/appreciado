@@ -1127,6 +1127,29 @@ ul.nostyle i {
     opacity:1
 }
 
+/*#top-benefits-mid1 .tooltip-inner {
+  font-family: 'font-AmsiProR';
+  background-color:rgba(102,184,195, 0.61);
+  border-radius: 0;
+
+}
+
+#top-benefits-mid1 .tooltip.top .tooltip-arrow {
+  border-top-color: rgba(102,184,195, 0.61);
+}
+
+#top-benefits-mid1 .tooltip.right .tooltip-arrow {
+  border-right-color: rgba(102,184,195, 0.61);
+}
+
+#top-benefits-mid1 .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: rgba(102,184,195, 0.61);
+}
+
+#top-benefits-mid1 .tooltip.left .tooltip-arrow {
+  border-left-color: rgba(102,184,195, 0.61);
+}*/
+
 
 /******* Top Benefits Connecting *******/
 #tb-connecting-mid1 {
@@ -2015,26 +2038,3 @@ button:hover
 }
 
 
-
-/*.tooltip-inner {
-   font-size: 8px;
-  font-family: "AmsiPro-Bold";
-    background-color: #008A97;
-    color: #fff;
-}
-
-.tooltip.top .tooltip-arrow {
-    border-top-color: #008A97;
-}
-
-.tooltip.right .tooltip-arrow {
-    border-right-color: #008A97;
-}
-
-.tooltip.bottom .tooltip-arrow {
-    border-bottom-color: #008A97;
-}
-
-.tooltip.left .tooltip-arrow {
-    border-left-color: #008A97;
-}*/
