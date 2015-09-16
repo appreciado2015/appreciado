@@ -63,6 +63,19 @@ $(document).ready(function(){
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){
+    var url = $("#HowItWorksBottom").attr('src');
+    
+    $("#myModalHowItWorksBottom").on('hide.bs.modal', function(){
+        $("#HowItWorksBottom").attr('src', '');
+    });
+    
+    $("#myModalHowItWorksBottom").on('show.bs.modal', function(){
+        $("#HowItWorksBottom").attr('src', url);
+    });
+});
+</script>
 
 <% end %>   
 
@@ -222,10 +235,29 @@ $(document).ready(function(){
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center btn3-mar btn-pad">
-                <button type="button" class="btn-pink">"HOW IT WORKS"<br>VIDEO</button>
+                <button type="button" class="btn-pink" href="#myModalHowItWorksBottom" data-toggle="modal">"HOW IT WORKS"<br>VIDEO</button>
                 <button type="button" class="btn-blue">PURCHASE<br>APPRECIADO</button>
                 <button type="button" class="btn-green">CONNECT<br>WITH US</button>
             </div>
         </div>
     </div>    
 </section>
+
+                <!-- How It Works Video Bottom -->
+                <div class="text-center modal-sky pad-top2 pad-bot1">
+                    <div class="bs-example">                         
+                        <div id="myModalHowItWorksBottom" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h2 class="modal-title">How It Works</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

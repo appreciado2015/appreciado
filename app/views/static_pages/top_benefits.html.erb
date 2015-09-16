@@ -1,3 +1,36 @@
+<%= content_for :benefits_modal do %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var url = $("#WhatItIs").attr('src');
+    
+    $("#myModalWhatItIs").on('hide.bs.modal', function(){
+        $("#WhatItIs").attr('src', '');
+    });
+    
+    $("#myModalWhatItIs").on('show.bs.modal', function(){
+        $("#WhatItIs").attr('src', url);
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var url = $("#HowItWorksBottom").attr('src');
+    
+    $("#myModalHowItWorksBottom").on('hide.bs.modal', function(){
+        $("#HowItWorksBottom").attr('src', '');
+    });
+    
+    $("#myModalHowItWorksBottom").on('show.bs.modal', function(){
+        $("#HowItWorksBottom").attr('src', url);
+    });
+});
+</script>
+
+<% end %>
+
 <%= content_for :index_body do %>id="home" class="homepage"<% end %>    
 
 <section id="top-top">
@@ -8,7 +41,7 @@
                 <p>We are a stand for appreciation</p>
             </div>
             <div class="col-sm-12 text-center btn-mar btn-pad">
-        <button type="button" class="btn-pink">"WHAT IT IS"<br>VIDEO</button>
+        <button type="button" class="btn-pink" href="#myModalWhatItIs" data-toggle="modal">"WHAT IT IS"<br>VIDEO</button>
         <button type="button" class="btn-blue">PURCHASE<br>APPRECIADO</button>
             </div>
         </div>
@@ -22,7 +55,7 @@
                 <div class="row">
                     <div class="col-lg-2"></div> 
                     <div class="col-sm-12 col-md-12 col-lg-10 pad-top2">
-                        <!-- <a href="/top-benefits-connecting" data-toggle="tooltip" data-placement="right" data-html="true" title="<h3>Fostering caring<br>relationships</h3>" rel="tooltip"><img src="/assets/plus.png" class="mar-top-m9"> -->
+                        <!-- <a href="/scheduling-coordinators" data-toggle="tooltip" data-placement="right" data-html="true" title="<h3>Fostering caring<br>relationships</h3>" rel="tooltip"><img src="/assets/plus.png" class="mar-top-m9"><h1 class="color-white in-block"><strong>CONNECTING</strong><br>SCHEDULING<br>COORDINATOR</h1></a> -->
                         <a href="/scheduling-coordinators"><img src="/assets/plus.png" class="mar-top-m9">
                         <h1 class="color-white in-block"><strong>CONNECTING</strong><br>SCHEDULING<br>COORDINATOR</h1></a>                        
                     </div>
@@ -45,37 +78,51 @@
 <section>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-7 box">
+            <div class="col-sm-7 box" id="revenue">
                 <div class="row bk-color-sky pad-bot1">
-                    <div class="col-sm-6 in-block text-right z1">
-                        <a href="/dental-practices"><img src="/assets/plus.png" class="mar-top-m9">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10 in-block z1">
+                        <div class="dropdown">
+                        <a href="/dental-practices" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/assets/plus.png" class="mar-top-m9">
                     <h1 class="color-white in-block text-left"><strong>GROWING</strong><br>DENTAL<br>PRACTICES</h1></a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <div class="col-sm-12 my-block">
+                            <div class="row">
+                    <h3 class="font-AmsiProR bk-color-blue-green">Increasing<br>referrals &amp; revenue</h3>
+                            </div>
+                        </div>
+                    </ul>
+                        </div>
                     </div>
-                    <div id="revenue">
+  
+                    <!-- <div id="revenue">
                         <div class="col-sm-6 in-block pull-right my-block">
                             <div class="row">
                     <h3 class="font-AmsiProR bk-color-blue-green">Increasing referrals &amp; revenue</h3>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="row">
-                    <div id="mid2-img1"></div>
+                    <div id="mid2-img1">
+                    </div>
                 </div>
             </div>     
-            <div class="col-sm-5 box">                
+            <div class="col-sm-5 box" id="appreciated">                
                 <div class="row bk-color-green pad-bot1">
-                    <div class="col-sm-6 in-block text-right z1">
-                        <a href="/your-patients"><img src="/assets/plus.png" class="mar-top-m9">
-                        <h1 class="color-white in-block text-left"><strong>REWARDING</strong><br>AMAZING<br>PATIENTS</h1></a>
-                    </div>
-                    <div id="appreciated">
-                        <div class="col-sm-6 in-block pull-right my-block" >
+                    <div class="col-sm-12 in-block z1">
+                        <div class="dropdown">
+                        <a href="/your-patients" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/assets/plus.png" class="mar-top-m9">
+                    <h1 class="color-white in-block text-left"><strong>REWARDING</strong><br>AMAZING<br>PATIENTS</h1></a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <div class="col-sm-12 my-block">
                             <div class="row">
-                        <h3 class="font-AmsiProR bk-color-blue-green">Feeling Appreciated</h3>
+                   <h3 class="font-AmsiProR bk-color-sky">Feeling<br>Appreciated</h3>
                             </div>
                         </div>
-                    </div>
+                    </ul>
+                        </div>
+                    </div>                    
                 </div>
                 <div class="row">
                     <div id="mid2-img2"></div>
@@ -89,9 +136,47 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center btn-mar btn-pad">
-                <button type="button" class="btn-pink">"HOW IT WORKS"<br>VIDEO</button>
-                <button type="button" class="btn-blue">PURCHASE<br>APPRECIADO</button>
+                <button type="button" class="btn-pink" href="#myModalHowItWorksBottom" data-toggle="modal">"HOW IT WORKS"<br>VIDEO</button>
+                <button type="button" class="btn-blue">PURCHASE<br>APPRECIADO</button>                
             </div>
         </div>
     </div>    
 </section>
+
+                <!--What It Is Video Top -->
+                <div class="text-center modal-sky pad-top2 pad-bot1">
+                    <div class="bs-example">                         
+                        <div id="myModalWhatItIs" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h2 class="modal-title">What It Is</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How It Works Video Bottom -->
+                <div class="text-center modal-sky pad-top2 pad-bot1">
+                    <div class="bs-example">                         
+                        <div id="myModalHowItWorksBottom" class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h2 class="modal-title">How It Works</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
