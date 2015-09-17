@@ -118,7 +118,8 @@ $(document).ready(function(){
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h1><i class="fa fa-twitter"></i><a href="https://twitter.com/intent/tweet"><u>#STANDFORAPPRECIATION</u></a></h1>
+                <h1><i class="fa fa-twitter"></i><a href="https://twitter.com/intent/tweet?button_hashtag=STANDFORAPPRECIATION"><u>#STANDFORAPPRECIATION</u></a></h1>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
             </div>
         </div>
     </div>
@@ -127,8 +128,8 @@ $(document).ready(function(){
 <section id="about-mid3">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 text-center">
-               
+            <div class="col-sm-12 text-right">
+               <a href="http://blog.appreciado.com/" target="_blank" data-html="true" data-toggle="tooltip" data-placement="left" title="<img src='/assets/whoarewe/helping-u.png'>" rel="tooltip"><img src="/assets/whoarewe/helping.png"></a>
             </div>
         </div>
     </div>
@@ -237,7 +238,7 @@ $(document).ready(function(){
             <div class="col-sm-12 text-center btn3-mar btn-pad">
                 <button type="button" class="btn-pink" href="#myModalHowItWorksBottom" data-toggle="modal">"HOW IT WORKS"<br>VIDEO</button>
                 <button type="button" class="btn-blue">PURCHASE<br>APPRECIADO</button>
-                <button type="button" class="btn-green">CONNECT<br>WITH US</button>
+                <%= link_to "CONNECT<br>WITH US".html_safe, support_path, class: "btn-green", :method => :get %>
             </div>
         </div>
     </div>    
