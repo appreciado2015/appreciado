@@ -219,10 +219,10 @@ ul.nostyle i {
 }
 
 @media screen and (min-width:768px) {
-    .dropdown:hover .dropdown-menu
+    /*.dropdown:hover .dropdown-menu
     {
         display:block
-    }
+    }*/
 }
 
 @media only screen and (min-width: 768px) {
@@ -1604,7 +1604,16 @@ ul.nostyle i {
   padding: 0.2em 0
 }
 
-#about-mid3 .tooltip-inner {
+#about-mid3 .dropdown-menu {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-left: 4em;
+  top: 0;
+  right: 100%;
+}
+
+/*#about-mid3 .tooltip-inner {
   max-width: 100%;
   background-color: transparent;
   border-radius: 0;
@@ -1625,7 +1634,7 @@ ul.nostyle i {
 #about-mid3 .tooltip.left .tooltip-arrow {
   border-left-color: transparent;
 }
-
+*/
 #about-mid4 h4 {
   color: #777
 }
@@ -1703,6 +1712,9 @@ ul.nostyle i {
 }
 #support-faq button {
   background-color: transparent
+}
+#support-faq-tab h1 {
+  color: #41A2AE
 }
 #support-faq .btn {
   color: #D2007D;
