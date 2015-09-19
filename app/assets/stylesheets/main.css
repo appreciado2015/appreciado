@@ -1228,7 +1228,9 @@ ul.nostyle i {
 #tb-connecting-mid3 .fa-9x {
   color: #D2007D
 }
-
+.shadow-text {
+    text-shadow: 2px 2px #044E59;
+}
 #move-in-to-place-p1 {
     position: absolute;
     width : 100%;
@@ -1713,16 +1715,51 @@ ul.nostyle i {
 #support-faq button {
   background-color: transparent
 }
-#support-faq-tab h1 {
-  color: #41A2AE
-}
 #support-faq .btn {
   color: #D2007D;
   border-bottom-width: 0px;
   padding: 3px 8px;
   z-index: 10
 }
-
+#support-faq-tab h1 {
+  color: #41A2AE
+}
+#support-faq-tab h6 {
+ color: #8F8F95;  
+}
+#support-faq-tab .panel-title {
+  color: #41A2AE;
+  font-size: 12px; 
+}
+#support-faq-tab .panel-body {
+  padding: 0 15px;
+  border-top-color: transparent;
+}
+#support-faq-tab .panel {
+  border-radius: 15px;
+  border: 1px solid #41A2AE;
+}
+#support-faq-tab .panel-heading {
+  background: transparent;
+  border-color: #41A2AE; 
+}
+#support-faq-tab .panel-body textarea {
+  font-size: 12px;
+  border: none;
+  resize: none
+}
+#support-faq-tab .form-control:focus {
+    border-color: transparent;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#support-faq-tab button {
+  background-color: transparent
+}
+#support-faq-tab .btn {
+  color: #D2007D;
+}
 .form-search {
     position: relative
 }
@@ -1787,6 +1824,9 @@ ul.nostyle i {
 }
 .pad-top5 {
   padding-top: 5em
+}
+.pad-top6 {
+  padding-top: 6em
 }
 .pad-top13 {
   padding-top: 13em
