@@ -128,10 +128,10 @@ $(document).ready(function(){
 <section id="about-mid3">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-lg-11 text-right">
+            <div class="col-sm-12 col-lg-11 text-right" >
                 <ul>
-                <li class="dropdown">                    
-                    <%= link_to(image_tag("whoarewe/helping.png", alt: "Helping"), "http://blog.appreciado.com/","data-toggle" => "dropdown", target: "_blank", method: :get) %>
+                <li class="dropdown">
+                   <%= link_to("<p class='invisible help'></p>".html_safe, "http://blog.appreciado.com/","data-toggle" => "dropdown", target: "_blank", method: :get) %>
                     <ul class="dropdown-menu">
                         <li>
                             <img src="/assets/whoarewe/helping-u.png">
