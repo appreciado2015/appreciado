@@ -1030,7 +1030,7 @@ ul.nostyle i {
 #top-top h1 {
   font-size: 56px;
   color: #41A2AE;
-  padding: 0.2em 0
+  padding: 1em 0 0.2em 0
 }
 
 #top-top p {
@@ -1883,6 +1883,9 @@ ul.nostyle i {
 .bk-color-blue-green {
   background-color: #008999
 }
+.bk-color-blue-green-trans {
+  background-color: rgba(0,137,153, 0.61)
+}
 .bk-color-green {
   background-color:#A2CE57
 }
@@ -2127,3 +2130,21 @@ button:hover
 }
 
 
+.modal-header [class*="close"] {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     display: inline-block;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+.modal-header:hover [class*="close"] {
+  color: #24a159 !important;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    .rotate(90deg);
+}
