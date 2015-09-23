@@ -2129,7 +2129,6 @@ button:hover
   background: rgba(161,211,218,0.8)
 }
 
-
 .modal-header [class*="close"] {
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
