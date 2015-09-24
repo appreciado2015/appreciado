@@ -1651,6 +1651,7 @@ ul.nostyle i {
 /******** Team ********/
 #team-about p {
   font-size: 18px;
+  display: inline
 }
 #team-about .pr-ul ul {
   padding: 10em 3em 0 0;
@@ -1916,6 +1917,7 @@ ul.nostyle i {
 .in-block {
   display: inline-block
 }
+
 .my-block h3 {
   color: #fff;
   padding: 1em 0.5em
@@ -2141,7 +2143,7 @@ button:hover
     transition-property: transform;
 }
 .modal-header:hover [class*="close"] {
-  color: #24a159 !important;
+  color: #fff !important;
     -webkit-transform:rotate(90deg);
     -moz-transform:rotate(90deg);
     -o-transform:rotate(90deg);
