@@ -168,6 +168,10 @@ ul.nostyle i {
 /*************************
 ******* Header ******
 **************************/
+#header {
+    background-color: lightgreen;
+    border-bottom: 3px solid blue;
+}
 .top-header {
   padding-top: 0.2em;
   padding-right: 10em;
@@ -226,6 +230,9 @@ ul.nostyle i {
 }
 
 @media only screen and (min-width: 768px) {
+  .navbar-default .navbar-nav>li>a {
+    color: #fff;
+  }
   #main-menu.navbar-default {
     background: transparent;
     -webkit-box-shadow: none;
@@ -239,14 +246,14 @@ ul.nostyle i {
   #main-menu.navbar-default .navbar-nav > li > a {
     font-family: 'AmsiPro-Bold';
     font-size: 12px;
-    padding: 40px 0 0 0
+    padding: 10px 0 0 0
   }
   
   #main-menu.navbar-default .navbar-nav > li.active > a,
   #main-menu.navbar-default .navbar-nav > li.open > a,
   #main-menu.navbar-default .navbar-nav > li:hover > a {
     background: transparent;
-    padding-top: 37px;
+    padding-top: 3px;
     border-bottom: 3px solid #D2007D;
     color: #ACD36A
   }
