@@ -4,20 +4,6 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-    var url = $("#WhatItIs").attr('src');
-    
-    $("#myModalWhatItIs").on('hide.bs.modal', function(){
-        $("#WhatItIs").attr('src', '');
-    });
-    
-    $("#myModalWhatItIs").on('show.bs.modal', function(){
-        $("#WhatItIs").attr('src', url);
-    });
-});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function(){
     var url = $("#HowItWorksBottom").attr('src');
     
     $("#myModalHowItWorksBottom").on('hide.bs.modal', function(){
@@ -32,30 +18,15 @@ $(document).ready(function(){
 
 <% end %>
 
-<%= content_for :index_body do %>id="home" class="homepage"<% end %>    
+<%= content_for :index_body do %>id="home" class="homepage"<% end %>
 
-<section id="top-top">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>SOFTWARE | PEOPLE | REWARDS</h1>
-                <p>We are a stand for appreciation</p>
-            </div>
-            <div class="col-sm-12 text-center btn-mar btn-pad">
-        <button type="button" class="btn-pink" href="#myModalWhatItIs" data-toggle="modal">"WHAT IT IS"<br>VIDEO</button>
-        <button type="button" class="btn-blue">PURCHASE<br>APPRECIADO</button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="top-benefits-mid1">
+<section id="top-benefits-mid1">    
     <div class="container-fluid">
         <div class="row box">
             <div class="col-sm-6 col-md-5 col-lg-4">
                 <div class="row">
                     <div class="col-lg-2"></div> 
-                    <div class="col-sm-12 col-md-12 col-lg-10 pad-top2">
+                    <div class="col-sm-12 col-md-12 col-lg-10 pad-top10">
 
                         <div class="dropdown">
                     <%= link_to("<img src='/assets/plus.png' class='mar-top-m9'><h1 class='color-white in-block'><strong>CONNECTING</strong><br>SCHEDULING<br>COORDINATOR</h1>".html_safe, top_benefits_connecting_path,"data-toggle" => "dropdown", method: :get) %>
@@ -72,7 +43,7 @@ $(document).ready(function(){
                 </div>
             </div> 
 
-            <div class="col-sm-6 col-md-7 col-lg-8" id="mid1-img1">            
+            <!-- <div class="col-sm-6 col-md-7 col-lg-8" id="mid1-img1">  -->           
                 
             </div>
         </div>
@@ -83,20 +54,21 @@ $(document).ready(function(){
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-7 box" id="revenue">
-                <div class="row bk-color-sky pad-bot1">
+                <div class="row pad-bot1" id="mid2-img1">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-10 in-block z1">
                         <div class="dropdown">
 
                     <%= link_to("<img src='/assets/plus.png' class='mar-top-m9'><h1 class='color-white in-block text-left'><strong>GROWING</strong><br>DENTAL<br>PRACTICES</h1>".html_safe, top_benefits_growing_path,"data-toggle" => "dropdown", method: :get) %>
-
-                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-                        <div class="col-sm-12 my-block">
-                            <div class="row">
-                    <h3 class="font-AmsiProR bk-color-blue-green-trans">Increasing<br>referrals &amp; revenue</h3>
+                            <div class="dropup">
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <div class="col-sm-12 my-block">
+                                        <div class="row">
+                                <h3 class="font-AmsiProR bk-color-sky">Increasing<br>referrals &amp; revenue</h3>
+                                        </div>
+                                    </div>
+                                </ul>
                             </div>
-                        </div>
-                    </ul>
                         </div>
                     </div>
   
@@ -108,33 +80,34 @@ $(document).ready(function(){
                         </div>
                     </div> -->
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div id="mid2-img1">
                     </div>
-                </div>
+                </div> -->
             </div>     
             <div class="col-sm-5 box" id="appreciated">                
-                <div class="row bk-color-green pad-bot1">
+                <div class="row pad-bot1" id="mid2-img2">
                     <div class="col-sm-12 in-block z1">
                         <div class="dropdown">
                         <!-- <a href="/your-patients" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/assets/plus.png" class="mar-top-m9">
                     <h1 class="color-white in-block text-left"><strong>REWARDING</strong><br>AMAZING<br>PATIENTS</h1></a> -->
 
                     <%= link_to("<img src='/assets/plus.png' class='mar-top-m9'><h1 class='color-white in-block text-left'><strong>REWARDING</strong><br>AMAZING<br>PATIENTS</h1>".html_safe, top_benefits_rewarding_path,"data-toggle" => "dropdown", method: :get) %>
-
-                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-                        <div class="col-sm-12 my-block">
-                            <div class="row">
-                   <h3 class="font-AmsiProR bk-color-sky">Feeling<br>Appreciated</h3>
+                            <div class="dropup">
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                <div class="col-sm-12 my-block">
+                                    <div class="row">
+                           <h3 class="font-AmsiProR bk-color-sky">Feeling<br>Appreciated</h3>
+                                    </div>
+                                </div>
+                            </ul>
                             </div>
-                        </div>
-                    </ul>
                         </div>
                     </div>                    
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div id="mid2-img2"></div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -151,24 +124,6 @@ $(document).ready(function(){
     </div>    
 </section>
 
-                <!--What It Is Video Top -->
-                <div class="text-center modal-sky pad-top2 pad-bot1">
-                    <div class="bs-example">                         
-                        <div id="myModalWhatItIs" class="modal fade">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
-                                        <h2 class="modal-title">What It Is</h2>
-                                    </div>
-                                    <div class="modal-body">
-                                        <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- How It Works Video Bottom -->
                 <div class="text-center modal-sky pad-top2 pad-bot1">

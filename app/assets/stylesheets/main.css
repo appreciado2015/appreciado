@@ -169,8 +169,18 @@ ul.nostyle i {
 ******* Header ******
 **************************/
 #header {
-    background-color: lightgreen;
-    border-bottom: 3px solid blue;
+    background-image: url("../assets/bar.jpg");
+    background-repeat: repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    min-height: 50px;
+    border-bottom: 3px solid #fff;
+}
+#header .navbar-nav img {
+    padding-top: 5px;
+    padding-right: 50px;
 }
 .top-header {
   padding-top: 0.2em;
@@ -254,8 +264,8 @@ ul.nostyle i {
   #main-menu.navbar-default .navbar-nav > li:hover > a {
     background: transparent;
     padding-top: 3px;
-    border-bottom: 3px solid #D2007D;
-    color: #ACD36A
+    border-bottom: 3px solid #144C49;
+    color: #fff
   }
   #main-menu.navbar-default .dropdown-menu {
     padding: 0 20px;
@@ -1047,18 +1057,14 @@ ul.nostyle i {
 
 #top-benefits-mid1 {
   color: #fff;
-  background-color: #008999;
-  height: 400px
-}
-
-#mid1-img1 {
   background-image: url("../assets/home/fostering-caring-relationship.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  min-height: 400px
+  min-height: 500px;
+  border-bottom: 3px solid #fff;
 }
 
 #mid1-img1 h3 {
@@ -1137,7 +1143,7 @@ ul.nostyle i {
   background: transparent;
   border: none;
   box-shadow: none;
-  margin-left: 1.1em;
+  margin-left: -1em;
   top: 0;
   left: 100%;
   width: 100%
@@ -1150,6 +1156,9 @@ ul.nostyle i {
   margin-top: -0.8em;
   margin-left: 7em
 }
+#revenue .z1 {
+  padding-top: 8.3em;
+}
 
 #appreciated .dropdown-menu {
   background: transparent;
@@ -1157,6 +1166,9 @@ ul.nostyle i {
   box-shadow: none;
   margin-top: -0.8em;
   margin-left: 7em
+}
+#appreciated .z1 {
+  padding-top: 8.3em;
 }
 
 
@@ -1842,6 +1854,9 @@ ul.nostyle i {
 .pad-top6 {
   padding-top: 6em
 }
+.pad-top10 {
+  padding-top: 10em
+}
 .pad-top13 {
   padding-top: 13em
 }
@@ -1936,8 +1951,8 @@ ul.nostyle i {
 
 
 .btn-pink {
-  color: #D2007D;
-  background-color: transparent;
+  color: #fff;
+  background-color: #D2007D;
   border: 3px solid #D2007D;
   display: inline-block;
   padding: 0.1em 2.5em 0.2em;
@@ -1961,8 +1976,8 @@ ul.nostyle i {
   }
 
   .btn-blue {
-  color: #373873;
-  background-color: transparent;
+  color: #fff;
+  background-color: #373873;
   border: 3px solid #373873;
   display: inline-block;
   padding: 0.1em 2.5em 0.2em;
