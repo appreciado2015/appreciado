@@ -2001,8 +2001,8 @@ ul.nostyle i {
   }
 
   .btn-green {
-  color: #ACD36A;
-  background-color: transparent;
+  color: #fff;
+  background-color: #ACD36A;
   border: 3px solid #ACD36A;
   display: inline-block;
   padding: 0.1em 2.5em 0.2em;

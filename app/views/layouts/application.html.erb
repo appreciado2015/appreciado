@@ -76,22 +76,22 @@
 <%= yield %>
 <footer id="footer">
     <div class="container">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-sm-12 text-center pad-bot3">
         <button class="btn-chat"><i class="fa fa-weixin"></i> CHAT ONLINE</button>
             </div>
-        </div>
-        <div class="row">
+        </div> -->
+        <div class="row pad-top5">
             <div class="col-md-4">
                 <address>
-                    <h3>CONTACT US</h3>
+                    <!-- <h3>CONTACT US</h3> -->
                     <p>OFFICE <a href="tel:+14038707826">+1 (403) 870 7826</a> <br>
                        <a href="mailto:hello@appreciado.com?Subject=Hello%20Appreciado">HELLO@APPRECIADO.COM</a></p>
                 </address>
             </div>
             <div class="col-md-4 text-center">
                 <address>
-                    <h3>FOLLOW US</h3>
+                    <!-- <h3>FOLLOW US</h3> -->
                     <ul>
                         <li><a href="#"><i class="fa fa-facebook-square fa-3x"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter-square fa-3x"></i></a></li>
@@ -101,18 +101,17 @@
             </div>
             <div class="col-md-4">
                 <address>
-                    <h3>LOCATION</h3>
+                    <!-- <h3>LOCATION</h3> -->
                     <p>317 7 Ave SW, Calgary, AB T2P 1B5 <br>
                        <a href="https://www.google.com/maps/place/317+7+St+SW,+Calgary,+AB+T2P,+Canada/@51.0501008,-114.0785038,17z/data=!3m1!4b1!4m2!3m1!1s0x53716fe50c4e8f55:0xc63abf0afbd87bd0?hl=en-US" target="_blank"><i class="fa fa-map-marker"></i> VIEW MAP</a></p>
                 </address>
             </div>
-            <div class="col-sm-12 text-center" id="footer-bot">
+            <div class="col-sm-12 pad-top1 text-center" id="footer-bot">
                 <ul>
                     <li><%= link_to "ABOUT APPRECIADO", about_path, :method => :get %></li>
                     <li><%= link_to "PRIVACY", root_path, :method => :get %></li>
                     <li><%= link_to "TERMS & CONDITIONS", root_path, :method => :get %></li>
                     <li><%= link_to "TALK WITH US", support_path, :method => :get %></li>
-                    <li ><%= link_to "ALREADY A CUSTOMER?", root_path, :method => :get %></li>
                 </ul>
             </div>
             
