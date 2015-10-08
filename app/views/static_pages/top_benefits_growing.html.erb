@@ -49,14 +49,11 @@ $(document).ready(function(){
 
 <%= content_for :index_body do %>id="home" class="homepage"<% end %>    
 
-<section id="top-top">
+<section id="tb-growing-top">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>YOU ARE LOOKING TO<br>GROW YOUR PRACTICE</h1>
-            </div>
-            <div class="col-sm-12 text-center pad-top2 pad-bot4">
-        <button type="button" class="btn-pink" href="#myModalWhatItIs" data-toggle="modal">"WHAT IT IS"<br>VIDEO</button>
+        <div class="row">            
+            <div class="col-sm-12 text-center pad-top13">
+        <a href="#"> <span class="fa fa-play-circle-o fa-9x"></span></a>
             </div>
         </div>
     </div>
@@ -183,37 +180,34 @@ $(document).ready(function(){
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close fa-4x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h1 class="modal-title" id="myModalLabel">SHARE WITH YOUR STAFF</h1>
+                            <h1 class="modal-title" id="myModalLabel">SEND A TEXT MESSAGE TO YOUR STAFF</h1>
                           </div>
                           <div class="modal-body">
                             <form class="form-horizontal">
                                 <div class="form-group">
                                     <div class="text-right col-md-4"><h3>NAME *</h3></div>
-                                    <div class="col-md-6 pad-top1">
+                                    <div class="col-md-4 pad-top1">
                                         <input type="text" class="form-control" placeholder="eg. Mary Mitchelle" required>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="text-right col-md-4"><h3>EMAIL</h3></div>
-                                    <div class="col-md-6 pad-top1">
-                                        <input type="email" class="form-control" placeholder="eg. mary@her-email.com">
-                                    </div>
+                                    <div class="col-md-4"></div>
                                 </div>
                                 <div class="form-group">
                                     <div class="text-right col-md-4"><h3>NUMBER</h3></div>
-                                    <div class="col-md-6 pad-top1">
+                                    <div class="col-md-4 pad-top1">
                                         <input type="text" class="form-control"  placeholder="eg. 403-403-403">
                                     </div>
+                                    <div class="col-md-4"></div>
                                 </div>
                                 <div class="form-group">
                                     <div class="text-right col-md-4"><h3>MESSAGE *</h3></div>
-                                    <div class="col-md-6 pad-top1">
+                                    <div class="col-md-4 pad-top1">
                                         <textarea class="form-control" id="inputPassword" rows="6" placeholder="eg. Hello Mary! Have you heard about Appreciado, It's an amzing app that really appreciate us as a customers. Go to appstore and download Appreciado." required></textarea>
                                     </div>
+                                    <div class="col-md-4"></div>
                                 </div>
                                 
                                 <div class="form-group">
-                                    <div class="col-md-offset-3 col-md-7 text-right pad-top1">
+                                    <div class="col-md-offset-3 col-md-5 text-right pad-top4 pad-bot2">
                                         <button type="submit" class="btn-white"><h3>SUBMIT</h3></button>
                                     </div>
                                 </div>

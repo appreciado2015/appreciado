@@ -176,7 +176,6 @@ ul.nostyle i {
     -o-background-size: 100%;
     background-size: 100%;
     min-height: 50px;
-    border-bottom: 3px solid #fff;
 }
 #header .navbar-nav img {
     padding-top: 5px;
@@ -1064,6 +1063,7 @@ ul.nostyle i {
   -o-background-size: 100%;
   background-size: 100%;
   min-height: 500px;
+  border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
 }
 
@@ -1174,6 +1174,17 @@ ul.nostyle i {
 
 
 /******* Top Benefits Connecting *******/
+#tb-connecting-top {
+  background-image: url("../assets/home/appreciado-coordinator.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 450px;
+  border-bottom: 3px solid #F5FEFE;
+}
+
 #tb-connecting-mid1 {
   background-image: url("../assets/home/appreciado-connecting.jpg");
   background-repeat: no-repeat;
@@ -1222,6 +1233,9 @@ ul.nostyle i {
   min-height: 425px 
 }
 
+#tb-connecting-top a {
+  color: #D2007D;
+}
 #tb-connecting-mid1 h1 {
   font-size: 72px
 }
@@ -1312,6 +1326,16 @@ ul.nostyle i {
 
 
 /******* Top Benefits Growing *******/
+#tb-growing-top {
+  background-image: url("../assets/home/appreciado-dentist.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 450px;
+  border-bottom: 3px solid #F5FEFE;
+}
 
 #tb-growing-mid1 {
   background-image: url("../assets/home/dental-practices-grow.jpg");
@@ -1360,7 +1384,9 @@ ul.nostyle i {
   background-size: 100%;
   min-height: 425px 
 }
-
+#tb-growing-top a {
+  color: #D2007D;
+}
 #tb-growing-mid1 h1 {
   font-size: 72px
 }
@@ -1448,6 +1474,17 @@ ul.nostyle i {
 }
 
 /******* Top Benefits Rewarding *******/
+#tb-rewarding-top {
+  background-image: url("../assets/home/appreciado-patient.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 450px;
+  border-bottom: 3px solid #F5FEFE;
+}
+
 #tb-rewarding-mid1 {
   background-image: url("../assets/home/appreciado-rewarding.jpg");
   background-repeat: no-repeat;
@@ -1494,6 +1531,9 @@ ul.nostyle i {
   -o-background-size: 100%;
   background-size: 100%;
   min-height: 425px 
+}
+#tb-rewarding-top a {
+  color: #D2007D;
 }
 #tb-rewarding-mid1 h1 {
   font-size: 72px
@@ -1854,6 +1894,9 @@ ul.nostyle i {
 .pad-top6 {
   padding-top: 6em
 }
+.pad-top8 {
+  padding-top: 8em
+}
 .pad-top10 {
   padding-top: 10em
 }
@@ -1862,6 +1905,9 @@ ul.nostyle i {
 }
 .pad-bot1 {
   padding-bottom: 1em
+}
+.pad-bot2 {
+  padding-bottom: 2em
 }
 .pad-bot3 {
   padding-bottom: 3em
@@ -2025,9 +2071,9 @@ ul.nostyle i {
           user-select: none;  
   }
 
-  .btn-green:hover {
+/*  .btn-green:hover {
   color: #ACD36A;
-}
+}*/
 
 .btn-white {
   color: #fff;

@@ -34,14 +34,11 @@ $(document).ready(function(){
 
 <%= content_for :index_body do %>id="home" class="homepage"<% end %>    
 
-<section id="top-top">
+<section id="tb-rewarding-top">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>YOUR TIME IS VALUABLE</h1>
-            </div>
-            <div class="col-sm-12 text-center pad-top2 pad-bot4">
-       <button type="button" class="btn-pink" href="#myModalWhatItIs" data-toggle="modal">"WHAT IT IS"<br>VIDEO</button>
+        <div class="row">            
+            <div class="col-sm-12 text-center pad-top13">
+        <a href="#"> <span class="fa fa-play-circle-o fa-9x"></span></a>
             </div>
         </div>
     </div>
@@ -174,31 +171,35 @@ $(document).ready(function(){
                 <form class="form-horizontal">
                     <div class="form-group">
                         <div class="text-right col-md-4"><h3>NAME *</h3></div>
-                        <div class="col-md-6 pad-top1">
+                        <div class="col-md-4 pad-top1">
                             <input type="text" class="form-control" placeholder="eg. Mary Mitchelle" required>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <div class="form-group">
                         <div class="text-right col-md-4"><h3>EMAIL</h3></div>
-                        <div class="col-md-6 pad-top1">
+                        <div class="col-md-4 pad-top1">
                             <input type="email" class="form-control" placeholder="eg. mary@her-email.com">
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <div class="form-group">
                         <div class="text-right col-md-4"><h3>NUMBER</h3></div>
-                        <div class="col-md-6 pad-top1">
+                        <div class="col-md-4 pad-top1">
                             <input type="text" class="form-control"  placeholder="eg. 403-403-403">
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <div class="form-group">
                         <div class="text-right col-md-4"><h3>MESSAGE *</h3></div>
-                        <div class="col-md-6 pad-top1">
+                        <div class="col-md-4 pad-top1">
                             <textarea class="form-control" id="inputPassword" rows="6" placeholder="eg. Hello Mary! Have you heard about Appreciado, It's an amzing app that really appreciate us as a customers. Go to appstore and download Appreciado." required></textarea>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     
                     <div class="form-group">
-                        <div class="col-md-offset-3 col-md-7 text-right pad-top1">
+                        <div class="col-md-offset-3 col-md-5 text-right pad-top3">
                             <button type="submit" class="btn-white"><h3>SUBMIT</h3></button>
                         </div>
                     </div>
@@ -222,38 +223,36 @@ $(document).ready(function(){
               <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <div class="text-right col-md-4"><h3>YOUR NAME*</h3></div>
-                        <div class="col-md-6 pad-top1">
-                            <input type="text" class="form-control" placeholder="eg. Mary Mitchelle" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <div class="text-right col-md-4"><h3>DR. NAME*</h3></div>
-                        <div class="col-md-6 pad-top1">
-                            <input type="text" class="form-control" placeholder="eg. Johon Doe" required>
+                        <div class="col-md-4 pad-top1">
+                            <input type="text" class="form-control" placeholder="Dr. Smiles" required>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <div class="form-group">
-                        <div class="text-right col-md-4"><h3>OFFICE NAME*</h3></div>
-                        <div class="col-md-6 pad-top1">
-                            <input type="text" class="form-control" placeholder="eg. Smile Dental" required>
+                        <div class="text-right col-md-4"><h3>CLINIC NAME*</h3></div>
+                        <div class="col-md-4 pad-top1">
+                            <input type="text" class="form-control" placeholder="Smiling Dental" required>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <div class="form-group">
-                        <div class="text-right col-md-4"><h3>OFFICE NUMBER*</h3></div>
-                        <div class="col-md-6 pad-top1">
-                            <input type="text" class="form-control"  placeholder="eg. 403-403-403" required>
+                        <div class="text-right col-md-4"><h3>YOUR NAME*</h3></div>
+                        <div class="col-md-4 pad-top1">
+                            <input type="text" class="form-control" placeholder="Mary Jane" required>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <div class="form-group">
-                        <div class="text-right col-md-4"><h3>OFFICE EMAIL</h3></div>
-                        <div class="col-md-6 pad-top1">
-                            <input type="email" class="form-control" placeholder="eg. dr.john@smiledental.com">
+                        <div class="text-right col-md-4"><h3>YOUR EMAIL*</h3></div>
+                        <div class="col-md-4 pad-top1">
+                            <input type="email" class="form-control" placeholder="ie: mary@youremail.com" required>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     
                     <div class="form-group">
-                        <div class="col-md-offset-3 col-md-7 text-right pad-top1">
+                        <div class="col-md-offset-3 col-md-5 text-right pad-top8 pad-bot5">
                             <button type="submit" class="btn-white"><h3>SUBMIT</h3></button>
                         </div>
                     </div>

@@ -36,18 +36,19 @@ $(document).ready(function(){
 
 <%= content_for :index_body do %>id="home" class="homepage"<% end %>    
 
-<section id="top-top">
+<section id="tb-connecting-top">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>CONNECTING YOU WITH<br>YOUR PATIENTS</h1>
-            </div>
-            <div class="col-sm-12 text-center pad-top2 pad-bot4">
-        <button type="button" class="btn-pink" href="#myModalWhatItIs" data-toggle="modal">"WHAT IT IS"<br>VIDEO</button>
+        <div class="row">            
+            <div class="col-sm-12 text-center pad-top13">
+        <a href="#"> <span class="fa fa-play-circle-o fa-9x"></span></a>
             </div>
         </div>
     </div>
 </section>
+
+ <!-- <div>
+<%= video_tag "prog.mp4", :size => "1000x500", :controls => true, :autobuffer => true %>
+</div> --> 
 
 <section id="tb-connecting-mid1">
     <div class="container">
@@ -322,50 +323,48 @@ $(document).ready(function(){
 
                 </div>
 
-                <!-- Modal SHARE WITH MY DOCTOR -->
-    <div class="modal-blue">
+                <!-- Modal SHARE WITH A DOCTOR -->
+    <div class="modal-green">
         <div class="modal fade" id="myModaldoc" tabindex="-1" role="dialog" aria-labelledby="myModalLabeldoc">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close fa-4x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h1 class="modal-title" id="myModalLabeldoc">SHARE WITH MY DOCTOR</h1>
+                <h1 class="modal-title" id="myModalLabeldoc">SHARE WITH A DOCTOR</h1>
               </div>
               <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <div class="text-right col-md-4"><h3>YOUR NAME*</h3></div>
-                        <div class="col-md-6 pad-top1">
-                            <input type="text" class="form-control" placeholder="eg. Mary Mitchelle" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <div class="text-right col-md-4"><h3>DR. NAME*</h3></div>
-                        <div class="col-md-6 pad-top1">
-                            <input type="text" class="form-control" placeholder="eg. Johon Doe" required>
+                        <div class="col-md-4 pad-top1">
+                            <input type="text" class="form-control" placeholder="Dr. Smiles" required>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <div class="form-group">
-                        <div class="text-right col-md-4"><h3>OFFICE NAME*</h3></div>
-                        <div class="col-md-6 pad-top1">
-                            <input type="text" class="form-control" placeholder="eg. Smile Dental" required>
+                        <div class="text-right col-md-4"><h3>CLINIC NAME*</h3></div>
+                        <div class="col-md-4 pad-top1">
+                            <input type="text" class="form-control" placeholder="Smiling Dental" required>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <div class="form-group">
-                        <div class="text-right col-md-4"><h3>OFFICE NUMBER*</h3></div>
-                        <div class="col-md-6 pad-top1">
-                            <input type="text" class="form-control"  placeholder="eg. 403-403-403" required>
+                        <div class="text-right col-md-4"><h3>YOUR NAME*</h3></div>
+                        <div class="col-md-4 pad-top1">
+                            <input type="text" class="form-control" placeholder="Mary Jane" required>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     <div class="form-group">
-                        <div class="text-right col-md-4"><h3>OFFICE EMAIL</h3></div>
-                        <div class="col-md-6 pad-top1">
-                            <input type="email" class="form-control" placeholder="eg. dr.john@smiledental.com">
+                        <div class="text-right col-md-4"><h3>YOUR EMAIL*</h3></div>
+                        <div class="col-md-4 pad-top1">
+                            <input type="email" class="form-control" placeholder="ie: mary@youremail.com" required>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
                     
                     <div class="form-group">
-                        <div class="col-md-offset-3 col-md-7 text-right pad-top1">
+                        <div class="col-md-offset-3 col-md-5 text-right pad-top8 pad-bot5">
                             <button type="submit" class="btn-white"><h3>SUBMIT</h3></button>
                         </div>
                     </div>
