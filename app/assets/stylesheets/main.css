@@ -171,10 +171,6 @@ ul.nostyle i {
 #header {
     background-image: url("../assets/bar.jpg");
     background-repeat: repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
     min-height: 50px;
 }
 #header .navbar-nav img {
@@ -184,6 +180,9 @@ ul.nostyle i {
 .top-header {
   padding-top: 0.2em;
   padding-right: 10em;
+}
+.top-header a {
+  color: #fff
 }
 
 .top-header .tooltip-inner {
@@ -999,7 +998,7 @@ ul.nostyle i {
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  padding-top: 0;
+  padding-top: 5em;
   padding-bottom: 10px;
   color: #fff;
 }
@@ -1173,7 +1172,7 @@ ul.nostyle i {
 
 
 
-/******* Top Benefits Connecting *******/
+/******* Top Benefits Connecting / Schedule coordinators *******/
 #tb-connecting-top {
   background-image: url("../assets/home/appreciado-coordinator.jpg");
   background-repeat: no-repeat;
@@ -1270,7 +1269,6 @@ ul.nostyle i {
     background: rgba(67,68,115,0.7);
     opacity:0;
     height:0;
-    padding-top: 9.5em
 }
 .box:hover #move-in-to-place-p1 {
     bottom: 0;
@@ -1290,7 +1288,6 @@ ul.nostyle i {
     background: rgba(67,68,115,0.7);
     opacity:0;
     height:0;
-    padding-top: 9.5em
 }
 .box:hover #move-in-to-place-p2 {
     bottom: 0;
@@ -1310,7 +1307,6 @@ ul.nostyle i {
     background: rgba(67,68,115,0.7);
     opacity:0;
     height:0;
-    padding-top: 9.5em
 }
 .box:hover #move-in-to-place-p3 {
     bottom: 0;
@@ -1325,7 +1321,7 @@ ul.nostyle i {
 }
 
 
-/******* Top Benefits Growing *******/
+/******* Top Benefits Growing / Dentists *******/
 #tb-growing-top {
   background-image: url("../assets/home/appreciado-dentist.jpg");
   background-repeat: no-repeat;
@@ -1419,7 +1415,6 @@ ul.nostyle i {
     background: rgba(67,68,115,0.7);
     opacity:0;
     height:0;
-    padding-top: 11.5em
 }
 .box:hover #move-in-to-place-gr-p1 {
     bottom: 0;
@@ -1439,7 +1434,6 @@ ul.nostyle i {
     background: rgba(67,68,115,0.7);
     opacity:0;
     height:0;
-    padding-top: 11.5em
 }
 .box:hover #move-in-to-place-gr-p2 {
     bottom: 0;
@@ -1459,7 +1453,6 @@ ul.nostyle i {
     background: rgba(67,68,115,0.7);
     opacity:0;
     height:0;
-    padding-top: 11.5em
 }
 .box:hover #move-in-to-place-gr-p3 {
     bottom: 0;
@@ -1473,7 +1466,7 @@ ul.nostyle i {
   display: none;
 }
 
-/******* Top Benefits Rewarding *******/
+/******* Top Benefits Rewarding / Patients*******/
 #tb-rewarding-top {
   background-image: url("../assets/home/appreciado-patient.jpg");
   background-repeat: no-repeat;
@@ -1567,7 +1560,6 @@ ul.nostyle i {
     background: rgba(67,68,115,0.7);
     opacity:0;
     height:0;
-    padding-top: 11.5em
 }
 .box:hover #move-in-to-place-rd-p1 {
     bottom: 0;
@@ -1587,7 +1579,6 @@ ul.nostyle i {
     background: rgba(67,68,115,0.7);
     opacity:0;
     height:0;
-    padding-top: 11.5em
 }
 .box:hover #move-in-to-place-rd-p2 {
     bottom: 0;
@@ -1607,7 +1598,6 @@ ul.nostyle i {
     background: rgba(67,68,115,0.7);
     opacity:0;
     height:0;
-    padding-top: 11.5em
 }
 .box:hover #move-in-to-place-rd-p3 {
     bottom: 0;
@@ -1894,6 +1884,9 @@ ul.nostyle i {
 .pad-top6 {
   padding-top: 6em
 }
+.pad-top7 {
+  padding-top: 7em
+}
 .pad-top8 {
   padding-top: 8em
 }
@@ -1994,7 +1987,9 @@ ul.nostyle i {
 .min-h650 {
   min-height: 650px
 }
-
+.vr-r {
+  border-right: 3px solid#fff;
+}
 
 .btn-pink {
   color: #fff;
@@ -2071,9 +2066,9 @@ ul.nostyle i {
           user-select: none;  
   }
 
-/*  .btn-green:hover {
-  color: #ACD36A;
-}*/
+.btn-green:hover {
+color: #fff;
+}
 
 .btn-white {
   color: #fff;
