@@ -1731,12 +1731,6 @@ ul.nostyle i {
   color: #8F8F95;
   font-size: 18px
 }
-#support-mid1-tab h1 {
-  color: #41A2AE;
-}
-#support-mid1-tab h3, #support-mid1-tab h4 {
-  color: #8F8F95;
-}
 
 
 /******** Support Appreciado ********/
@@ -1912,9 +1906,9 @@ ul.nostyle i {
   padding-bottom: 5em
 }
 
-.pad-lr5 {
-  padding-left: 5em;
-  padding-right: 5em
+.pad-lr12 {
+  padding-left: 12em;
+  padding-right: 12em
 }
 .mar-top-m5 {
   margin-top: -5em
