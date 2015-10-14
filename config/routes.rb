@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   match '/partners', to: 'static_pages#partners', via: 'get', as: :partners
   match '/contact', to: 'static_pages#contact', via: 'get', as: :contact
   match '/talk-with-us', to: 'static_pages#support', via: 'get', as: :support
+  match '/schedule-a-call', to: 'static_pages#support_schedule', via: 'get', as: :support_schedule
   match '/appreciado-support', to: 'static_pages#support_appreciado', via: 'get', as: :support_appreciado
   match '/question-support', to: 'static_pages#support_question', via: 'get', as: :support_question
   match '/purchase', to: 'static_pages#purchase', via: 'get', as: :purchase

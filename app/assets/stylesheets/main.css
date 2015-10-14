@@ -182,7 +182,8 @@ ul.nostyle i {
   padding-right: 10em;
 }
 .top-header a {
-  color: #fff
+  color: #fff;
+  font-size: 10px
 }
 
 .top-header .tooltip-inner {

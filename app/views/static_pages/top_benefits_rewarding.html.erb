@@ -15,7 +15,7 @@ $(document).ready(function(){
     });
 });
 </script>
--->
+
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -31,6 +31,7 @@ $(document).ready(function(){
     });
 });
 </script>
+-->
 <% end %>
 
 <%= content_for :index_body do %>id="home" class="homepage"<% end %>    
@@ -84,22 +85,8 @@ $(document).ready(function(){
                 <h1>"HOW IT WORKS" VIDEO</h1>
                 <div class="row text-center modal-sky">
                     <div class="bs-example"> 
-                        <a href="#myModalRewardHowitworks" data-toggle="modal">
+                        <a href="#myModal1" data-toggle="modal">
                         <span class="fa fa-play-circle-o fa-9x"></span></a>
-                        
-                        <div id="myModalRewardHowitworks" class="modal fade">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
-                                        <h2 class="modal-title">HOW IT WORKS</h2>
-                                    </div>
-                                    <div class="modal-body">
-                                        <iframe id="CoryLiss" width="560" height="315" src="//www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -158,133 +145,286 @@ $(document).ready(function(){
                 <button type="button" class="btn-pink" data-toggle="modal" data-target="#myModalmom">"SHARE WITH"<br>ANOTHER MOM</button>
                 <button type="button" class="btn-green">DOWNLOAD<br>THE APP</button>
                 <button type="button" class="btn-blue" data-toggle="modal" data-target="#myModaldoc">"SHARE WITH"<br>MY DOCTOR</button>
-
-    <!-- Modal SHARE WITH ANOTHER MOM -->
-    <div class="modal-purple">
-        <div class="modal fade" id="myModalmom" tabindex="-1" role="dialog" aria-labelledby="myModalLabelmom">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close fa-4x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h1 class="modal-title" id="myModalLabelmom">SHARE WITH ANOTHER MOM YOU APPRECIATE</h1>
-              </div>
-              <div class="modal-body">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <div class="text-right col-md-4"><h3>NAME *</h3></div>
-                        <div class="col-md-4 pad-top1">
-                            <input type="text" class="form-control" placeholder="eg. Mary Mitchelle" required>
-                        </div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    <div class="form-group">
-                        <div class="text-right col-md-4"><h3>EMAIL</h3></div>
-                        <div class="col-md-4 pad-top1">
-                            <input type="email" class="form-control" placeholder="eg. mary@her-email.com">
-                        </div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    <div class="form-group">
-                        <div class="text-right col-md-4"><h3>NUMBER</h3></div>
-                        <div class="col-md-4 pad-top1">
-                            <input type="text" class="form-control"  placeholder="eg. 403-403-403">
-                        </div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    <div class="form-group">
-                        <div class="text-right col-md-4"><h3>MESSAGE *</h3></div>
-                        <div class="col-md-4 pad-top1">
-                            <textarea class="form-control" id="inputPassword" rows="6" placeholder="eg. Hello Mary! Have you heard about Appreciado, It's an amzing app that really appreciate us as a customers. Go to appstore and download Appreciado." required></textarea>
-                        </div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <div class="col-md-offset-3 col-md-5 text-right pad-top3">
-                            <button type="submit" class="btn-white"><h3>SUBMIT</h3></button>
-                        </div>
-                    </div>
-                </form>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <!-- Modal SHARE WITH MY DOCTOR -->
-    <div class="modal-blue">
-        <div class="modal fade" id="myModaldoc" tabindex="-1" role="dialog" aria-labelledby="myModalLabeldoc">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close fa-4x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h1 class="modal-title" id="myModalLabeldoc">SHARE WITH MY DOCTOR</h1>
-              </div>
-              <div class="modal-body">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <div class="text-right col-md-4"><h3>DR. NAME*</h3></div>
-                        <div class="col-md-4 pad-top1">
-                            <input type="text" class="form-control" placeholder="Dr. Smiles" required>
-                        </div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    <div class="form-group">
-                        <div class="text-right col-md-4"><h3>CLINIC NAME*</h3></div>
-                        <div class="col-md-4 pad-top1">
-                            <input type="text" class="form-control" placeholder="Smiling Dental" required>
-                        </div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    <div class="form-group">
-                        <div class="text-right col-md-4"><h3>YOUR NAME*</h3></div>
-                        <div class="col-md-4 pad-top1">
-                            <input type="text" class="form-control" placeholder="Mary Jane" required>
-                        </div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    <div class="form-group">
-                        <div class="text-right col-md-4"><h3>YOUR EMAIL*</h3></div>
-                        <div class="col-md-4 pad-top1">
-                            <input type="email" class="form-control" placeholder="ie: mary@youremail.com" required>
-                        </div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <div class="col-md-offset-3 col-md-5 text-right pad-top8 pad-bot5">
-                            <button type="submit" class="btn-white"><h3>SUBMIT</h3></button>
-                        </div>
-                    </div>
-                </form>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-    </div>
-
             </div>
         </div>
     </div>    
 </section>
 
-                <!--What It Is Video Top -->
-                <!-- <div class="text-center modal-sky pad-top2 pad-bot1">
-                    <div class="bs-example">                         
-                        <div id="myModalWhatItIs" class="modal fade">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
-                                        <h2 class="modal-title">What It Is</h2>
-                                    </div>
-                                    <div class="modal-body">
-                                        <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
+<!-- Modal SHARE WITH ANOTHER MOM -->
+<div class="modal-purple">
+    <div class="modal fade" id="myModalmom" tabindex="-1" role="dialog" aria-labelledby="myModalLabelmom">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close fa-4x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h1 class="modal-title text-center" id="myModalLabelmom">SHARE WITH ANOTHER MOM YOU APPRECIATE</h1>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="text-right col-md-4"><h3>NAME *</h3></div>
+                    <div class="col-md-4 pad-top1">
+                        <input type="text" class="form-control" placeholder="eg. Mary Mitchelle" required>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="form-group">
+                    <div class="text-right col-md-4"><h3>EMAIL</h3></div>
+                    <div class="col-md-4 pad-top1">
+                        <input type="email" class="form-control" placeholder="eg. mary@her-email.com">
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="form-group">
+                    <div class="text-right col-md-4"><h3>NUMBER</h3></div>
+                    <div class="col-md-4 pad-top1">
+                        <input type="text" class="form-control"  placeholder="eg. 403-403-403">
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="form-group">
+                    <div class="text-right col-md-4"><h3>MESSAGE *</h3></div>
+                    <div class="col-md-4 pad-top1">
+                        <textarea class="form-control" id="inputPassword" rows="6" placeholder="eg. Hello Mary! Have you heard about Appreciado, It's an amzing app that really appreciate us as a customers. Go to appstore and download Appreciado." required></textarea>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-md-5 text-right pad-top3">
+                        <button type="submit" class="btn-white"><h3>SUBMIT</h3></button>
+                    </div>
+                </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal SHARE WITH MY DOCTOR -->
+<div class="modal-blue">
+    <div class="modal fade" id="myModaldoc" tabindex="-1" role="dialog" aria-labelledby="myModalLabeldoc">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close fa-4x" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h1 class="modal-title text-center" id="myModalLabeldoc">SHARE WITH MY DOCTOR</h1>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="text-right col-md-4"><h3>DR. NAME*</h3></div>
+                    <div class="col-md-4 pad-top1">
+                        <input type="text" class="form-control" placeholder="Dr. Smiles" required>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="form-group">
+                    <div class="text-right col-md-4"><h3>CLINIC NAME*</h3></div>
+                    <div class="col-md-4 pad-top1">
+                        <input type="text" class="form-control" placeholder="Smiling Dental" required>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="form-group">
+                    <div class="text-right col-md-4"><h3>YOUR NAME*</h3></div>
+                    <div class="col-md-4 pad-top1">
+                        <input type="text" class="form-control" placeholder="Mary Jane" required>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="form-group">
+                    <div class="text-right col-md-4"><h3>YOUR EMAIL*</h3></div>
+                    <div class="col-md-4 pad-top1">
+                        <input type="email" class="form-control" placeholder="ie: mary@youremail.com" required>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-md-5 text-right pad-top8 pad-bot5">
+                        <button type="submit" class="btn-white"><h3>SUBMIT</h3></button>
+                    </div>
+                </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal HOW IT WORKS -->
+<div class="modal-sky">
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="col-sm-4">
+                <h1>TELL US ABOUT YOU<br>YOUR PRACTICE</h1>
+              </div>
+              <div class="col-sm-4">
+                <h1 class="modal-title text-center">STEP 1 OF 3</h1>
+              </div>
+            </div><div class="container"></div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="text-right col-md-4 pad-top1"><h4>TITLE:</h4></div>
+                        <div class="col-md-6 text-left">
+                            <div class="row">
+                           <label class="checkbox-inline">
+                              <h4>DOCTOR <input type="radio" name="optionRadiosinline" id="optionRadios1" 
+                                 value="DOCTOR" checked></h4>
+                           </label>
+                           <label class="checkbox-inline">
+                              <h4>ASSISTANT <input type="radio" name="optionRadiosinline" id="optionRadios2" 
+                                 value="ASSISTANT"> </h4>
+                           </label>
+                           </div>
                         </div>
                     </div>
-                </div> -->
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>FIRST NAME:</h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>LAST NAME:</h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>OFFICE NUMBER:</h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>EMAIL:</h4></div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>                        
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>WHY ARE<br>YOU HERE?</h4></div>
+                        <div class="col-md-6">
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>                        
+                    <div class="form-group">
+                        <div class="col-md-offset-3 col-md-7 text-center pad-top1">
+                            <!-- <button type="submit" class="btn-white" data-toggle="modal" data-target="#myModal2"><span>CONTINUE</span></button> -->
+                                <a id="first_link" data-toggle="modal" href="#myModal2" class="btn-white">CONTINUE</a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            
+          </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal2" data-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="col-sm-4">
+                <h1>JUST A FEW<br>MORE QUESTIONS</h1>
+              </div>
+              <div class="col-sm-4">
+                <h1 class="modal-title text-center">STEP 2 OF 3</h1>
+              </div>                              
+            </div><div class="container"></div>
+            <div class="modal-body">
+                <form class="form-horizontal">                                    
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>NAME OF OFFICE </h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4># OF DOCTORS</h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4># OF STAFF</h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>CURRENT PMS</h4></div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>TYPE OF PRACTICE</h4></div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>                        
+                                            
+                    <div class="form-group">
+                        <div class="col-md-offset-3 col-md-7 text-center pad-top1">
+                            <!-- <button type="submit" class="btn-white" data-toggle="modal" data-target="#myModal2"><span>CONTINUE</span></button> -->
+                                <a id="second_link" data-toggle="modal" href="#myModal3" class="btn-white">CONTINUE</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal3" data-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
+              <h1 class="modal-title text-center">STEP 3 OF 3</h1>
+            </div><div class="container"></div>
+            <div class="modal-body text-center">
+                <form class="form-horizontal">                                    
+                    <div class="form-group">
+                        <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
+                    </div>                    
+                    <div class="form-group">
+                        <div class="col-md-12 text-center pad-top1">
+                            <button type="submit" class="btn-white"><span>PURCHASE</span></button>
+                            <button type="submit" class="btn-white"><span>HAVE QUESTIONS?</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>                            
+          </div>
+        </div>
+    </div>
+
+</div>
+
+
+<%= content_for :modal_js do %>
+<script type="text/javascript">
+$('#first_link').click(function(){
+    $('#myModal1').modal('hide');
+});
+</script>
+
+<script type="text/javascript">
+$('#second_link').click(function(){
+    $('#myModal2').modal('hide');
+});
+</script>
+<% end %>

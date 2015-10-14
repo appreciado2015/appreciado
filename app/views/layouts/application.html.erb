@@ -33,7 +33,7 @@
 </head>
 <body <%= yield :index_body %>>
 <div class="text-right top-header bk-color-blue">
-<%= link_to "Login", root_path, method: :get %> &nbsp;&nbsp;
+<%= link_to "LOGIN", root_path, method: :get %> &nbsp;&nbsp;
 <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="PROUDLY<br>CANADIAN" rel="tooltip"><img src="/assets/canada-flag.png" alt="Canada Flag"></a>
 </div>
 <!-- <div class="text-center">
@@ -62,7 +62,7 @@
                     <li class="<%= 'active' if current_page?(about_path)||current_page?(about_team_path) %>"><%= link_to "WHO WE ARE?", about_path, :method => :get %>
                     </li>
                     <li><%= link_to "BLOG", "http://blog.appreciado.com/", target: "_blank", :method => :get %></li>
-                    <li class="<%= 'active' if current_page?(support_path)||current_page?(support_appreciado_path) %>"><%= link_to "TALK WITH US", support_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(support_path)||current_page?(support_appreciado_path)||current_page?(support_schedule_path) %>"><%= link_to "TALK WITH US", support_path, :method => :get %></li>
                       
                     <li class="<%= 'active' if current_page?(support_question_path) %>"><%= link_to "FAQ", support_question_path, :method => :get %></li>
                     <li class="<%= 'active' if current_page?(purchase_path) %>"><%= link_to "PURCHASE", purchase_path, :method => :get %>
@@ -145,7 +145,7 @@
     </script>
     
     <%= yield :faq_js %>
-
+    <%= yield :modal_js %>
 
 </body>
 </html>

@@ -26,6 +26,9 @@ class StaticPagesController < ApplicationController
   def support
   end
 
+  def support_schedule    
+  end
+
   def support_appreciado    
   end
 

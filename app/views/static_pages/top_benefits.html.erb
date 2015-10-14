@@ -1,5 +1,5 @@
 <%= content_for :benefits_modal do %>
-
+<!--
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 <script type="text/javascript">
@@ -15,6 +15,7 @@ $(document).ready(function(){
     });
 });
 </script>
+-->
 
 <% end %>
 
@@ -117,29 +118,202 @@ $(document).ready(function(){
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center btn-mar btn-pad">
-                <button type="button" class="btn-pink" href="#myModalHowItWorksBottom" data-toggle="modal">"HOW IT WORKS"<br>VIDEO</button>
+                <button type="button" class="btn-pink" href="#myModal1" data-toggle="modal">"HOW IT WORKS"<br>VIDEO</button>
                 <button type="button" class="btn-blue">PURCHASE<br>APPRECIADO</button>                
             </div>
         </div>
     </div>    
 </section>
 
-
-                <!-- How It Works Video Bottom -->
-                <div class="text-center modal-sky pad-top2 pad-bot1">
-                    <div class="bs-example">                         
-                        <div id="myModalHowItWorksBottom" class="modal fade">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
-                                        <h2 class="modal-title">How It Works</h2>
-                                    </div>
-                                    <div class="modal-body">
-                                        <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
+<!-- Modal HOW IT WORKS -->
+<div class="modal-sky">
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="col-sm-4">
+                <h1>TELL US ABOUT YOU<br>YOUR PRACTICE</h1>
+              </div>
+              <div class="col-sm-4">
+                <h1 class="modal-title text-center">STEP 1 OF 3</h1>
+              </div>
+            </div><div class="container"></div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="text-right col-md-4 pad-top1"><h4>TITLE:</h4></div>
+                        <div class="col-md-6 text-left">
+                            <div class="row">
+                           <label class="checkbox-inline">
+                              <h4>DOCTOR <input type="radio" name="optionRadiosinline" id="optionRadios1" 
+                                 value="DOCTOR" checked></h4>
+                           </label>
+                           <label class="checkbox-inline">
+                              <h4>ASSISTANT <input type="radio" name="optionRadiosinline" id="optionRadios2" 
+                                 value="ASSISTANT"> </h4>
+                           </label>
+                           </div>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>FIRST NAME:</h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>LAST NAME:</h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>OFFICE NUMBER:</h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>EMAIL:</h4></div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>                        
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>WHY ARE<br>YOU HERE?</h4></div>
+                        <div class="col-md-6">
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>                        
+                    <div class="form-group">
+                        <div class="col-md-offset-3 col-md-7 text-center pad-top1">
+                            <!-- <button type="submit" class="btn-white" data-toggle="modal" data-target="#myModal2"><span>CONTINUE</span></button> -->
+                                <a id="first_link" data-toggle="modal" href="#myModal2" class="btn-white">CONTINUE</a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            
+          </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal2" data-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
+              <div class="col-sm-4">
+                <h1>JUST A FEW<br>MORE QUESTIONS</h1>
+              </div>
+              <div class="col-sm-4">
+                <h1 class="modal-title text-center">STEP 2 OF 3</h1>
+              </div>                              
+            </div><div class="container"></div>
+            <div class="modal-body">
+                <form class="form-horizontal">                                    
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>NAME OF OFFICE </h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4># OF DOCTORS</h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4># OF STAFF</h4></div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>CURRENT PMS</h4></div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-right col-md-4"><h4>TYPE OF PRACTICE</h4></div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>                        
+                                            
+                    <div class="form-group">
+                        <div class="col-md-offset-3 col-md-7 text-center pad-top1">
+                            <!-- <button type="submit" class="btn-white" data-toggle="modal" data-target="#myModal2"><span>CONTINUE</span></button> -->
+                                <a id="second_link" data-toggle="modal" href="#myModal3" class="btn-white">CONTINUE</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal3" data-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
+              <h1 class="modal-title text-center">STEP 3 OF 3</h1>
+            </div><div class="container"></div>
+            <div class="modal-body text-center">
+                <form class="form-horizontal">                                    
+                    <div class="form-group">
+                        <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
+                    </div>                    
+                    <div class="form-group">
+                        <div class="col-md-12 text-center pad-top1">
+                            <button type="submit" class="btn-white"><span>PURCHASE</span></button>
+                            <button type="submit" class="btn-white"><span>HAVE QUESTIONS?</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>                            
+          </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- How It Works Video Bottom -->
+<!--<div class="text-center modal-sky pad-top2 pad-bot1">
+    <div class="bs-example">                         
+        <div id="myModalHowItWorksBottom" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h2 class="modal-title">How It Works</h2>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<%= content_for :modal_js do %>
+<script type="text/javascript">
+$('#first_link').click(function(){
+    $('#myModal1').modal('hide');
+});
+</script>
+
+<script type="text/javascript">
+$('#second_link').click(function(){
+    $('#myModal2').modal('hide');
+});
+</script>
+<% end %>
