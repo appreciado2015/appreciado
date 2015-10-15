@@ -1746,6 +1746,32 @@ ul.nostyle i {
   color: #D2007D
 }
 
+/******** Support Schedule ********/
+#schedule-mid button {
+  font-size: 18px
+}
+.date-picker {
+  background: url("../assets/calendar.png") no-repeat center;
+  text-align: center;
+  padding-top: 6em;
+  font-size: 20px;
+  border: none;
+}
+#schedule-mid input:hover, 
+#schedule-mid input:active, 
+#schedule-mid input:focus {
+   outline:0px !important;
+    -webkit-appearance:none
+}
+
+.time-zone {
+  padding: 3em 5em 2em 5em
+}
+.time-schedule {
+  text-align: left;
+  padding-left: 10em;
+}
+
 /******** Support Question  ********/
 #support-faq h1, #support-faq h2 {
   color: #41A2AE

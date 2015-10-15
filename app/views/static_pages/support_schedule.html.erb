@@ -11,26 +11,31 @@
     </div>
 </section>
 
-<section id="">
+<section id="schedule-mid">
     <div class="container">
-        <div class="row pad-top2">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-4">
-                        
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <P>PAGE IS NOT READY YET</P>
-                        <P>PAGE IS NOT READY YET</P>
-                        <P>PAGE IS NOT READY YET</P>
-                        <P>PAGE IS NOT READY YET</P>
-                        <P>PAGE IS NOT READY YET</P>
-                    </div>
-                    <div class="col-md-4">
-                        
-                    </div>
-                    
-                </div>
+        <div class="row pad-top2 text-center">
+            <div class="col-sm-12">
+                <input type="text" id="datepicker" class="date-picker">
+            </div>
+            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 time-zone">
+                <p>Time Zone</p>
+                <select class="form-control" id="timezone"></select>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                <p>I'd like to receive a<br>call between</p>
+                
+                  <p class="time-schedule">
+                    <input type="radio" name="optionRadiosinline" id="optionRadios1" 
+                     value="8to10" checked> 8-10 am<br>
+                    <input type="radio" name="optionRadiosinline" id="optionRadios2" 
+                     value="10to12"> 10-12 pm<br>
+                    <input type="radio" name="optionRadiosinline" id="optionRadios3" 
+                     value="2to4"> 2-4 pm<br>
+                    <input type="radio" name="optionRadiosinline" id="optionRadios4" 
+                     value="4to6"> 4-6 pm</p>
+            </div>
+            <div class="col-sm-12 pad-top4 pad-bot2">
+                <button type="button" class="btn-pink" data-toggle="modal" data-target="#myModalmom">SCHEDULE<br>THIS CALL</button>
             </div>
         </div>
     </div>
@@ -110,3 +115,38 @@
       </div>
     </div>
 </div>
+
+<%= content_for :modal_js do %>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="/assets/timezones.full.min.js"></script>
+<script type="text/javascript">
+$('#timezone').timezones();
+</script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+    
+  
+    $("#datepicker").datepicker({dateFormat: 'M dd, yy'}).datepicker('setDate',new Date())
+
+  
+});
+</script>
+
+  <script type="text/javascript">
+$("#datepicker").datepicker({
+    beforeShow: function (input, inst) {
+        setTimeout(function () {
+            inst.dpDiv.css({
+                top: 300,
+                left: 550
+            });
+        }, 0);
+    }
+});
+  </script>
+
+<% end %>
