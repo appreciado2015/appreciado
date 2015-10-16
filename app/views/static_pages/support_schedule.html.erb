@@ -1,3 +1,6 @@
+<%= content_for :datepicker_css do %>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<% end %>
 <%= content_for :index_body do %>id="home" class="homepage"<% end %>    
 
 <section id="top-top">
@@ -117,26 +120,20 @@
 </div>
 
 <%= content_for :modal_js do %>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="/assets/timezones.full.min.js"></script>
 <script type="text/javascript">
 $('#timezone').timezones();
 </script>
 
-
-
 <script type="text/javascript">
 $(document).ready(function () {
-    
-  
-    $("#datepicker").datepicker({dateFormat: 'M dd, yy'}).datepicker('setDate',new Date())
-
-  
+    $("#datepicker").datepicker('option', 'dateFormat', 'M dd, yy').datepicker('setDate',new Date())
 });
 </script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
 $("#datepicker").datepicker({
     beforeShow: function (input, inst) {
         setTimeout(function () {
@@ -147,6 +144,6 @@ $("#datepicker").datepicker({
         }, 0);
     }
 });
-  </script>
+</script>
 
 <% end %>

@@ -28,15 +28,15 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="#">
-                        <div class="thumbnail text-center">
-                            <i class="fa fa-calendar fa-3x"></i>
-                            <div class="caption">
+                        <%= link_to("                        
+                        <div class='thumbnail text-center'>
+                            <i class='fa fa-calendar fa-3x'></i>
+                            <div class='caption'>
                                 <h1>SCHEDULE A CALL</h1>
                                 <p>Book a time with our centre to call you when it's convenient.</p>
                             </div>
                         </div>
-                        </a>
+                        ".html_safe, support_schedule_path, method: :get) %>                        
                     </div>
                     <div class="col-md-4">
                         <a href="#call-u-later" data-toggle="modal">
