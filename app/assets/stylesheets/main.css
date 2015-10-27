@@ -1236,11 +1236,17 @@ ul.nostyle i {
 #tb-connecting-top a {
   color: #D2007D;
 }
+#tb-connecting-top a > p {
+  color: #D2007D;
+  font-size: 20px;
+  font-weight: 600;
+}
 #tb-connecting-mid1 h1 {
   font-size: 72px
 }
 #tb-connecting-mid2 h1 {
-  font-size: 72px
+  font-size: 64px;
+  color: #373873;
 }
 #tb-connecting-mid2 h3 {
   color: #8F8F95;
@@ -1249,10 +1255,13 @@ ul.nostyle i {
   font-size: 26px
 }
 #tb-connecting-mid2 .caption {
-  padding: 3em 0 6em 2em
+  padding: 10em 0 7em 2em
 }
 #tb-connecting-mid2 .c-caption {
   padding: 2em 0 1em 0
+}
+#tb-connecting-mid2 ul {
+  font-size: 26px
 }
 #tb-connecting-mid3 h1 {
   color: #D2007D;
@@ -1383,6 +1392,11 @@ ul.nostyle i {
 }
 #tb-growing-top a {
   color: #D2007D;
+}
+#tb-growing-top a > p {
+  color: #D2007D;
+  font-size: 20px;
+  font-weight: 600;
 }
 #tb-growing-mid1 h1 {
   font-size: 72px
@@ -1528,6 +1542,11 @@ ul.nostyle i {
 }
 #tb-rewarding-top a {
   color: #D2007D;
+}
+#tb-rewarding-top a > p {
+  color: #D2007D;
+  font-size: 20px;
+  font-weight: 600;
 }
 #tb-rewarding-mid1 h1 {
   font-size: 72px
