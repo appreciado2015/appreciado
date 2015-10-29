@@ -1,6 +1,6 @@
 class ContactMailer < ApplicationMailer
 
-	default from: "priyanko.dey33@gmail.com"
+	default from: "david@appreciado.com"
 
   def welcome_email(contact)
     @contact = contact
@@ -10,7 +10,7 @@ class ContactMailer < ApplicationMailer
 
    def query_mail(contact)
   	@contact=contact
-    mail(:to => "priyanko.dey33@gmail.com", :subject => "Getting Quote")
+    mail(:to => "david@appreciado.com", :subject => "Getting Quote")
    end
 
 end

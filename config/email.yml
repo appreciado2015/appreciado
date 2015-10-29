@@ -12,6 +12,6 @@ production:
   :port: 587
   :Domain: mail.google.com
   :authentication: plain
-  :user_name: priyanko.dey33@gmail.com
-  :password: priyanko123456
+  :user_name: david@appreciado.com
+  :password: password
   :enable_starttls_auto: true 
