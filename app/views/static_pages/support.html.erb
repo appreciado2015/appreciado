@@ -6,6 +6,28 @@
             <div class="col-sm-12 text-center">
                 <h1>CONNECT WITH OUR TEAM RIGHT AWAY</h1>
                 <p>WE HAVE PROVIDED A NUMBER OF WAYS FOR YOU TO GET INTO<br>CONTACT WITH US AT THE CENTRE....</p>
+                <div class="well">
+      <%= form_for @contact do |f| %>
+
+  <div class="form-group">   
+    <%= f.text_field :name, type:"text", tabindex: "1", class: "form-control", placeholder: 'Enter your name'  %>
+  </div>
+  <div class="form-group">
+    <%= f.text_field :email, type:"email", tabindex: "2", class: "form-control",  placeholder: 'Enter your email address'  %>
+  </div>
+  <div class="form-group">
+    <%= f.number_field :phone, type:"tel", tabindex: "3", class: "form-control", placeholder: 'Enter your phone number'  %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.text_area :message, type:"text", tabindex: "4", class: "form-control",  placeholder: 'Write your message', rows: "8"  %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Send', tabindex: "5", :class => 'btn btn-primary btn-block' %>
+  </div>
+<% end %>
+        </div>
             </div>
         </div>
     </div>

@@ -24,6 +24,7 @@ class StaticPagesController < ApplicationController
   end
 
   def support
+    @contact = Contact.new
   end
 
   def support_schedule    
