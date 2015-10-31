@@ -2307,3 +2307,7 @@ button:hover
 .white-font{
     color: #ffffff !important;
 }
+
+.submit-button{
+    background-color: #41A2AE;
+}
