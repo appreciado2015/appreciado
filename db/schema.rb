@@ -14,12 +14,14 @@
 ActiveRecord::Schema.define(version: 20151029120718) do
 
   create_table "contacts", force: :cascade do |t|
-    t.string   "name"
+    t.string   "radio_option"
+    t.string   "fname"
+    t.string   "lname"
     t.string   "email"
     t.string   "phone"
     t.text     "message"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end

@@ -22,7 +22,7 @@ class ContactsController < ApplicationController
   private
   
      def contact_params
-      params.require(:contact).permit(:name, :email, :phone, :message)
+      params.require(:contact).permit(:radio_option, :fname, :lname, :email, :phone, :message)
     end
 
 end

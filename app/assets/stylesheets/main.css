@@ -1744,6 +1744,11 @@ ul.nostyle i {
   color: #41A2AE;
   border: 2px solid #41A2AE;
 }
+#support-form h4 {
+  color: #41A2AE;
+  font-size: 20px;
+}
+
 #support-mid1 h1 {
   color: #41A2AE;
 }
