@@ -2287,3 +2287,23 @@ button:hover
     -o-transform:rotate(90deg);
     transform:rotate(90deg);
 }
+
+/*How it works - points*/
+
+.howitworks-point{
+    font-size: 23px !important;
+    color: #ffffff;
+    margin-right: 80px;
+    margin-top: -86px;
+    line-height: 37px;
+}
+.howitworks-point-dark{
+    font-size: 23px;
+    color: #64686d;
+    margin-left: -15px;
+    padding-top: 42px;
+    line-height: 37px;
+}
+.white-font{
+    color: #ffffff !important;
+}
