@@ -4,7 +4,6 @@ class ContactMailer < ApplicationMailer
 
   def welcome_email(contact)
     @contact = contact
-    #attachments["garb.jpg"] = File.read("#{Rails.root}/public/assets/garb.jpg")
     mail(to: @contact.email, subject: 'Welcome to Appreciado')
   end
 
