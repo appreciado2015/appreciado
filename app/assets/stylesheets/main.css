@@ -172,6 +172,8 @@ ul.nostyle i {
     background-image: url("../assets/bar.jpg");
     background-repeat: repeat;
     min-height: 50px;
+    z-index: 999999;
+    position: relative;
 }
 #header .navbar-nav img {
     padding-top: 5px;
@@ -180,10 +182,12 @@ ul.nostyle i {
 .top-header {
   padding-top: 0.2em;
   padding-right: 10em;
+  z-index: 999999;
+  position: relative;
 }
 .top-header a {
   color: #fff;
-  font-size: 10px
+  font-size: 10px;
 }
 
 .top-header .tooltip-inner {
@@ -1496,6 +1500,8 @@ ul.nostyle i {
 #tb-rewarding-mid1 {
   background-image: url("../assets/home/appreciado-rewarding.jpg");
   background-repeat: no-repeat;
+  z-index: 999999;
+  position: relative;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -1998,9 +2004,15 @@ ul.nostyle i {
 }
 .mar-top-m5 {
   margin-top: -5em
+
 }
 .mar-top-m9 {
   margin-top: -9em
+}
+
+.vid_size {
+  margin-top: -5em;
+  margin-bottom: -10em;
 }
 
 .font-AmsiProCB {
