@@ -18,18 +18,20 @@
     <div class="container">
         <div class="row">
           <div class="col-sm-12 pad-top2 pad-bot3">
-            <%= form_for @contact, class: "form-horizontal" do |f| %>
-            
+           <%= form_tag('https://cs51.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8') %>
+            <input type="hidden" value="00D4B0000008t7C" name="oid">
+            <input type="hidden" value="<%= request.original_url %>" name="retURL">
+             <input type="hidden" value="1" name="debug">
                     <div class="form-group">
                         <div class="row">
                             <div class="text-right col-md-4"><h4>YOUR TITLE:</h4></div>
                             <div class="col-md-6 text-left">
                                 <div class="row">
                                <label class="checkbox-inline">
-                    <h4>DOCTOR <%= f.radio_button :radio_option, "Doctor", checked: true %></h4>
+                    <h4>DOCTOR <%= radio_button_tag '00N61000005nsvw', 'Doctor', checked: true%></h4>
                                </label>
                                <label class="checkbox-inline">
-                    <h4>ASSISTANT <%= f.radio_button :radio_option, "Assistant" %></h4>
+                    <h4>ASSISTANT <%= radio_button_tag '00N61000005nsvw', "Assistant" %></h4>
                                </label>
                                </div>
                             </div>
@@ -39,7 +41,7 @@
                         <div class="row">
                             <div class="text-right col-md-4"><h4>FIRST NAME:</h4></div>
                             <div class="col-md-6">
-                                <%= f.text_field :fname, type: "text", tabindex: "1", class: "form-control" %>
+                                <%= text_field_tag 'first_name',nil, tabindex: "1", class: "form-control"  %>
                             </div>
                         </div>
                     </div>
@@ -47,7 +49,7 @@
                         <div class="row">
                             <div class="text-right col-md-4"><h4>LAST NAME:</h4></div>
                             <div class="col-md-6">
-                                <%= f.text_field :lname, type: "text", tabindex: "1", class: "form-control" %>
+                                <%= text_field_tag 'last_name',nil, tabindex: "1", class: "form-control"  %>
                             </div>
                         </div>
                     </div>
@@ -55,7 +57,7 @@
                         <div class="row">
                             <div class="text-right col-md-4"><h4>OFFICE NUMBER:</h4></div>
                             <div class="col-md-6">
-                                <%= f.number_field :phone, type: "tel", tabindex: "3", class: "form-control" %>
+                                <%= text_field_tag 'mobile',nil, tabindex: "3", class: "form-control"  %>
                             </div>
                         </div>
                     </div>
@@ -63,7 +65,7 @@
                         <div class="row">
                             <div class="text-right col-md-4"><h4>EMAIL:</h4></div>
                             <div class="col-md-6">                                
-                                <%= f.text_field :email, type: "email", tabindex: "2", class: "form-control" %>
+                                <%= text_field_tag 'email',nil, tabindex: "2", class: "form-control" %>
                             </div>
                         </div>
                     </div>                        
@@ -71,223 +73,19 @@
                         <div class="row">
                             <div class="text-right col-md-4"><h4>WHAT CAN WE<br>HELP YOU<br>WITH?:</h4></div>
                             <div class="col-md-6">
-                                <%= f.text_area :message, type: "text", tabindex: "4", class: "form-control", rows: "8" %>
+                                <%= text_area_tag '00N61000007LxCF',nil, tabindex: "4", class: "form-control",rows: "8"  %>
                             </div>
                         </div>
                     </div>                        
                     <div class="form-group">
                         <div class="col-md-offset-3 col-md-7 text-right pad-top1">
-                                <%= f.submit 'Submit', tabindex: "5", :class => 'btn-pink' %>                  
+                                <%= submit_tag 'Submit', tabindex: "4", class: "btn-pink" %>                  
                         </div>
                     </div>
                 
 
-            <% end %>
+          
           </div>
         </div>
     </div>
 </section>
-
-<section id="support-mid1 hidden">
-  <div class="container hidden">
-    <div class="row pad-top2">
-      <div class="col-md-12 pad-lr12">
-        <div class="row">
-          <div class="col-md-4">
-            <a href="#please-call-me" data-toggle="modal">
-              <div class="thumbnail text-center">
-                <i class="fa fa-mobile fa-3x"></i>
-
-                <div class="caption">
-                  <h1>PLEASE CALL ME</h1>
-
-                  <p>Once you submit your details, we will give you a call right away.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <%= link_to("
-                        <div class='thumbnail text-center'>
-                            <i class='fa fa-calendar fa-3x'></i>
-                            <div class='caption'>
-                                <h1>SCHEDULE A CALL</h1>
-                                <p>Book a time with our centre to call you when it's convenient.</p>
-                            </div>
-                        </div>
-                        ".html_safe, support_schedule_path, method: :get) %>
-          </div>
-          <div class="col-md-4">
-            <a href="#call-u-later" data-toggle="modal">
-              <div class="thumbnail text-center">
-                <i class="fa fa-clock-o fa-3x"></i>
-
-                <div class="caption">
-                  <h1>I'LL CALL U LATER</h1>
-
-                  <p>Call us when you're ready. We'll be waiting by the phone.</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Modal PLEASE CALL ME -->
-<div class="modal-blue">
-  <div class="modal fade" id="please-call-me" tabindex="-1" role="dialog" aria-labelledby="myModalLabelCallMe">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close fa-4x" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span></button>
-          <h1 class="modal-title text-center" id="myModalLabelCallMe">WE'LL CALL YOU</h1>
-
-          <h3 class="font-AmsiProCR text-center">PLEASE CONFIRM YOUR INFORMATION</h3>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <div class="text-right col-md-4 pad-top1"><h4>YOUR TITLE:</h4></div>
-              <div class="col-md-6 text-left">
-                <div class="row">
-                  <label class="checkbox-inline">
-                    <h4>DOCTOR <input type="radio" name="optionRadiosinline" id="optionRadios1"
-                                      value="DOCTOR" checked></h4>
-                  </label>
-                  <label class="checkbox-inline">
-                    <h4>ASSISTANT <input type="radio" name="optionRadiosinline" id="optionRadios2"
-                                         value="ASSISTANT"></h4>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="text-right col-md-4"><h4>FIRST NAME:</h4></div>
-              <div class="col-md-4">
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-            <div class="form-group">
-              <div class="text-right col-md-4"><h4>LAST NAME:</h4></div>
-              <div class="col-md-4">
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-            <div class="form-group">
-              <div class="text-right col-md-4"><h4>OFFICE NUMBER:</h4></div>
-              <div class="col-md-4">
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-            <div class="form-group">
-              <div class="text-right col-md-4"><h4>EMAIL:</h4></div>
-              <div class="col-md-4">
-                <input type="email" class="form-control">
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-            <div class="form-group">
-              <div class="text-right col-md-4"><h4>WHAT CAN WE<br>HELP YOU<br>WITH?:</h4></div>
-              <div class="col-md-4">
-                <textarea class="form-control" rows="5"></textarea>
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-            <div class="form-group">
-              <div class="col-md-offset-3 col-md-5 text-right pad-top1">
-                <button type="submit" class="btn-white"><span>SUBMIT</span></button>
-              </div>
-            </div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal I'LL CALL U LATER -->
-<div class="modal-blue">
-  <div class="modal fade" id="call-u-later" tabindex="-1" role="dialog" aria-labelledby="myModalLabelCallYouLater">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close fa-4x" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span></button>
-          <h1 class="modal-title text-center" id="myModalLabelCallYouLater">I'LL CALL U LATER</h1>
-
-          <h3 class="font-AmsiProCR text-center">PLEASE CONFIRM YOUR INFORMATION</h3>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <div class="text-right col-md-4 pad-top1"><h4>YOUR TITLE:</h4></div>
-              <div class="col-md-6 text-left">
-                <div class="row">
-                  <label class="checkbox-inline">
-                    <h4>DOCTOR <input type="radio" name="optionRadiosinline" id="optionRadios1"
-                                      value="DOCTOR" checked></h4>
-                  </label>
-                  <label class="checkbox-inline">
-                    <h4>ASSISTANT <input type="radio" name="optionRadiosinline" id="optionRadios2"
-                                         value="ASSISTANT"></h4>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="text-right col-md-4"><h4>FIRST NAME:</h4></div>
-              <div class="col-md-4">
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-            <div class="form-group">
-              <div class="text-right col-md-4"><h4>LAST NAME:</h4></div>
-              <div class="col-md-4">
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-            <div class="form-group">
-              <div class="text-right col-md-4"><h4>OFFICE NUMBER:</h4></div>
-              <div class="col-md-4">
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-            <div class="form-group">
-              <div class="text-right col-md-4"><h4>EMAIL:</h4></div>
-              <div class="col-md-4">
-                <input type="email" class="form-control">
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-            <div class="form-group">
-              <div class="text-right col-md-4"><h4>WHAT CAN WE<br>HELP YOU<br>WITH?:</h4></div>
-              <div class="col-md-4">
-                <textarea class="form-control" rows="5"></textarea>
-              </div>
-              <div class="col-md-4"></div>
-            </div>
-            <div class="form-group">
-              <div class="col-md-offset-3 col-md-5 text-right pad-top1">
-                <button type="submit" class="btn-white"><span>SUBMIT</span></button>
-              </div>
-            </div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
