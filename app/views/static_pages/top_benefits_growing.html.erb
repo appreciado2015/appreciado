@@ -1,22 +1,6 @@
 <%= content_for :benefits_modal do %>
-<!--
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-    
-    var url = $("#GrowingHowitworks").attr('src');
-    
-    $("#myModalGrowingHowitworks").on('hide.bs.modal', function(){
-        $("#GrowingHowitworks").attr('src', '');
-    });
-    
-    $("#myModalGrowingHowitworks").on('show.bs.modal', function(){
-        $("#GrowingHowitworks").attr('src', url);
-    });
-});
-</script>
-
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -28,6 +12,22 @@ $(document).ready(function(){
     
     $("#myModalWhatItIs").on('show.bs.modal', function(){
         $("#WhatItIs").attr('src', url);
+    });
+});
+</script>
+
+<!--
+<script type="text/javascript">
+$(document).ready(function(){
+    
+    var url = $("#GrowingHowitworks").attr('src');
+    
+    $("#myModalGrowingHowitworks").on('hide.bs.modal', function(){
+        $("#GrowingHowitworks").attr('src', '');
+    });
+    
+    $("#myModalGrowingHowitworks").on('show.bs.modal', function(){
+        $("#GrowingHowitworks").attr('src', url);
     });
 });
 </script>
@@ -55,7 +55,7 @@ $(document).ready(function(){
     <div class="container">
         <div class="row">            
             <div class="col-sm-12 text-center pad-top13">
-        <a href="#"> <span class="fa fa-play-circle-o fa-9x"></span><p>play me</p></a>
+                <a href="#myModalWhatItIs" data-toggle="modal"><span class="fa fa-play-circle-o fa-9x"></span><p>play me</p></a>
             </div>
         </div>
     </div>
@@ -216,23 +216,25 @@ $(document).ready(function(){
 </div>
 
     <!--What It Is Video Top -->
-    <!-- <div class="text-center modal-sky pad-top2 pad-bot1">
+    <div class="text-center modal-sky pad-top2 pad-bot1">
         <div class="bs-example">                         
             <div id="myModalWhatItIs" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close fa-4x" data-dismiss="modal" aria-hidden="true">×</button>
-                            <h2 class="modal-title">What It Is</h2>
+                            <h2 class="modal-title">DENTIST</h2>
                         </div>
                         <div class="modal-body">
-                            <iframe id="MiteGiuffre" width="560" height="315" src="https://www.youtube.com/embed/Nci9e1lHtwY" frameborder="0" allowfullscreen></iframe>
+                            
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_1nmnzoogiz videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- How It Works Video Bottom -->
     <!-- <div class="text-center modal-sky">

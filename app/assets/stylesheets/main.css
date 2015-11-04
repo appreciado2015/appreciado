@@ -2305,6 +2305,10 @@ button:hover
     transform:rotate(90deg);
 }
 
+.bs-example .modal {
+  z-index: 999999;
+}
+
 /*How it works - points*/
 
 .howitworks-point{
