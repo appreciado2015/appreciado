@@ -1567,7 +1567,7 @@ ul.nostyle i {
   font-size: 26px
 }
 #tb-rewarding-mid2 .caption {
-  padding: 3em 0 6em 2em
+  padding: 3em 0 7em 2em
 }
 #tb-rewarding-mid2 .c-caption {
   padding: 2em 0 1em 0
@@ -2219,7 +2219,10 @@ textarea:active,
 textarea:focus,
 button:focus,
 button:active,
-button:hover
+button:hover,
+a:focus,
+a:active,
+a:hover
 {
     outline:0px !important;
     -webkit-appearance:none
