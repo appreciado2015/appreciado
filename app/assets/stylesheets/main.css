@@ -1057,6 +1057,16 @@ ul.nostyle i {
   height: 700px;
 }
 
+#demo1 {
+  background-image: url("../assets/demo1.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 700px;
+}
+
 
 /******* TOP PART *******/
 #top-top h1 {
