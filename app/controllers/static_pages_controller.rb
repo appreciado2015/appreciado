@@ -41,4 +41,8 @@ class StaticPagesController < ApplicationController
 
   def thankyou    
   end
+
+  def demo
+    render :layout => 'demo'
+  end
 end
