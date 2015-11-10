@@ -1949,6 +1949,22 @@ ul.nostyle i {
     border: 2px solid #41A2AE
 }
 
+/******** PRIVACY ********/
+#privacy h3 {
+  color: #41A2AE;
+}
+
+/******** TERMS & CONDITION ********/
+#terms h2 {
+  color: #8F8F95;
+}
+#terms h3 {
+  color: #41A2AE;
+}
+#terms h4 {
+  color: #8F8F95;
+}
+
 /******** THANK YOU ********/
 
 #thankyou-mid1 h1, #thankyou-mid1 h2 {

@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   match '/question-support', to: 'static_pages#support_question', via: 'get', as: :support_question
   match '/purchase', to: 'static_pages#purchase', via: 'get', as: :purchase
   match '/thank-you', to: 'static_pages#thankyou', via: 'get', as: :thankyou
+  match '/privacy', to: 'static_pages#privacy', via: 'get', as: :privacy
+  match '/terms-condition', to: 'static_pages#terms', via: 'get', as: :terms
 
   resources :contacts
 

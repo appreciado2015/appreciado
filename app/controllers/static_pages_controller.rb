@@ -42,6 +42,12 @@ class StaticPagesController < ApplicationController
   def thankyou    
   end
 
+  def privacy    
+  end
+
+  def terms    
+  end
+
   def demo
     render :layout => 'demo'
   end
