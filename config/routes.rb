@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  root 'static_pages#demo'
+  root 'static_pages#top_benefits'
 
   match '/index', to: 'static_pages#top_benefits', via: 'get', as: :top_benefits
   match '/scheduling-coordinators', to: 'static_pages#top_benefits_connecting', via: 'get', as: :top_benefits_connecting
