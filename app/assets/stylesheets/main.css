@@ -1571,7 +1571,7 @@ ul.nostyle i {
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  min-height: 400px
+  min-height: 480px
 }
 
 #tb-rewarding-mid3 {
@@ -2415,4 +2415,7 @@ a:hover
 
 .submit-button{
     background-color: #41A2AE;
+}
+.ani-font-height{
+    line-height: 1.6;
 }
