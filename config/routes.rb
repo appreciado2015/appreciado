@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   match '/purchase', to: 'static_pages#purchase', via: 'get', as: :purchase
   match '/thank-you', to: 'static_pages#thankyou', via: 'get', as: :thankyou
   match '/privacy', to: 'static_pages#privacy', via: 'get', as: :privacy
-  match '/terms-condition', to: 'static_pages#terms', via: 'get', as: :terms
+  match '/terms-conditions', to: 'static_pages#terms', via: 'get', as: :terms
 
   resources :contacts
 
