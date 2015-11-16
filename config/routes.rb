@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'static_pages#demo'
 
   match '/index', to: 'static_pages#top_benefits', via: 'get', as: :top_benefits
-  match '/scheduling-coordinators', to: 'static_pages#top_benefits_connecting', via: 'get', as: :top_benefits_connecting
+  match '/dental-office-managers', to: 'static_pages#top_benefits_connecting', via: 'get', as: :top_benefits_connecting
   match '/dental-practices', to: 'static_pages#top_benefits_growing', via: 'get', as: :top_benefits_growing
   match '/your-patients', to: 'static_pages#top_benefits_rewarding', via: 'get', as: :top_benefits_rewarding
   match '/who-are-we', to: 'static_pages#about', via: 'get', as: :about
