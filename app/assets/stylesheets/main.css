@@ -2408,6 +2408,7 @@ a:hover
     margin-left: -15px;
     padding-top: 42px;
     line-height: 37px;
+    word-spacing: 0px;
 }
 .white-font{
     color: #ffffff !important;
