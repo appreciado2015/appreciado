@@ -1571,7 +1571,7 @@ ul.nostyle i {
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  min-height: 480px
+  min-height: 500px
 }
 
 #tb-rewarding-mid3 {
@@ -1791,7 +1791,7 @@ ul.nostyle i {
 /******** Team ********/
 #team-about p {
   font-size: 18px;
-  display: inline
+  /* display: inline */
 }
 #team-about .pr-ul ul {
   padding: 10em 3em 0 0;
@@ -2137,6 +2137,13 @@ ul.nostyle i {
   background: #53C9FF
 }
 
+.glich {
+  position: absolute;
+  z-index: 999999;
+  height: 11.5em;
+  width: 100%;
+}
+
 .fa-9x {
     font-size: 9em
 }
@@ -2408,7 +2415,6 @@ a:hover
     margin-left: -15px;
     padding-top: 42px;
     line-height: 37px;
-    word-spacing: 0px;
 }
 .white-font{
     color: #ffffff !important;
@@ -2417,6 +2423,4 @@ a:hover
 .submit-button{
     background-color: #41A2AE;
 }
-.ani-font-height{
-    line-height: 1.6;
-}
+
