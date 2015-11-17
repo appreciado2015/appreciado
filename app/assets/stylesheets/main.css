@@ -172,7 +172,7 @@ ul.nostyle i {
     background-image: url("../assets/bar.jpg");
     background-repeat: repeat;
     min-height: 50px;
-    z-index: 999999;
+    z-index: 99999;
     position: relative;
 }
 #header .navbar-nav img {
