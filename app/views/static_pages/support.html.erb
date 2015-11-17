@@ -9,86 +9,84 @@
 
         <!-- <p>WE HAVE PROVIDED A NUMBER OF WAYS FOR YOU TO GET INTO<br>CONTACT WITH US AT THE CENTRE....</p> -->
 
-        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="support-form">
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-12 pad-top2 pad-bot3">
-           <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-            <input type="hidden" value="00D4B0000008t7C" name="oid">
-            <input type="hidden" value="<%= request.original_url %>" name="retURL">
-             <input type="hidden" value="0" name="debug">
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="text-right col-md-4"><h4>YOUR TITLE:</h4></div>
-                            <div class="col-md-6 text-left">
-                                <div class="row">
-                               <label class="checkbox-inline">
-                    <h4>DOCTOR <%= radio_button_tag '00N61000005nsvw', "Doctor", checked: true%></h4>
-                               </label>
-                               <label class="checkbox-inline">
-                    <h4>ASSISTANT <%= radio_button_tag '00N61000005nsvw', "Assistant" %></h4>
-                               </label>
-                               <label class="checkbox-inline">
-                    <h4>OFFICE MANAGER <%= radio_button_tag '00N61000005nsvw', "Office Manager"%></h4>
-                               </label>
-                               </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="text-right col-md-4"><h4>FIRST NAME:</h4></div>
-                            <div class="col-md-6">
-                                <%= text_field_tag 'first_name',nil, tabindex: "1", class: "form-control"  %>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="text-right col-md-4"><h4>LAST NAME:</h4></div>
-                            <div class="col-md-6">
-                                <%= text_field_tag 'last_name',nil, tabindex: "1", class: "form-control"  %>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="text-right col-md-4"><h4>OFFICE NUMBER:</h4></div>
-                            <div class="col-md-6">
-                                <%= text_field_tag 'mobile',nil, tabindex: "3", class: "form-control"  %>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="text-right col-md-4"><h4>EMAIL:</h4></div>
-                            <div class="col-md-6">                                
-                                <%= text_field_tag 'email',nil, tabindex: "2", class: "form-control" %>
-                            </div>
-                        </div>
-                    </div>                        
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="text-right col-md-4"><h4>WHAT CAN WE<br>HELP YOU<br>WITH?:</h4></div>
-                            <div class="col-md-6">
-                                <%= text_area_tag '00N61000007LxCF',nil, tabindex: "4", class: "form-control",rows: "8"  %>
-                            </div>
-                        </div>
-                    </div>                      
-                    <div class="form-group">
-                        <div class="col-md-offset-3 col-md-7 text-right pad-top1">
-                                <%= submit_tag 'Submit', tabindex: "4", class: "btn-pink" %>                  
-                        </div>
-                    </div>
-                
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 pad-top2 pad-bot3">
+        <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+          <input type="hidden" value="00D4B0000008t7C" name="oid">
+          <input type="hidden" value="<%= request.original_url %>" name="retURL">
+          <input type="hidden" value="0" name="debug">
 
-          
+          <div class="form-group">
+            <div class="row">
+              <div class="text-right col-md-4"><h4>YOUR TITLE:</h4></div>
+              <div class="col-md-6 text-left">
+                <div class="row">
+                  <label class="checkbox-inline">
+                    <h4>DOCTOR <%= radio_button_tag '00N61000005nsvw', "Doctor", checked: true %></h4>
+                  </label>
+                  <label class="checkbox-inline">
+                    <h4>ASSISTANT <%= radio_button_tag '00N61000005nsvw', "Assistant" %></h4>
+                  </label>
+                  <label class="checkbox-inline">
+                    <h4>OFFICE MANAGER <%= radio_button_tag '00N61000005nsvw', "Office Manager" %></h4>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="text-right col-md-4"><h4>FIRST NAME:</h4></div>
+              <div class="col-md-6">
+                <%= text_field_tag 'first_name', nil, tabindex: "1", class: "form-control" %>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="text-right col-md-4"><h4>LAST NAME:</h4></div>
+              <div class="col-md-6">
+                <%= text_field_tag 'last_name', nil, tabindex: "1", class: "form-control" %>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="text-right col-md-4"><h4>OFFICE NUMBER:</h4></div>
+              <div class="col-md-6">
+                <%= text_field_tag 'mobile', nil, tabindex: "2", maxlength: 10, class: "form-control" %>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="text-right col-md-4"><h4>EMAIL:</h4></div>
+              <div class="col-md-6">
+                <%= email_field_tag 'email', nil, tabindex: "3", class: "form-control" %>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="text-right col-md-4"><h4>WHAT CAN WE<br>HELP YOU<br>WITH?:</h4></div>
+              <div class="col-md-6">
+                <%= text_area_tag '00N61000007LxCF', nil, tabindex: "4", class: "form-control", rows: "8" %>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-offset-3 col-md-7 text-right pad-top1">
+              <%= submit_tag 'Submit', tabindex: "4", class: "btn-pink" %>
+            </div>
+          </div>
+      </div>
     </div>
+  </div>
 </section>
