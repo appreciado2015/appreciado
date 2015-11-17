@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   match '/dental-office-managers', to: 'static_pages#top_benefits_connecting', via: 'get', as: :top_benefits_connecting
   match '/dental-practices', to: 'static_pages#top_benefits_growing', via: 'get', as: :top_benefits_growing
   match '/your-patients', to: 'static_pages#top_benefits_rewarding', via: 'get', as: :top_benefits_rewarding
-  match '/who-are-we', to: 'static_pages#about', via: 'get', as: :about
+  match '/who-we-are', to: 'static_pages#about', via: 'get', as: :about
   match '/team', to: 'static_pages#about_team', via: 'get', as: :about_team
   match '/partners', to: 'static_pages#partners', via: 'get', as: :partners
   match '/contact', to: 'static_pages#contact', via: 'get', as: :contact
