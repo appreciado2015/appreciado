@@ -1,0 +1,122 @@
+
+/****** Footer ******/
+@media screen and (min-width:431px) and (max-width:767px) {
+	#footer {
+  		background-image: url("../assets/footer-bg-r.jpg");
+  		background-repeat: no-repeat;
+  		-webkit-background-size: 100%;
+  		-moz-background-size: 100%;
+  		-o-background-size: 100%;
+  		background-size: 100%;
+  		color: #fff;
+  		padding-top: 2em;
+  		padding-bottom: 0;
+  	}
+}
+
+@media screen and (max-width: 430px) {
+	#footer {
+  		background-image: url("../assets/footer-bg-r1.jpg");
+		background-repeat: no-repeat;
+	  	-webkit-background-size: 100%;
+	  	-moz-background-size: 100%;
+	  	-o-background-size: 100%;
+	  	background-size: 100%;
+	  	color: #fff;
+	  	padding-top: 2em;
+	  	padding-bottom: 0;
+  	}
+}
+
+/******* TOP PART *******/
+@media screen and (max-width: 767px) {
+	#top-top h1 {
+  		font-size: 40px;
+  		padding: 0.2em 0 0.2em 0
+}
+}
+
+/******* ABOUT *******/
+@media screen and (max-width: 910px) {
+	#about-mid1 h3 {
+    	font-size: 20px;
+	}
+}
+
+/******* Top Benefits Rewarding / Patients*******/
+@media screen and (max-width: 991px) {
+	#tb-rewarding-mid1 h1 {
+	    font-size: 40px;
+	}
+}
+@media screen and (max-width: 991px) {
+	#tb-rewarding-mid1 .pad-top5 {
+		padding-top: 1em;
+	}
+}
+@media screen and (max-width: 680px) {
+	#tb-rewarding-mid1 h1 {
+    font-size: 32px;
+}
+#tb-rewarding-mid1 h3 {
+    font-size: 16px;
+}
+}
+@media screen and (max-width: 767px) {
+	#tb-rewarding-mid1 {
+  		background-image: url("../assets/home/appreciado-rewarding-r.jpg");
+  		background-repeat: no-repeat;
+  		z-index: 999999;
+  		position: relative;
+  		-webkit-background-size: 100%;
+  		-moz-background-size: 100%;
+  		-o-background-size: 100%;
+  		background-size: 100%;
+  		min-height: 200px
+	}
+}
+
+@media screen and (max-width: 550px) {
+	#tb-rewarding-mid1 {
+  		background-image: url("../assets/home/appreciado-rewarding-r1.jpg");
+  		background-repeat: no-repeat;
+  		z-index: 999999;
+  		position: relative;
+  		-webkit-background-size: 100%;
+  		-moz-background-size: 100%;
+  		-o-background-size: 100%;
+  		background-size: 100%;
+  		min-height: 200px
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#tb-rewarding-mid1 .pad-top5 {
+		padding-top: 0.2em;
+	}
+	#tb-rewarding-mid1 h1 {
+	    font-size: 24px;
+	    margin-top: 10px;
+	}
+	#tb-rewarding-mid1 h3 {
+	    font-size: 16px;
+	    margin-top: 10px;
+	}
+}
+/******* SUPPORT *******/
+@media screen and (max-width: 767px) {
+	#support-form .text-right {
+		text-align: left;
+	}
+	#support-form h4 {
+  		font-size: 18px;
+	}
+}
+
+/******* General *******/
+@media screen and (max-width: 991px) {
+	.vid_size {
+    margin-top: -2em;
+    margin-bottom: 0em;
+	}
+}
