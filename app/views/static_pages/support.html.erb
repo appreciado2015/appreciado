@@ -25,8 +25,8 @@
           <input type=hidden name="00N4B000000MaXT" id="00N4B000000MaXT" value="General Lead">
           <div class="form-group">
             <div class="row">
-              <div class="text-right col-md-4"><h4>YOUR TITLE:</h4></div>
-              <div class="col-md-6 text-left">
+              <div class="text-right col-sm-4"><h4>YOUR TITLE:</h4></div>
+              <div class="col-sm-6 text-left">
                 <div class="row">
                   <label class="checkbox-inline">
                     <h4>OFFICE MANAGER <%= radio_button_tag '00N61000005nsvw', "Office Manager", checked: true %></h4>
@@ -40,46 +40,46 @@
           </div>
           <div class="form-group">
             <div class="row">
-              <div class="text-right col-md-4"><h4>FIRST NAME:</h4></div>
-              <div class="col-md-6">
+              <div class="text-right col-sm-4"><h4>FIRST NAME:</h4></div>
+              <div class="col-sm-6">
                 <%= text_field_tag 'first_name', nil, tabindex: "1", class: "form-control", required: true, oninvalid: "setCustomValidity('First name can not be blank')", onchange: "try{setCustomValidity('')}catch(e){}" %>
               </div>
             </div>
           </div>
           <div class="form-group">
             <div class="row">
-              <div class="text-right col-md-4"><h4>LAST NAME:</h4></div>
-              <div class="col-md-6">
+              <div class="text-right col-sm-4"><h4>LAST NAME:</h4></div>
+              <div class="col-sm-6">
                 <%= text_field_tag 'last_name', nil, tabindex: "2", class: "form-control", required: true, oninvalid: "setCustomValidity('Last name can not be blank')", onchange: "try{setCustomValidity('')}catch(e){}" %>
               </div>
             </div>
           </div>
           <div class="form-group">
             <div class="row">
-              <div class="text-right col-md-4"><h4>OFFICE NUMBER:</h4></div>
-              <div class="col-md-6">
+              <div class="text-right col-sm-4"><h4>OFFICE NUMBER:</h4></div>
+              <div class="col-sm-6">
                 <%= text_field_tag 'mobile', nil, tabindex: "3",minlength:10, maxlength: 10, placeholder: 'ie:4035115151', class: "form-control", required: true, pattern: "[0-9]+",  oninvalid: "setCustomValidity('Mobile number must be 10 digit')", onchange: "try{setCustomValidity('')}catch(e){}" %>
               </div>
             </div>
           </div>
           <div class="form-group">
             <div class="row">
-              <div class="text-right col-md-4"><h4>EMAIL:</h4></div>
-              <div class="col-md-6">
+              <div class="text-right col-sm-4"><h4>EMAIL:</h4></div>
+              <div class="col-sm-6">
                 <%= email_field_tag 'email', nil, tabindex: "4", class: "form-control", required: true, oninvalid: "setCustomValidity('Please use email format')", onchange: "try{setCustomValidity('')}catch(e){}" %>
               </div>
             </div>
           </div>
           <div class="form-group">
             <div class="row">
-              <div class="text-right col-md-4"><h4>WHAT CAN WE<br>HELP YOU<br>WITH?:</h4></div>
-              <div class="col-md-6">
+              <div class="text-right col-sm-4"><h4>WHAT CAN WE<br>HELP YOU<br>WITH?:</h4></div>
+              <div class="col-sm-6">
                 <%= text_area_tag '00N61000007LxCF', nil, tabindex: "5", class: "form-control", rows: "8", required: true, oninvalid: "setCustomValidity('Message can not be blank')", onchange: "try{setCustomValidity('')}catch(e){}" %>
               </div>
             </div>
           </div>
           <div class="form-group">
-            <div class="col-md-offset-3 col-md-7 text-right pad-top1">
+            <div class="col-sm-offset-3 col-sm-7 text-right pad-top1">
               <%= submit_tag 'Submit', tabindex: "6", class: "btn-pink" %>
             </div>
           </div>
