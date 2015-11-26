@@ -1,5 +1,6 @@
 
 /****** Footer ******/
+
 @media screen and (min-width:431px) and (max-width:767px) {
 	#footer {
   		background-image: url("../assets/footer-bg-r.jpg");
@@ -11,6 +12,9 @@
   		color: #fff;
   		padding-top: 2em;
   		padding-bottom: 0;
+  	}
+  	.glich {
+  		height: 11em;
   	}
 }
 
@@ -42,7 +46,172 @@
     	font-size: 20px;
 	}
 }
+/******* TOP BENEFITS / index *******/
 
+@media screen and (max-width: 767px) {
+	#top-benefits-mid1 {
+  		color: #fff;
+  		background-image: url("../assets/home/fostering-caring-relationship-r1.png");
+  		background-repeat: no-repeat;
+  		-webkit-background-size: 100%;
+  		-moz-background-size: 100%;
+  		-o-background-size: 100%;
+  		background-size: 100%;
+  		border-top: 3px solid #fff;
+  		border-bottom: 3px solid #fff;
+	}
+}
+@media screen and (min-width:601px) and (max-width:767px) {
+#top-benefits-mid1 {
+  	min-height: 325px;
+	}
+}
+@media screen and (min-width:501px) and (max-width:600px) {
+#top-benefits-mid1 {
+  	min-height: 270px;
+	}
+}
+@media screen and  (max-width:500px) {
+#top-benefits-mid1 {
+  	min-height: 160px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+	#top-benefits-mid1 {
+  		color: #fff;
+  		background-image: url("../assets/home/fostering-caring-relationship-r.png");
+  		background-repeat: no-repeat;
+  		-webkit-background-size: 100%;
+  		-moz-background-size: 100%;
+  		-o-background-size: 100%;
+  		background-size: 100%;
+  		min-height: 500px;
+  		border-top: 3px solid #fff;
+  		border-bottom: 3px solid #fff;
+	}
+}
+
+@media screen and (min-width:1251px) and (max-width:1360px) {
+	#top-benefits-mid1 {
+  		min-height: 440px;
+	}
+}
+@media screen and (min-width:801px) and (max-width:1250px) {
+	#top-benefits-mid1 {
+  		min-height: 360px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:800px) {
+	#top-benefits-mid1 {
+  		min-height: 345px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1360px) {
+#top-benefits-mid1 .dropdown a > h1 {
+    font-size: 30px;
+	}
+}
+@media screen and (min-width:601px) and (max-width:767px) {
+#top-benefits-mid1 .dropdown a > h1 {
+    font-size: 30px;
+	}
+#top-benefits-mid1 .mar-top-m9 {
+    margin-top: -6em;
+	}
+}
+@media screen and (max-width:600px) {
+#top-benefits-mid1 .dropdown a > h1 {
+    font-size: 18px;
+	}
+#top-benefits-mid1 .mar-top-m9 {
+    margin-top: -3em;
+	}
+}
+@media screen and (min-width:401px) and (max-width:600px) {
+	#top-benefits-mid1 .pad-top10 {
+		padding-top: 7em;
+	}
+}
+@media screen and (max-width:400px) {
+	#top-benefits-mid1 .pad-top10 {
+		padding-top: 3em;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+#top-benefits-mid2 .dropdown a > h1 {
+    font-size: 24px;
+	}
+#top-benefits-mid2 .dropdown .mar-top-m9 {
+    margin-top: -4em;
+	}
+}
+@media screen and (min-width:601px) and (max-width:767px) {
+#top-benefits-mid2 .dropdown a > h1 {
+    font-size: 30px;
+	}
+#top-benefits-mid2 .mar-top-m9 {
+    margin-top: -6em;
+	}
+}
+@media screen and (max-width:600px) {
+#top-benefits-mid2 .dropdown a > h1 {
+    font-size: 18px;
+	}
+#top-benefits-mid2 .mar-top-m9 {
+    margin-top: -3em;
+	}
+}
+
+@media screen and (min-width:1201px) and (max-width:1360px) {
+	#mid2-img1, #mid2-img2 {
+  		min-height: 350px;
+	}
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+	#mid2-img1, #mid2-img2 {
+  		min-height: 280px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+	#mid2-img1, #mid2-img2 {
+  		min-height: 220px;
+	}
+}
+@media screen and (min-width:601px) and (max-width:767px) {
+	#mid2-img1 {
+  		min-height: 295px;
+	}
+}
+@media screen and (min-width:501px) and (max-width:600px) {
+	#mid2-img1 {
+  		min-height: 245px;
+	}
+}
+@media screen and (max-width:500px) {
+	#mid2-img1 {
+  		min-height: 145px;
+	}
+}
+@media screen and (min-width:501px) and (max-width:600px) {
+	#mid2-img2 {
+  		min-height: 345px;
+	}
+}
+@media screen and (min-width:401px) and (max-width:500px) {
+	#mid2-img2 {
+  		min-height: 275px;
+	}
+}
+@media screen and (max-width:400px) {
+	#mid2-img2 {
+  		min-height: 205px;
+	}
+}
+@media screen and (max-width:500px) {
+	#top-benefits-mid2 #revenue .z1 {
+    padding-top: 3em;
+	}
+}
 /******* Top Benefits Connecting / scheduling*******/
 
 @media screen and (max-width: 991px) {
@@ -146,7 +315,14 @@
     padding: 10em 0 11em 2em;
 	}
 }
-
+@media screen and (max-width: 991px) {
+#tb-connecting-mid4 h2 {
+    font-size: 24px;
+	}
+#tb-connecting-mid4	h3 {
+    font-size: 18px;
+	}
+}
 @media screen and (min-width:992px) and (max-width:1360px) {
 #tb-connecting-mid4 .pad-top13 {
     padding-top: 7em;
@@ -160,6 +336,11 @@
 @media screen and (min-width:768px) and (max-width:850px) {
 #tb-connecting-mid4 .pad-top13 {
     padding-top: 2em;
+	}
+}
+@media screen and (max-width:500px) {
+#tb-connecting-mid4 .pad-top13 {
+    padding-top: 6em;
 	}
 }
 @media screen and (min-width:1201px) and (max-width:1360px) {
@@ -187,7 +368,17 @@
     min-height: 235px ;
 	}
 }
+@media screen and (max-width:500px) {
+#connect-mid4-img1, #connect-mid4-img2, #connect-mid4-img3 {
+    min-height: 270px ;
+	}
+}
 
+@media screen and (max-width:767px) {
+#tb-connecting-mid4 #tb-connecting-mid4-p1 h2, #tb-connecting-mid4 #tb-connecting-mid4-p2 h2, #tb-connecting-mid4 #tb-connecting-mid4-p3 h2 {
+    margin-bottom: 0px;
+	}
+}
 /******* Top Benefits Growing / Dentist*******/
 
 @media screen and (max-width: 991px) {
@@ -203,6 +394,11 @@
 @media screen and (min-width:992px) and (max-width:1100px) {
 	#tb-growing-mid1 .pad-top5 {
 		padding-top: 2em;
+	}
+}
+@media screen and (max-width:500px) {
+#tb-growing-mid4 .pad-top13 {
+    padding-top: 6em;
 	}
 }
 @media screen and (max-width: 680px) {
@@ -280,7 +476,14 @@
     font-size: 56px;
 	}
 }
-
+@media screen and (max-width: 991px) {
+#tb-growing-mid4 h2 {
+    font-size: 24px;
+	}
+#tb-growing-mid4 h3 {
+    font-size: 18px;
+	}
+}
 @media screen and (min-width:992px) and (max-width:1360px) {
 #tb-growing-mid4 .pad-top13 {
     padding-top: 7em;
@@ -321,6 +524,17 @@
     min-height: 235px ;
 	}
 }
+@media screen and (max-width:500px) {
+#grow-mid4-img1, #grow-mid4-img2, #grow-mid4-img3 {
+    min-height: 270px ;
+	}
+}
+
+@media screen and (max-width:767px) {
+#tb-growing-mid4 #tb-growing-mid4-p1 h2, #tb-growing-mid4 #tb-growing-mid4-p2 h2, #tb-growing-mid4 #tb-growing-mid4-p3 h2 {
+    margin-bottom: 0px;
+	}
+}
 
 /******* Top Benefits Rewarding / Patients*******/
 
@@ -332,6 +546,11 @@
 @media screen and (max-width: 991px) {
 	#tb-rewarding-mid1 .pad-top5 {
 		padding-top: 1em;
+	}
+}
+@media screen and (max-width:500px) {
+#tb-rewarding-mid4 .pad-top13 {
+    padding-top: 6em;
 	}
 }
 @media screen and (max-width: 680px) {
@@ -409,7 +628,14 @@
     font-size: 56px;
 	}
 }
-
+@media screen and (max-width: 991px) {
+#tb-rewarding-mid4 h2 {
+    font-size: 24px;
+	}
+#tb-rewarding-mid4 h3 {
+    font-size: 18px;
+	}
+}
 @media screen and (min-width:992px) and (max-width:1200px) {
 #tb-rewarding-mid4 .pad-top13 {
     padding-top: 8em;
@@ -448,6 +674,17 @@
 @media screen and (min-width:768px) and (max-width:840px) {
 #reward-mid4-img1, #reward-mid4-img2, #reward-mid4-img3 {
     min-height: 235px ;
+	}
+}
+@media screen and (max-width:500px) {
+#reward-mid4-img1, #reward-mid4-img2, #reward-mid4-img3 {
+    min-height: 270px ;
+	}
+}
+
+@media screen and (max-width:767px) {
+#tb-rewarding-mid4 #tb-rewarding-mid4-p1 h2, #tb-rewarding-mid4 #tb-rewarding-mid4-p2 h2, #tb-rewarding-mid4 #tb-rewarding-mid4-p3 h2 {
+    margin-bottom: 0px;
 	}
 }
 
