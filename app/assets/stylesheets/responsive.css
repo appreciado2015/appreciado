@@ -48,7 +48,7 @@
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: greenyellow;
     background-color: transparent;
-}
+	}
 }
 /****** Footer ******/
 
@@ -775,6 +775,7 @@
 @media screen and (max-width: 767px) {
 #terms .pad-top2 {
 	padding-top: 0;
+	}
 }
 
 /******* General *******/
