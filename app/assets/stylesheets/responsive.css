@@ -1,10 +1,15 @@
 /****** Top Header ******/
+@media screen and (max-width:767px) {
 .top-header {
     padding-right: 0;
     text-align: center;
+	}
 }
 /****** Nav bar ******/
 @media screen and (max-width:767px) {
+.navbar {
+	margin-bottom: 0px;
+}
 .navbar-default {
     background-image: url("../assets/bar.jpg");
     background-repeat: repeat;
@@ -26,7 +31,7 @@
     border: 0px solid transparent;
     border-radius: 4px;
 	}
-	.navbar-default .navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 	}
 
@@ -40,7 +45,7 @@
 .navbar-default .navbar-nav>li>a:hover {
     color: #ddd;
 	}
-	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     color: greenyellow;
     background-color: transparent;
 }
@@ -79,13 +84,18 @@
 }
 
 /******* TOP PART *******/
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 501px) and (max-width: 767px) {
 	#top-top h1 {
   		font-size: 40px;
   		padding: 0.2em 0 0.2em 0
+	}
 }
+@media screen and (max-width: 500px) {
+	#top-top h1 {
+		font-size: 36px;
+		padding: 0.1em 0 0.1em 0
+	}
 }
-
 /******* ABOUT *******/
 @media screen and (max-width: 910px) {
 	#about-mid1 h3 {
@@ -761,10 +771,34 @@
 	}
 }
 
+/******* Terms *******/
+@media screen and (max-width: 767px) {
+#terms .pad-top2 {
+	padding-top: 0;
+}
+
 /******* General *******/
 @media screen and (max-width: 991px) {
 	.vid_size {
     margin-top: -2em;
     margin-bottom: -4em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	h3 {
+		font-size: 16px;
+		font-weight: 600;
+	}
+	h4 {
+		font-size: 14px;
+	}
+}
+@media screen and (min-width: 501px) and (max-width: 767px) {
+	h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 16px;
 	}
 }
