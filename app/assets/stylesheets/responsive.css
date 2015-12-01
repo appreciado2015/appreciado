@@ -785,13 +785,16 @@
 /******* SUPPORT *******/
 @media screen and (max-width: 767px) {
 	#support-form .text-right {
-		text-align: left;
+		text-align: right;
 	}
 	#support-form h4 {
   		font-size: 13px;
 	}
 	#support-form .form-group .row {
 		margin: 0;
+	}
+	#support-form .form-group .checkbox-inline {
+		padding: 0;
 	}
 }
 
