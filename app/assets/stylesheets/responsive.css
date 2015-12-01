@@ -96,15 +96,10 @@
 		padding: 0.1em 0 0.1em 0
 	}
 }
-/******* ABOUT *******/
-@media screen and (max-width: 910px) {
-	#about-mid1 h3 {
-    	font-size: 20px;
-	}
-}
+
 /******* TOP BENEFITS / index *******/
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width:569px) and (max-width: 767px) {
 	#top-benefits-mid1 {
   		color: #fff;
   		background-image: url("../assets/home/fostering-caring-relationship-r1.png");
@@ -117,19 +112,37 @@
   		border-bottom: 3px solid #fff;
 	}
 }
-@media screen and (min-width:601px) and (max-width:767px) {
+@media screen and (min-width:320px) and (max-width:568px) {
+	#top-benefits-mid1 {
+  		color: #fff;
+  		background-image: url("../assets/home/fostering-caring-relationship-r568.jpg");
+  		background-repeat: no-repeat;
+  		-webkit-background-size: 100%;
+  		-moz-background-size: 100%;
+  		-o-background-size: 100%;
+  		background-size: 100%;
+  		border-top: 3px solid #fff;
+  		border-bottom: 3px solid #fff;
+	}
+}
+@media screen and (min-width:569px) and (max-width:767px) {
 #top-benefits-mid1 {
   	min-height: 325px;
 	}
 }
-@media screen and (min-width:501px) and (max-width:600px) {
+@media screen and (min-width:555px) and (max-width:568px) {
+#top-benefits-mid1 {
+  	min-height: 370px;
+	}
+}
+@media screen and (min-width:501px) and (max-width:554px) {
 #top-benefits-mid1 {
   	min-height: 270px;
 	}
 }
-@media screen and  (max-width:500px) {
+@media screen and (min-width:320px) and (max-width:500px) {
 #top-benefits-mid1 {
-  	min-height: 160px;
+  	min-height: 210px;
 	}
 }
 @media screen and (min-width:768px) and (max-width:991px) {
@@ -167,23 +180,32 @@
     font-size: 30px;
 	}
 }
-@media screen and (min-width:601px) and (max-width:767px) {
-#top-benefits-mid1 .dropdown a > h1 {
+@media screen and (min-width:569px) and (max-width:767px) {
+	#top-benefits-mid1 .pad-top10 {
+		padding-top: 0;
+	}
+	#top-benefits-mid1 .dropdown a > h1 {
     font-size: 30px;
 	}
-#top-benefits-mid1 .mar-top-m9 {
+	#top-benefits-mid1 .mar-top-m9 {
     margin-top: -6em;
 	}
 }
-@media screen and (max-width:600px) {
-#top-benefits-mid1 .dropdown a > h1 {
-    font-size: 18px;
+@media screen and (max-width:568px) {
+	#top-benefits-mid1 .pad-top10 {
+		padding-top: 0;
 	}
-#top-benefits-mid1 .mar-top-m9 {
-    margin-top: -3em;
+	#top-benefits-mid1 .dropdown a > h1 {
+    font-size: 20px;
+	}
+	#top-benefits-mid1 .dropdown a > h1 > span {
+    font-size: 16px;
+	}
+	#top-benefits-mid1 .mar-top-m9 {
+    margin-top: -6em;
 	}
 }
-@media screen and (min-width:401px) and (max-width:600px) {
+/*@media screen and (min-width:401px) and (max-width:600px) {
 	#top-benefits-mid1 .pad-top10 {
 		padding-top: 7em;
 	}
@@ -192,7 +214,8 @@
 	#top-benefits-mid1 .pad-top10 {
 		padding-top: 3em;
 	}
-}
+}*/
+
 @media screen and (min-width:768px) and (max-width:1200px) {
 #top-benefits-mid2 .dropdown a > h1 {
     font-size: 24px;
@@ -201,22 +224,40 @@
     margin-top: -4em;
 	}
 }
-@media screen and (min-width:601px) and (max-width:767px) {
-#top-benefits-mid2 .dropdown a > h1 {
+
+@media screen and (min-width:569px) and (max-width:767px) {
+	#top-benefits-mid2 #revenue .z1 {
+    padding-top: 0;
+	}
+	#appreciated .z1 {
+    padding-top: 0;
+	}
+	#top-benefits-mid2 .dropdown a > h1 {
     font-size: 30px;
 	}
-#top-benefits-mid2 .mar-top-m9 {
+	#top-benefits-mid2 .mar-top-m9 {
     margin-top: -6em;
 	}
 }
-@media screen and (max-width:600px) {
-#top-benefits-mid2 .dropdown a > h1 {
-    font-size: 18px;
+@media screen and (max-width:568px) {
+	#top-benefits-mid2 #revenue .z1 {
+    padding-top: 0;
 	}
-#top-benefits-mid2 .mar-top-m9 {
-    margin-top: -3em;
+	#appreciated .z1 {
+    padding-top: 0;
+	}
+	#top-benefits-mid2 .dropdown a > h1 {
+    font-size: 20px;
+	}
+	#top-benefits-mid2 .dropdown a > h1 > span {
+    font-size: 16px;
+	}
+	#top-benefits-mid2 .mar-top-m9 {
+    margin-top: -6em;
 	}
 }
+
+
 @media screen and (max-width:767px) {
 #top-benefits-mid2 .vr-r {
     border-right: 0px solid#fff;
@@ -239,41 +280,64 @@
   		min-height: 220px;
 	}
 }
-@media screen and (min-width:601px) and (max-width:767px) {
+
+@media screen and (min-width:569px) and (max-width:767px) {
 	#mid2-img1 {
-  		min-height: 295px;
+  background-image: url("../assets/home/dental-practices-r.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 295px
 	}
 }
-@media screen and (min-width:501px) and (max-width:600px) {
+@media screen and (max-width:568px) {
 	#mid2-img1 {
-  		min-height: 245px;
+  background-image: url("../assets/home/dental-practices-r568.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 290px;
 	}
 }
-@media screen and (max-width:500px) {
+@media screen and (min-width:320px) and (max-width:500px) {
 	#mid2-img1 {
-  		min-height: 145px;
+  		min-height: 180px;
 	}
 }
-@media screen and (min-width:501px) and (max-width:600px) {
+
+@media screen and (min-width:569px) and (max-width:767px) {
 	#mid2-img2 {
-  		min-height: 345px;
+  background-image: url("../assets/home/amazing-patients-r1.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 345px
 	}
 }
-@media screen and (min-width:401px) and (max-width:500px) {
+@media screen and (max-width:568px) {
 	#mid2-img2 {
-  		min-height: 275px;
+  background-image: url("../assets/home/amazing-patients-r568.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  min-height: 290px
 	}
 }
-@media screen and (max-width:400px) {
+@media screen and (min-width:320px) and (max-width:500px) {
 	#mid2-img2 {
-  		min-height: 205px;
+  		min-height: 180px;
 	}
 }
-@media screen and (max-width:500px) {
-	#top-benefits-mid2 #revenue .z1 {
-    padding-top: 3em;
-	}
-}
+
+
 /******* Top Benefits Connecting / scheduling*******/
 
 @media screen and (max-width: 991px) {
@@ -754,20 +818,54 @@
     margin-bottom: 0px;
 	}
 }
+
+/******* ABOUT *******/
+@media screen and (max-width: 910px) {
+	#about-mid1 h3 {
+    	font-size: 20px;
+	}
+}
+@media screen and (max-width: 767px) {
+#about-mid1 h3 {
+    font-size: 13px;
+	}
+}
+@media screen and (max-width: 910px) {
+	#about-mid1 .min-h650 {
+    	min-height: 450px;
+	}
+}
 /******** Team ********/
 @media screen and (max-width: 767px) {
-#team-about h1 {
-	text-align: center;
-	line-height: 1.5;
+	#team-about h1 {
+		text-align: center;
+		line-height: 1.5;
+		}
+	#team-about p {
+		font-size: 14px; 
+		line-height: 1.4;
 	}
 }
 /******* SUPPORT *******/
 @media screen and (max-width: 767px) {
-	#support-form .text-right {
-		text-align: left;
-	}
 	#support-form h4 {
-  		font-size: 18px;
+  		font-size: 10px;
+	}
+	#support-form .form-control {
+	   /* height: 24px;*/
+	    padding: 3px 6px;
+	    font-size: 12px;
+	    border: 1px solid #41A2AE;
+	}
+	.checkbox-inline {
+    	display: inline-block;
+    	padding-left: 10px; 
+    	margin-top: -10px;
+	}
+	.checkbox-inline+.checkbox-inline {
+    	margin-top: 0;
+    	margin-left: 0px;
+    	margin-top: -10px;
 	}
 }
 
@@ -801,5 +899,12 @@
 	}
 	h4 {
 		font-size: 16px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.btn-pink {
+    padding: 0.1em 1.5em 0.2em;
+    margin-bottom: 0;
+    font-size: 14px;
 	}
 }
