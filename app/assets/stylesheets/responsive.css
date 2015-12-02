@@ -69,7 +69,7 @@
   	}
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 380px) {
 	#footer {
   		background-image: url("../assets/footer-bg-r1.jpg");
 		background-repeat: no-repeat;
@@ -78,8 +78,8 @@
 	  	-o-background-size: 100%;
 	  	background-size: 100%;
 	  	color: #fff;
-	  	padding-top: 2em;
-	  	padding-bottom: 0;
+	  	padding-top: 6em;
+	  	padding-bottom: 1.6em;
   	}
 }
 
