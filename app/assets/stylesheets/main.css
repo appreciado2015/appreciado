@@ -1681,3 +1681,14 @@ a:hover
 .submit-button{
     background-color: #41A2AE;
 }
+#support-form .pad-top2 .form-group .col-sm-4{
+    width: 33%;
+    float: left;
+}
+#support-form .pad-top2 .form-group .col-sm-6 {
+    width: 50%;
+    float: left;
+}
+#please-call-me {
+    z-index: 99999999;
+}
