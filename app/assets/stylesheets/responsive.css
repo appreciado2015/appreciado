@@ -411,7 +411,7 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 568px) {
 	#tb-connecting-mid1 .pad-top5 {
 		padding-top: 0.2em;
 	}
@@ -420,8 +420,10 @@
 	    margin-top: 10px;
 	}
 	#tb-connecting-mid1 h3 {
-	    font-size: 16px;
+	    font-size: 13px;
 	    margin-top: 10px;
+	    line-height: 1.5;
+	    font-weight: 400;
 	}
 }
 
@@ -431,8 +433,26 @@
 	}
 }
 @media screen and (max-width: 767px) {
+#tb-connecting-mid2 .c-caption {
+    padding: 1em 0 1em 1px;
+	}
 #tb-connecting-mid2 h1 {
     text-align: center;
+    font-size: 24px;
+	}
+#tb-connecting-mid2 h3 {
+    font-size: 13px;
+    font-weight: 400;
+	}
+#tb-connecting-mid2 .caption {
+    padding: 2em 0 2em 0;
+	}
+#tb-connecting-mid2 .howitworks-point {
+    font-size: 13px !important;
+    color: #ffffff;
+    margin-right: 0;
+    margin-top: 0;
+    line-height: 1.5;
 	}
 }
 
@@ -454,6 +474,13 @@
     font-size: 18px;
 	}
 }
+@media screen and (max-width: 767px) {
+#tb-connecting-mid4	h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 24px;
+	}
+}
 @media screen and (min-width:992px) and (max-width:1360px) {
 #tb-connecting-mid4 .pad-top13 {
     padding-top: 7em;
@@ -469,9 +496,9 @@
     padding-top: 2em;
 	}
 }
-@media screen and (max-width:500px) {
-#tb-connecting-mid4 .pad-top13 {
-    padding-top: 6em;
+@media screen and (max-width:767px) {
+#tb-connecting-mid4 .hidden-sm img {
+    margin-bottom: 10px;
 	}
 }
 @media screen and (min-width:1201px) and (max-width:1360px) {
@@ -508,6 +535,7 @@
 @media screen and (max-width:767px) {
 #tb-connecting-mid4 #tb-connecting-mid4-p1 h2, #tb-connecting-mid4 #tb-connecting-mid4-p2 h2, #tb-connecting-mid4 #tb-connecting-mid4-p3 h2 {
     margin-bottom: 0px;
+    display: inline-block;
 	}
 }
 /******* Top Benefits Growing / Dentist*******/
@@ -527,11 +555,7 @@
 		padding-top: 2em;
 	}
 }
-@media screen and (max-width:500px) {
-#tb-growing-mid4 .pad-top13 {
-    padding-top: 6em;
-	}
-}
+
 @media screen and (max-width: 680px) {
 	#tb-growing-mid1 h1 {
     font-size: 32px;
@@ -588,7 +612,7 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 568px) {
 	#tb-growing-mid1 .pad-top5 {
 		padding-top: 0.2em;
 	}
@@ -597,8 +621,10 @@
 	    margin-top: 10px;
 	}
 	#tb-growing-mid1 h3 {
-	    font-size: 16px;
+	    font-size: 13px;
 	    margin-top: 10px;
+	    line-height: 1.5;
+	    font-weight: 400;
 	}
 }
 
@@ -607,12 +633,43 @@
     font-size: 56px;
 	}
 }
+@media screen and (max-width: 767px) {
+#tb-growing-mid2 .caption {
+    padding: 1em 0 1em 1em;
+	}
+#tb-growing-mid2 h1 {
+    text-align: center;
+    font-size: 24px;
+	}
+#tb-growing-mid2 h3 {
+    font-size: 13px;
+    font-weight: 400;
+	}
+#tb-growing-mid2 .c-caption {
+    padding: 2em 0 2em 0;
+	}
+#tb-growing-mid2 .howitworks-point-dark {
+    font-size: 13px;
+    color: #64686d;
+    margin-left: 0;
+    padding-top: 0;
+    line-height: 1.5;
+	}
+}
+
 @media screen and (max-width: 991px) {
 #tb-growing-mid4 h2 {
     font-size: 24px;
 	}
 #tb-growing-mid4 h3 {
     font-size: 18px;
+	}
+}
+@media screen and (max-width: 767px) {
+#tb-growing-mid4	h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 70px;
 	}
 }
 @media screen and (min-width:992px) and (max-width:1360px) {
@@ -628,6 +685,11 @@
 @media screen and (min-width:768px) and (max-width:850px) {
 #tb-growing-mid4 .pad-top13 {
     padding-top: 2em;
+	}
+}
+@media screen and (max-width:767px) {
+#tb-growing-mid4 .hidden-sm img {
+    margin-bottom: 10px;
 	}
 }
 @media screen and (min-width:1201px) and (max-width:1360px) {
@@ -664,6 +726,7 @@
 @media screen and (max-width:767px) {
 #tb-growing-mid4 #tb-growing-mid4-p1 h2, #tb-growing-mid4 #tb-growing-mid4-p2 h2, #tb-growing-mid4 #tb-growing-mid4-p3 h2 {
     margin-bottom: 0px;
+    display: inline-block;
 	}
 }
 
@@ -679,11 +742,7 @@
 		padding-top: 1em;
 	}
 }
-@media screen and (max-width:500px) {
-#tb-rewarding-mid4 .pad-top13 {
-    padding-top: 6em;
-	}
-}
+
 @media screen and (max-width: 680px) {
 	#tb-rewarding-mid1 h1 {
     font-size: 32px;
@@ -740,7 +799,7 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 568px) {
 	#tb-rewarding-mid1 .pad-top5 {
 		padding-top: 0.2em;
 	}
@@ -749,8 +808,10 @@
 	    margin-top: 10px;
 	}
 	#tb-rewarding-mid1 h3 {
-	    font-size: 16px;
+	    font-size: 13px;
 	    margin-top: 10px;
+	    line-height: 1.5;
+	    font-weight: 400;
 	}
 }
 
@@ -759,12 +820,44 @@
     font-size: 56px;
 	}
 }
+@media screen and (max-width: 767px) {
+#tb-rewarding-mid2 .caption {
+    padding: 1em 0 1em 1em;
+	}
+#tb-rewarding-mid2 h1 {
+    text-align: center;
+    font-size: 24px;
+	}
+#tb-rewarding-mid2 h3 {
+    font-size: 13px;
+    font-weight: 400;
+	}
+#tb-rewarding-mid2 .c-caption {
+    padding: 2em 0 2em 0;
+	}
+#tb-rewarding-mid2 .howitworks-point-dark {
+    font-size: 13px;
+    color: #64686d;
+    margin-left: 0;
+    padding-top: 0;
+    line-height: 1.5;
+	}
+}
+
+
 @media screen and (max-width: 991px) {
 #tb-rewarding-mid4 h2 {
     font-size: 24px;
 	}
 #tb-rewarding-mid4 h3 {
     font-size: 18px;
+	}
+}
+@media screen and (max-width: 767px) {
+#tb-rewarding-mid4	h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 70px;
 	}
 }
 @media screen and (min-width:992px) and (max-width:1200px) {
@@ -780,6 +873,11 @@
 @media screen and (min-width:768px) and (max-width:850px) {
 #tb-rewarding-mid4 .pad-top13 {
     padding-top: 4em;
+	}
+}
+@media screen and (max-width:767px) {
+#tb-rewarding-mid4 .hidden-sm img {
+    margin-bottom: 10px;
 	}
 }
 @media screen and (min-width:1201px) and (max-width:1360px) {
@@ -816,6 +914,7 @@
 @media screen and (max-width:767px) {
 #tb-rewarding-mid4 #tb-rewarding-mid4-p1 h2, #tb-rewarding-mid4 #tb-rewarding-mid4-p2 h2, #tb-rewarding-mid4 #tb-rewarding-mid4-p3 h2 {
     margin-bottom: 0px;
+    display: inline-block;
 	}
 }
 
@@ -851,6 +950,10 @@
 	#support-form h4 {
   		font-size: 10px;
 	}
+	#support-form .pad-top2 {
+    padding-top: 1em;
+    padding-right: 2em;
+	}
 	#support-form .form-control {
 	   /* height: 24px;*/
 	    padding: 3px 6px;
@@ -880,6 +983,12 @@
 	.vid_size {
     margin-top: -2em;
     margin-bottom: -4em;
+	}
+}
+@media screen and (max-width: 767px) {
+.vid_size {
+    margin-top: -1em;
+    margin-bottom: -1em;
 	}
 }
 @media screen and (max-width: 500px) {
