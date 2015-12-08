@@ -1692,3 +1692,6 @@ a:hover
 #please-call-me {
     z-index: 99999999;
 }
+input, button, select, textarea{
+    font-family:arial;
+}
