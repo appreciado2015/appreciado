@@ -1346,7 +1346,8 @@ hr {
 
 }
 .mar-top-m9 {
-  margin-top: -9em
+    margin-top: -11em;
+    padding-right: 1em;
 }
 
 .vid_size {
