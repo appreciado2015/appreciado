@@ -345,7 +345,7 @@ hr {
     min-width: 130px;
 }
 #demo4 {
-    background-image: url("../assets/csoon.png");
+   /* background-image: url("../assets/csoon.png");*/
     background-repeat: no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
