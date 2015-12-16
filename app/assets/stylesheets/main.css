@@ -335,7 +335,7 @@ hr {
     min-height: 700px;
 }
 #demo3 {
-    background-image: url("../assets/logo-bg.png");
+   /* background-image: url("../assets/logo-bg.png");*/
     background-repeat: no-repeat;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
