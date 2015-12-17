@@ -1371,6 +1371,12 @@ hr {
 .bk-color-sky {
   background-color:rgba(102,184,195, 0.61)
 }
+.bk-color-gray-white {
+  background-color:rgba(210,200,195, 0.61)
+}
+.bk-color-green-white {
+  background-color:rgba(220,230,200, 0.61)
+}
 .bk-color-blue {
   background-color: #373873
 }

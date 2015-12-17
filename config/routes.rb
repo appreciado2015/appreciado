@@ -3,14 +3,14 @@ Rails.application.routes.draw do
   root 'static_pages#demo'
 
   match '/index', to: 'static_pages#top_benefits', via: 'get', as: :top_benefits
-  match '/dental-office-managers', to: 'static_pages#top_benefits_connecting', via: 'get', as: :top_benefits_connecting
-  match '/dental-practices', to: 'static_pages#top_benefits_growing', via: 'get', as: :top_benefits_growing
-  match '/your-patients', to: 'static_pages#top_benefits_rewarding', via: 'get', as: :top_benefits_rewarding
+  match '/office-managers', to: 'static_pages#top_benefits_connecting', via: 'get', as: :top_benefits_connecting
+  match '/business-owner', to: 'static_pages#top_benefits_growing', via: 'get', as: :top_benefits_growing
+  match '/customers', to: 'static_pages#top_benefits_rewarding', via: 'get', as: :top_benefits_rewarding
   match '/who-we-are', to: 'static_pages#about', via: 'get', as: :about
   match '/team', to: 'static_pages#about_team', via: 'get', as: :about_team
   match '/partners', to: 'static_pages#partners', via: 'get', as: :partners
   match '/contact', to: 'static_pages#contact', via: 'get', as: :contact
-  match '/talk-with-us', to: 'static_pages#support', via: 'get', as: :support
+  match '/connect-with-us', to: 'static_pages#support', via: 'get', as: :support
   match '/schedule-a-call', to: 'static_pages#support_schedule', via: 'get', as: :support_schedule
   match '/appreciado-support', to: 'static_pages#support_appreciado', via: 'get', as: :support_appreciado
   match '/question-support', to: 'static_pages#support_question', via: 'get', as: :support_question

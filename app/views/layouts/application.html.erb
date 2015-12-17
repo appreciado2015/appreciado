@@ -64,12 +64,12 @@
                 <ul class="nav navbar-nav">
                      <%= link_to(image_tag("appreciadologo.png", alt: "Appreciado"), root_path, method: :get, class: "hidden-xs") %>
                       
-                    <li class="<%= 'active' if current_page?(top_benefits_connecting_path) %>"><%= link_to "SCHEDULING COORDINATORS", top_benefits_connecting_path, :method => :get %></li>
-                    <li class="<%= 'active' if current_page?(top_benefits_growing_path) %>"><%= link_to "DENTIST", top_benefits_growing_path, :method => :get %></li>
-                    <li class="<%= 'active' if current_page?(top_benefits_rewarding_path) %>"><%= link_to "PATIENTS", top_benefits_rewarding_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(top_benefits_connecting_path) %>"><%= link_to "OFFICE MANAGERS", top_benefits_connecting_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(top_benefits_growing_path) %>"><%= link_to "BUSINESS OWNERS", top_benefits_growing_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(top_benefits_rewarding_path) %>"><%= link_to "CUSTOMERS", top_benefits_rewarding_path, :method => :get %></li>
                     <li class="<%= 'active' if current_page?(about_path)||current_page?(about_team_path) %>"><%= link_to "WHO WE ARE", about_path, :method => :get %></li>
                     <!--<li><%= link_to "BLOG", "http://blog.appreciado.com/", target: "_blank", :method => :get %></li>-->
-                    <li class="<%= 'active' if current_page?(support_path)||current_page?(support_appreciado_path)||current_page?(support_schedule_path) %>"><%= link_to "TALK WITH US", support_path, :method => :get %></li>
+                    <li class="<%= 'active' if current_page?(support_path)||current_page?(support_appreciado_path)||current_page?(support_schedule_path) %>"><%= link_to "CONNECT WITH US", support_path, :method => :get %></li>
                       
                     <!--<li class="<%= 'active' if current_page?(support_question_path) %>"><%= link_to "FAQ", support_question_path, :method => :get %></li>-->
                     <!--<li class="<%= 'active' if current_page?(purchase_path) %>"><%= link_to "PURCHASE", purchase_path, :method => :get %></li>-->
@@ -116,7 +116,7 @@
                     <li><%= link_to "WHO WE ARE", about_path, :method => :get %></li>
                     <li><%= link_to "PRIVACY", privacy_path, :method => :get %></li>
                     <li><%= link_to "TERMS & CONDITIONS", terms_path, :method => :get %></li>
-                    <li><%= link_to "TALK WITH US", support_path, :method => :get %></li>
+                    <li><%= link_to "CONNECT WITH US", support_path, :method => :get %></li>
                 </ul>
             </div>
             
