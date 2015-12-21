@@ -1064,7 +1064,9 @@ hr {
 #team-about ul > li > a {
   color: #D2007D
 }
-
+#team-about .close {
+  float: left
+}
 
 /******** SUPPORT ********/
 #support-mid1 .thumbnail {
