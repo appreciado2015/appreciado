@@ -1067,6 +1067,14 @@ hr {
 #team-about .close {
   float: left
 }
+.arrow-toggle .fa-arrow-up,
+.arrow-toggle.collapsed .fa-arrow-down {
+    display: inline-block;
+}
+.arrow-toggle.collapsed .fa-arrow-up,
+.arrow-toggle .fa-arrow-down {
+    display: none;
+}
 
 /******** SUPPORT ********/
 #support-mid1 .thumbnail {
