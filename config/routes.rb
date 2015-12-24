@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   
-  root 'static_pages#demo'
+  root 'static_pages#top_benefits'
 
-  match '/index', to: 'static_pages#top_benefits', via: 'get', as: :top_benefits
+  #match '/index', to: 'static_pages#top_benefits', via: 'get', as: :top_benefits
   match '/office-managers', to: 'static_pages#top_benefits_connecting', via: 'get', as: :top_benefits_connecting
   match '/business-owner', to: 'static_pages#top_benefits_growing', via: 'get', as: :top_benefits_growing
   match '/customers', to: 'static_pages#top_benefits_rewarding', via: 'get', as: :top_benefits_rewarding
