@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   match '/customers', to: 'static_pages#top_benefits_rewarding', via: 'get', as: :top_benefits_rewarding
   match '/who-we-are', to: 'static_pages#about', via: 'get', as: :about
   match '/team', to: 'static_pages#about_team', via: 'get', as: :about_team
+  match '/idea', to: 'static_pages#about_idea', via: 'get', as: :about_idea
   match '/partners', to: 'static_pages#partners', via: 'get', as: :partners
   match '/contact', to: 'static_pages#contact', via: 'get', as: :contact
   match '/connect-with-us', to: 'static_pages#support', via: 'get', as: :support

@@ -95,14 +95,13 @@ $(document).ready(function(){
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6">
-                <div class="row text-center bk-color-sky pad-top4 min-h650">            
-                        <h1>THE IDEA</h1>
+                <div class="row text-center bk-color-sky pad-top4 min-h650">
                         <div class= "hidden-xs">
-                            <img src="/assets/whoarewe/icon-idea.png">
+                            <%= link_to("<h1>THE IDEA</h1> #{image_tag("whoarewe/icon-idea.png", alt: "Idea")}".html_safe, about_idea_path, method: :get) %>
                             <h3>Appreciado believes in thoughtfully growing heartfelt connections!</h3>
                         </div>
                         <div class= "hidden-sm hidden-md hidden-lg">
-                            <img src="/assets/whoarewe/icon-idea-r.png">
+                            <%= link_to("<h1>THE IDEA</h1> #{image_tag("whoarewe/icon-idea-r.png", alt: "Idea")}".html_safe, about_idea_path, method: :get) %>
                             <h3>Appreciado believes in thoughtfully, growing, heartfelt connections! Appreciado is a mobile platform that will revolutionize how dental practices interact with patients. We believe in connecting, rewarding + growing. </h3>
                         </div>
                         

@@ -17,6 +17,9 @@ class StaticPagesController < ApplicationController
   def about_team
   end
 
+  def about_idea
+  end
+
   def partners
   end
 
